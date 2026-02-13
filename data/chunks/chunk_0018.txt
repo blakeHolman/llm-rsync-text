@@ -1,0 +1,49 @@
+ c. DNI. The DNI is head of the Intelligence Community and principal advisor to the
+President and the NSC for intelligence matters related to national security pursuant to Section
+1011 of Public Law 108-458 (Reference (ag)) and Section 1.3 of E.O. 12333 (Reference (ah)).
+The DNI is also charged by section 1.3(b)(8) of Reference (ah) with protecting intelligence
+sources, methods, and activities, and in this role, the DNI issues instructions in the form of
+Intelligence Community Directives or other security policies and standards for the protection,
+management and oversight of SCI and other national intelligence.
+
+ d. ISOO. The ISOO, under the authority of the Archivist of the United States, acting in
+consultation with the NSC, issues directives as necessary to implement Reference (d). The
+directives establish national standards for the classification and marking of national security
+information, security education and training programs, safeguarding, self-inspection programs,
+and declassification. The ISOO has the responsibility to oversee agency implementation and
+compliance with these directives. In this role, the ISOO requests certain information regarding
+DoD activities, and such requests are coordinated through USD(I&S).
+
+ e. CUI Office (CUIO). The CUIO, under the authority of the Archivist of the United States,
+issues directives as necessary to implement Reference (e). The directives establish national
+standards for designation, safeguarding, marking, and dissemination of CUI as well as standards
+for education and training. The CUIO has the responsibility to oversee agency implementation
+and compliance with these directives. CUIO requests for information regarding DoD activities
+are coordinated through USD(I&S).
+
+5. DoD INFORMATION SECURITY PROGRAM MANAGEMENT
+
+ a. USD(I&S). Reference (a) designates the USD(I&S) as the DoD Senior Security Official.
+In this role, the USD(I&S) is the DoD Senior Agency Official responsible for directing,
+administering, and overseeing the DoD Information Security Program for the Department of
+Defense, and except as provided in paragraph 5.b. of this section, performs the functions
+specified in subsection 5.4(d) of Reference (d) and its implementing directives for the
+Department of Defense. The USD(I&S) is also the Restricted Data Management Official for the
+Department of Defense consistent with the requirement in part 1045 of title 10, Code of Federal
+Regulations (References (ai) and (as)).
+
+ b. USD(P). In accordance with Reference (p), the USD(P) is the senior official responsible
+for directing, administering, and overseeing that portion of the DoD Information Security
+Program pertaining to foreign government (including NATO) information, the disclosure of
+classified information to foreign governments and international organizations, and security
+arrangements for international programs. Within the scope of these responsibilities, the USD(P)
+also performs the functions specified in subsection 5.4(d) of Reference (d) and its implementing
+directives for the Department of Defense.
+
+ c. DoD CIO. In accordance with DoDD 5144.02 (Reference (aj)), the DoD CIO is
+responsible for all matters relating to the DoD information enterprise, including communications;
+spectrum management; network policy and standards; information systems; cybersecurity;
+
+positioning, navigation, and timing policy; and the DoD information enterprise that supports
+DoD command and control.
+

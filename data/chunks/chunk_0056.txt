@@ -1,0 +1,63 @@
+senior agency official. An official appointed by the head of a DoD Component to be responsible
+for direction, administration, and oversight of the Component’s information security program, to
+include classification, declassification, safeguarding, and security education and training
+programs, and for the efficient and effective implementation of References (b), (d), (e), and (f)
+and the guidance in this Manual. Where used in reference to authorities pursuant to
+section 5.4(d) of Reference (d), this term applies only to the senior agency officials of the
+Military Departments and of the Department of Defense.
+
+senior intelligence official. The highest ranking military or civilian charged with direct foreign
+intelligence missions, functions, or responsibilities with a department, agency, component, or
+element of an Intelligence Community organization. Responsible for direction, administration,
+and oversight of the organization’s SCI program, to include classification, declassification,
+safeguarding, and security education and training programs for the effective implementation of
+References (b), (j), and (ad) and the guidance in this Manual.
+
+SSO. Individual appointed, in accordance with References (j) and (ad), by the senior intelligence
+official to be responsible for the day-to-day security management, operation, implementation,
+use, and dissemination of SCI within an activity.
+
+tab. A narrow paper sleeve placed around a document or group of documents in such a way that
+it is readily visible.
+
+telecommunications. The preparation, transmission, or communication of information by
+electronic means.
+
+transferred records. Records transferred to agency storage facilities or a Federal records center.
+
+unauthorized disclosure. Communication or physical transfer of classified or controlled
+unclassified information to an unauthorized recipient.
+
+unscheduled records. Records whose final disposition has not been approved by NARA.
+
+U.S. entity
+
+ State, local, or tribal governments.
+
+ State, local, and tribal law enforcement and firefighting entities.
+
+ Public health and medical entities.
+
+ Regional, State, local, and tribal emergency management entities, including State Adjutants
+General and other appropriate public safety entities.
+
+ Private sector entities serving as part of the Nation’s critical infrastructure and/or key
+resources.
+
+violation
+
+ Any knowing, willful, or negligent action that could reasonably be expected to result in an
+unauthorized disclosure of classified information.
+
+ Any knowing, willful, or negligent action to classify or continue the classification of
+information contrary to the requirements of Reference (d), its implementing directives, or this
+Manual.
+
+ Any knowing, willful, or negligent action to create or continue a special access program
+contrary to the requirements of Reference (d), Reference (q), or this Manual.
+
+waiver. An approved temporary or short-term exclusion or deviation from an information
+security standard or requirement, as specified in this Volume.
+
+weapons of mass destruction. Any weapon of mass destruction as defined in section 1801(p) of
+Reference (af).

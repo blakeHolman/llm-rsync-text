@@ -1,0 +1,48 @@
+ b. Secretary of Defense Certification. In addition to the requirement of paragraph 12.a. of
+this section, DoD Components shall not automatically declassify DoD records without reviewing
+them for declassification unless the Secretary of Defense has certified to Congress that such
+declassification would not harm the national security pursuant to section 1041(c) of Public
+Law 106-65 (Reference (bf)). If records will not be reviewed for declassification as required
+prior to December 31 of the year in which they become 25 years old, the DoD Component Heads
+shall notify the USD(I&S), 6 months in advance of the deadline, so the required Secretary of
+Defense certification can be addressed. Notification shall include identification of the records,
+the compelling reason why the records will not be reviewed by the deadline, how many records
+will remain un-reviewed, where the records are located, and when the required reviews will be
+completed.
+
+ c. Public Release of Automatically Declassified Documents. Automatic declassification
+does not constitute approval for public release of the information. Automatically declassified
+documents shall not be released to the public until a public disclosure review has been conducted
+in accordance with paragraph 1.e. of this enclosure. Declassified information may be designated
+CUI in accordance with Volume 4 of this Manual if it meets the criteria for designation;
+information so designated shall be marked and protected as Volume 4 requires.
+
+ d. Basis for Exclusion or Exemption from Automatic Declassification. Information shall be
+excluded or exempted from automatic declassification provisions based on content. Exclusion or
+exemption shall not be based solely on the type of document or record in which the information
+is found.
+
+ e. Exclusion of RD and FRD. Documents and other materials marked or containing RD or
+FRD are excluded from the automatic declassification provisions of Reference (d) and this
+Volume until the RD or FRD designation is properly removed. Such information shall remain
+classified or shall be referred for a declassification review to the Department of Energy if RD or
+the DASD(NM) if FRD.
+
+ (1) In accordance with the provisions of section 3161 of Public Law 105-261
+(Reference (bg) (also known as “The Kyl-Lott Amendment”), and its implementing plan, all
+personnel who perform automatic declassification reviews on records that are highly likely to
+contain RD or FRD must be trained and certified by the Department of Energy in the
+identification of unmarked RD and FRD information. DoD Components shall report each
+confirmed inadvertent release of RD or FRD occurring during declassification processes to the
+Department of Energy and provide a copy to OUSD(I&S) Security Directorate.
+
+ (2) When the RD or FRD pertains to defense nuclear information, declassification
+reviews shall be referred to the DASD(NM), who has OCA for defense nuclear information, to
+include joint OCA with the Department of Energy for FRD.
+
+ (3) The Secretary of Energy determines when information concerning foreign nuclear
+programs that was removed from the RD category in order to carry out provisions of
+section 2673 of Reference (af) may be declassified. Unless otherwise determined by the
+appropriate OCA, such information shall be declassified when comparable information
+concerning the U.S. nuclear program is declassified.
+

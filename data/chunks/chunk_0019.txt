@@ -1,0 +1,62 @@
+ d. National Security Agency/Central Security Service (NSA/CSS). In accordance with
+Reference (ah), the NSA/CSS provides centralized coordination and direction for signals
+intelligence. In accordance with National Security Directive 42 (Reference (ak)), the NSA/CSS
+provides IA/cybersecurity support for national security systems and, at the request of the national
+security system owner, provides vulnerability assessments. Additionally, in accordance with
+Reference (b), the Director, NSA/Chief, CSS may impose special requirements for protection of
+classified cryptologic information.
+
+ e. DIA. As assigned by Reference (b) and with the exception of NSA/CSS, the National
+Reconnaissance Office, and the National Geospatial-Intelligence Agency, DIA administers
+within the Department of Defense the SCI security policies and procedures issued by the DNI.
+The Director, DIA, is responsible for development of standards, implementation, and operational
+management of the SCI compartments for the Department of Defense.
+
+ f. Defense Security Service (DSS). DSS provides information security education and
+training for the Department of Defense as required by DoDI 3305.13 (Reference (al)). DSS, as
+the DoD cognizant security office for industrial security, also manages and administers the DoD
+portion of the National Industrial Security Program, to ensure the protection of classified information
+released or disclosed to industry in connection with classified contracts.
+
+6. DoD COMPONENT INFORMATION SECURITY MANAGEMENT
+
+ a. Head of the DoD Component. The Head of each DoD Component has overall
+responsibility for implementation of the information security program within the Component.
+This includes responsibility for:
+
+ (1) Designating senior agency officials, including, as appropriate, the DoD Component
+senior agency official and senior intelligence official, to be responsible for directing,
+administering, and overseeing the information security program within the Component. A
+separate senior official responsible for overseeing SAPs within the Component may also be
+designated.
+
+ (2) Committing necessary resources to effectively implement the information security
+program.
+
+ b. Senior Agency Officials. The senior agency official appointed by the Head of the DoD
+Component has day-to-day responsibility for the direction, implementation, and oversight of
+Component’s information security program and for its efficient and effective implementation.
+These responsibilities include:
+
+ (1) Promulgating guidance necessary for program implementation.
+
+ (2) Ensuring adequate resources for a robust information security program are identified
+and programmed.
+
+ (3) Establishing and maintaining a security education program.
+
+ (4) Establishing and maintaining an ongoing self-inspection and program oversight
+function.
+
+ (5) Directing the head of each activity within the DoD Component that creates, handles,
+or stores classified information to appoint an official to serve as security manager for the activity,
+to properly manage and oversee the activity’s information security program.
+
+ c. Activity Security Management. The activity security manager manages and implements
+the activity’s information security program and ensures its visibility and effectiveness on behalf
+of the activity head, who retains the responsibility for overall management and functioning of the
+program. The activity security managers must have sufficient delegated authority to ensure that
+personnel adhere to program requirements, and their position within the organizational hierarchy
+must ensure their credibility and enable them to raise security issues directly to their respective
+activity head.
+

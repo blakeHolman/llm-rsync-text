@@ -1,0 +1,63 @@
+information security. The system of policies, procedures, and requirements established in
+accordance with Reference (d) to protect information that, if subjected to unauthorized
+disclosure, could reasonably be expected to cause damage to national security. The term also
+applies to policies, procedures, and requirements established to protect unclassified information
+that may be withheld from release to the public pursuant to Executive order, statute, or
+regulation.
+
+integral file block. A distinct component of a file series that should be maintained as a separate
+unit to ensure the integrity of the records. An integral file block may consist of a set of records
+covering either a specific topic or a range of time, such as a Presidential administration or a
+5-year retirement schedule within a specific file series that is retired from active use as a
+group. For purposes of automatic declassification, integral file blocks shall contain only records
+dated within 10 years of the oldest record in the file block.
+
+integrity. The state that exists when information is unchanged from its source and has not been
+accidentally or intentionally modified, altered, or destroyed.
+
+Intelligence Community. An element or agency of the U.S. Government identified in or
+designated pursuant to section 3(4) of the National Security Act of 1947, as amended, or
+section 3.5(h) of Reference (ah).
+
+international program. Any program, project, contract, operation, exercise, training, experiment,
+or other initiative that involves a DoD Component or a DoD contractor and a foreign
+
+government, international organization, or corporation that is located and incorporated to do
+business in a foreign country.
+
+material. Any product or substance on or in which information is embodied.
+
+national security. The national defense or foreign relations of the United States. National
+security includes defense against transnational terrorism.
+
+national security system. Defined in section 3542(b)(2) of Reference (av).
+
+need to know. A determination that a prospective recipient requires access to specific classified
+information in order to perform or assist in a lawful and authorized governmental function.
+
+network. A system of two or more computers that can exchange data or information.
+
+newly discovered records. Records that were inadvertently not reviewed prior to the effective
+date of automatic declassification because the Agency declassification authority was unaware of
+their existence.
+
+OCA. An individual authorized in writing, either by the President, the Vice President, or by
+agency heads or other officials designated by the President, to originally classify information
+(i.e., to classify information in the first instance).
+
+original classification. An initial determination that information requires, in the interests of
+national security, protection against unauthorized disclosure.
+
+pass/fail. A declassification technique that regards information at the full document level. Any
+exemptible portion of a document may result in exemption (failure) of the entire document.
+Documents that contain no exemptible information are passed and therefore declassified.
+Documents that contain exemptible information are failed and therefore exempt from automatic
+declassification.
+
+permanent records. Any Federal record that has been determined by NARA to have sufficient
+value to warrant its preservation in the National Archives of the United States. Permanent
+records include all records accessioned by NARA into the National Archives of the United States
+and later increments of the same records, and those for which the disposition is permanent on
+SF 115, “Request for Records Disposition Authority,” approved by NARA on or after May 14,
+1973.
+

@@ -1,0 +1,58 @@
+permanently valuable records. See “records having permanent historical value.”
+
+RD. All data concerning design, manufacture, or utilization of atomic weapons; the production
+of special nuclear material; or the use of special nuclear material in the production of energy, but
+not data declassified or removed from the RD category pursuant to section 2162 of The Atomic
+Energy Act of 1954, as amended.
+
+records. The records of an agency and Presidential papers or Presidential records, as those terms
+are defined in Reference (av), including those created or maintained by a U.S. Government
+contractor, licensee, certificate holder, or grantee that are subject to the sponsoring agency’s
+control in accordance with the terms of the contract, license, certificate, or grant.
+
+records having permanent historical value. Records that the Archivist of the United States has
+determined should be maintained permanently in accordance with Reference (av).
+
+records management. The planning, controlling, directing, organizing, training, promoting, and
+other managerial activities involved with respect to records creation, records maintenance and
+use, and records disposition in order to achieve adequate and proper documentation of the
+policies and transactions of the Federal Government and effective and economical management
+of agency operations. Within the Department of Defense, records management is implemented
+by Reference (aw).
+
+redaction. For purposes of declassification, the removal of exempted information from copies of
+a document.
+
+released to the public. Made available to the general public through any publicly accessible
+media or method.
+
+risk management. The process of identifying, assessing, and controlling risks and making
+decisions that balance risk with cost and benefits.
+
+safeguarding. Measures and controls that are prescribed to protect classified information.
+
+SAP. A program established for a specific class of classified information that imposes
+safeguarding and access requirements that exceed those normally required for information at the
+same classification level. In the Department of Defense, any DoD program or activity (as
+authorized in Reference (d)), employing enhanced security measures (e.g., safeguarding, access
+requirements), exceeding those normally required for collateral information at the same level of
+classification, shall be established, approved, and managed as a DoD SAP in accordance with
+Reference (q).
+
+scheduled records. All records that fall under a NARA-approved records control schedule.
+
+SCI. Classified information concerning or derived from intelligence sources, methods, or
+analytical processes that is required to be handled within formal access control systems
+established by the Director of National Intelligence.
+
+security classification guide. A documentary form of classification guidance issued by an OCA
+that identifies the elements of information regarding a specific subject that must be classified and
+establishes the level and duration of classification for each such element.
+
+security clearance. A determination that a person is eligible in accordance with the standards of
+Reference (s) for access to classified information.
+
+self-inspection. The internal review and evaluation of individual DoD Component activities and
+the DoD Component as a whole with respect to the implementation of the information security
+program established in accordance with References (b), (d) and (f), and this Manual.
+

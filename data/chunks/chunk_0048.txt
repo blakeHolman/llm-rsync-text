@@ -1,0 +1,52 @@
+17. SYSTEMATIC REVIEW FOR DECLASSIFICATION. Heads of the DoD Components
+that have classified information in accordance with Reference (d) or previous Executive orders
+shall establish systematic review programs to review for declassification information in the
+custody of the DoD Component. These programs shall review for declassification information
+that is contained in permanently valuable historical records that have been exempted from
+automatic declassification and shall determine if the information may be further exempt from
+automatic declassification in accordance with the provisions of this enclosure. These efforts
+shall be prioritized in accordance with the priorities established by the NDC.
+
+18. DOWNGRADING CLASSIFIED INFORMATION. Downgrading information to a lower
+level of classification is appropriate when the information no longer requires protection at the
+originally assigned level and can be properly protected at a lower level. The principal purpose of
+downgrading is to conserve security resources by avoiding protection of information at too high
+a level. Any official with jurisdiction over the information who is authorized to classify or
+declassify the information may downgrade it.
+
+ a. Downgrading shall be considered when OCAs are deciding on the duration of
+classification to be assigned. If downgrading dates or events can be identified, they shall be
+specified along with the declassification instruction. Downgrading instructions do not replace
+declassification instructions.
+
+ b. An authorized official making a downgrading decision shall notify all known holders of
+the change in classification. If the information is subject to the Scientific and Technical
+Information Program (STIP) (DoDD 3200.12 (Reference (bk)), the authorized official shall also
+notify the Defense Technical Information Center.
+
+ c. When information is marked for downgrading on a specific date or event and that date or
+event has passed, holders shall confirm that the OCA(s) of the information has not extended the
+higher classification period prior to downgrading DoD information.
+
+ d. Downgraded information shall be marked as required by Enclosure 3 of Volume 2 of this
+Manual.
+
+ e. If a holder of classified information has reason to believe it should not be downgraded as
+indicated, the originator shall be notified through appropriate administrative channels. The
+
+document or material shall continue to be protected at the originally assigned classification until
+the issue is resolved.
+
+19. UPGRADING CLASSIFIED INFORMATION. Classified information may be upgraded to
+a higher level of classification only by officials who have been delegated the appropriate level of
+OCA in accordance with Enclosure 4 of this Volume. The information to be upgraded must
+continue to meet the standards for classification specified in Enclosure 4 of this Volume. When
+making the decision to upgrade the classification level, OCAs shall consider the benefits to
+national security that will accrue from the higher classification against the costs associated with
+upgrading (e.g., the requirement for upgraded clearances or storage facilities, notification costs)
+and the ability to notify all holders of the information of the change so that the information shall
+be uniformly protected at the higher level. The OCA making the upgrading decision is
+responsible for notifying holders of the change in classification. For information subject to the
+STIP (Reference (bk)), the OCA shall also notify the Defense Technical Information Center.
+Upgraded information shall be marked as required by Enclosure 3 of Volume 2 of this Manual.
+
