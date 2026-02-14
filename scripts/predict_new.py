@@ -59,8 +59,8 @@ def _open_data(path, len_prompt=False, stop_after=sys.maxsize):
                 print(f"Skipping malformed JSON on line {idx}: {e}")
                 continue
 
-            old = rec.get("old")
-            new = rec.get("new")
+            old = rec.get("OLD")
+            new = rec.get("NEW")
 
             # Ignore first line do to few-shot prompting
             if idx <= 1:
@@ -82,8 +82,9 @@ def _open_data(path, len_prompt=False, stop_after=sys.maxsize):
             print("===============pred============")
             print(predicted)
             print("==============actual=============")
-            print(new)
             """
+            print(new)
+            
             
             prev_old = old
             prev_new = new
