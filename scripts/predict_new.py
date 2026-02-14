@@ -83,7 +83,7 @@ def _open_data(path, len_prompt=False, stop_after=sys.maxsize):
             print(predicted)
             print("==============actual=============")
             """
-            print(new)
+            print(predicted)
             
             
             prev_old = old
