@@ -131,8 +131,7 @@ def _build_prefix(prev_old, prev_new, subs):
 
     system = (
         "You are a semantic substitution engine.\n"
-        "Apply ONLY the substitutions listed below.\n"
-        "Do not paraphrase. Preserve ALL whitespace, punctuation, and line breaks.\n"
+        "You need to apply the changes in the text to the output.\n"
         "Output ONLY the rewritten text.\n\n"
         f"Substitutions:\n{subs_str}"
     )
@@ -194,6 +193,8 @@ def predict(old, target_len=None):
 
     # Build one full prompt and let generate() handle cache internally.
     full_text = PREFIX_TEXT + _chat_user(old) + _chat_assistant_gen()
+
+    print(f"Prompt:\n {full_text}")
 
     enc = TOKENIZER(
         full_text,
