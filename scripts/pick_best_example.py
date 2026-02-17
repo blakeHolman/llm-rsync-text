@@ -10,18 +10,31 @@ from collections import Counter
 
 _TOKEN_RE = re.compile(r"[A-Za-z0-9]+(?:'[A-Za-z0-9]+)?|[^\w\s]|\s+", re.UNICODE)
 
+def _substitution_coverage_score(old: str, new: str) -> float:
+    """
+    Reward exemplars that have both long-form and short-form (acronym) changes.
+    High variance in changed span lengths = good exemplar.
+    """
+    sm = difflib.SequenceMatcher(a=old, b=new, autojunk=False)
+    changed_spans = [
+        old[i1:i2]
+        for tag, i1, i2, j1, j2 in sm.get_opcodes()
+        if tag == "replace" and i2 - i1 > 1
+    ]
+    if not changed_spans:
+        return 0.0
+
+    lengths = [len(s) for s in changed_spans]
+    avg_len = sum(lengths) / len(lengths)
+    diversity = len(set(changed_spans))
+
+    # Variance in lengths rewards having both short (acronyms) and long (full phrases)
+    variance = sum((l - avg_len) ** 2 for l in lengths) / len(lengths)
+
+    return diversity * (1.0 + variance ** 0.5)
+
 def pick_best_example(jsonl_path, pick_best, tokenizer=None, max_tokens=600, min_tokens=80):
-    """
-    Pick a single exemplar (prev_old, prev_new) that is:
-      - small (<= max_tokens if tokenizer provided; else by chars)
-      - has high relative change (low similarity)
-    Works for ANY dataset with OLD/NEW fields.
-    If pick_best is fasle, pick first pair.
-
-    Returns: (prev_old, prev_new, id)
-    """
     first_valid = None
-
     best = None
     best_score = -1.0
 
@@ -30,7 +43,6 @@ def pick_best_example(jsonl_path, pick_best, tokenizer=None, max_tokens=600, min
             line = line.strip()
             if not line:
                 continue
-
             try:
                 rec = json.loads(line)
             except json.JSONDecodeError:
@@ -41,7 +53,6 @@ def pick_best_example(jsonl_path, pick_best, tokenizer=None, max_tokens=600, min
             if not old or not new:
                 continue
 
-            # Token-length gating (recommended)
             if tokenizer is not None:
                 tok_len = len(tokenizer(old + "\n" + new).input_ids)
                 if tok_len > max_tokens or tok_len < min_tokens:
@@ -52,29 +63,28 @@ def pick_best_example(jsonl_path, pick_best, tokenizer=None, max_tokens=600, min
                 if size <= 0:
                     continue
 
-            # Track the first valid example so we can return it when pick_best=False
             if first_valid is None:
                 first_valid = (old, new, rec.get("id"))
 
             if not pick_best:
                 return first_valid
 
-            # Similarity estimate (character-level, generic)
             sm = difflib.SequenceMatcher(a=old, b=new, autojunk=False)
-            sim = sm.ratio()               # 1.0 identical
-            change_ratio = 1.0 - sim       # 0.0 identical, 1.0 very different
+            sim = sm.ratio()
+            change_ratio = 1.0 - sim
 
-            # Score: prefer high change_ratio, prefer smaller size.
-            score = change_ratio / log1p(size)
+            coverage = _substitution_coverage_score(old, new)
+
+            # Combine: change_ratio rewards high delta, coverage rewards
+            # longer/more diverse changed spans, size penalty keeps it short
+            score = (change_ratio * coverage) / log1p(size)
 
             if score > best_score:
                 best_score = score
                 best = (old, new, rec.get("id"))
 
-    # If we were asked not to pick_best and never found a valid pair:
     if not pick_best and first_valid is not None:
         return first_valid
-
     if best is None:
         raise RuntimeError("No suitable exemplar found; relax max_tokens/min_tokens.")
     return best
