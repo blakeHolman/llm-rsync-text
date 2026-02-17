@@ -1,61 +1,42 @@
-declassification guide. Written instructions issued by a declassification authority that describes
-the elements of information regarding a specific subject that may be declassified and the
-elements that must remain classified. May also be a guide providing classification and
-declassification instructions specifically for information that is 25 years old or older and of
-permanent historical value. A declassification guide is the most commonly used vehicle for
-obtaining ISCAP approval of 25-year exemptions from the automatic declassification provisions
-of Reference (d).
+4. DECLASSIFICATION GUIDANCE. Persons with declassification authority shall develop
+and issue declassification guidance to facilitate effective review and declassification of
+information classified under both current and previous classified national security information
+Executive orders. The guidance may be in the form of declassification guides, sections of
 
-Defense Intelligence Components. All DoD organizations that perform national intelligence,
-Defense Intelligence, and intelligence-related functions, including: the Defense Intelligence
-Agency; the National Geospatial-Intelligence Agency, the National Reconnaissance Office, the
-National Security Agency/Central Security Service, and the intelligence elements of the Active
-and Reserve components of the Military Departments, including the United States Coast Guard
-when operating as a service in the Navy.
+security classification guides, memorandums, etc. Exemptions authorized in accordance with
+section 13 of this enclosure should be cited in declassification guidance.
 
-derivative classification. Incorporating, paraphrasing, restating, or generating in new form
-information that is already classified, and marking the newly developed material consistent with
-the classification markings that apply to the source information. Includes the classification of
-information based on classification guidance. The duplication or reproduction of existing
-classified information is not derivative classification.
+5. DECLASSIFICATION OF INFORMATION
 
-distribution statement. A statement used on a technical document to denote the extent of its
-availability for secondary distribution, release, and disclosure without additional approvals or
-authorizations. A distribution statement is distinct from and in addition to a security
-classification marking and any dissemination control markings included in the banner line. A
-distribution statement is also required on security classification guides submitted to the Defense
-Technical Information Center.
+ a. Holders of classified information marked with a date or event on the “declassify on” line,
+shall, prior to downgrading or declassifying the information, confirm that the OCA(s) for the
+information has not extended the classification period.
 
-document. Any recorded information, regardless of the nature of the medium or the method or
-circumstances of recording. This includes any physical medium in or on which information is
-recorded or stored, to include written or printed matter, audiovisual materials, and
-electromagnetic storage media.
+ b. Holders of classified information may confirm the classification period (i.e., date or event
+for declassification) by reference to the applicable security classification or declassification
+guide or other appropriate guidance issued by the OCA(s), or by consultation with the OCA(s).
+Classified information shall continue to be safeguarded as required for the indicated
+classification level until the holder has confirmed that the OCA(s) has not extended the
+classification period.
 
-downgrading. A determination by a declassification authority that information classified and
-safeguarded at a specified level shall be classified and safeguarded at a lower level.
+ c. If the holder of a document has reason to believe it should not be declassified as specified,
+the originator shall be notified through appropriate administrative channels. The document or
+material shall continue to be protected at the originally assigned classification until the issue is
+resolved.
 
-element of the Intelligence Community. See Intelligence Community.
+ d. Declassification markings are used to clearly convey the declassified status of the
+information and who authorized the declassification. All declassified information in agency
+records not held by NARA shall have the declassification markings required by Enclosure 3 of
+Volume 2 of this Manual applied.
 
-equity. For purposes of classification management, information originally classified by or under
-the control of an agency.
+6. CANCELING OR CHANGING CLASSIFICATION MARKINGS. Declassification
+authority is not required for simply canceling or changing classification markings in accordance
+with guidance from an OCA or declassification authority. Sections 18 and 19 of this enclosure
+provide guidance on downgrading and upgrading classified information.
 
-exception. An approved permanent exclusion or deviation from an information security standard
-or requirement, as specified in this Volume.
-
-exempted. Nomenclature and marking indicating information has been determined to fall within
-an enumerated exemption from automatic declassification in accordance with Reference (d).
-
-FGI
-
- Information provided to the U.S. Government by a foreign government or governments, an
-international organization of governments, or any element thereof, with the expectation that the
-information, the source of the information, or both, are to be held in confidence.
-
- Information produced by the U.S. Government pursuant to or as a result of a joint
-arrangement with a foreign government or governments, or an international organization of
-governments, or any element thereof, requiring that the information, the arrangement, or both,
-are to be held in confidence.
-
- Information received and treated as FGI pursuant to the terms of a predecessor order to
-Reference (d).
+7. SPECIAL PROCEDURES FOR CRYPTOLOGIC INFORMATION. Only NSA/CSS may
+declassify cryptologic information. Therefore, such information uncovered in systematic or
+mandatory review of U.S. Government records for declassification, including such information
+incorporated into other documents, must be referred to the NSA/CSS for declassification
+determination.
 

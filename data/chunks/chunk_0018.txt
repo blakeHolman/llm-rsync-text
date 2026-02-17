@@ -1,49 +1,47 @@
- c. DNI. The DNI is head of the Intelligence Community and principal advisor to the
-President and the NSC for intelligence matters related to national security pursuant to Section
-1011 of Public Law 108-458 (Reference (ag)) and Section 1.3 of E.O. 12333 (Reference (ah)).
-The DNI is also charged by section 1.3(b)(8) of Reference (ah) with protecting intelligence
-sources, methods, and activities, and in this role, the DNI issues instructions in the form of
-Intelligence Community Directives or other security policies and standards for the protection,
-management and oversight of SCI and other national intelligence.
+ (1) The report, covering the previous fiscal year, shall be submitted on Standard Form
+(SF) 311, “Agency Information Security Program Data,” to reach the Director of Security,
 
- d. ISOO. The ISOO, under the authority of the Archivist of the United States, acting in
-consultation with the NSC, issues directives as necessary to implement Reference (d). The
-directives establish national standards for the classification and marking of national security
-information, security education and training programs, safeguarding, self-inspection programs,
-and declassification. The ISOO has the responsibility to oversee agency implementation and
-compliance with these directives. In this role, the ISOO requests certain information regarding
-DoD activities, and such requests are coordinated through USD(I&S).
+OUSD(I&S), prior to October 31 of each year. The Military Departments shall submit their
+reports directly to ISOO, with a copy furnished to OUSD(I&S). OUSD(I&S) shall compile the
+reports, excluding those of the Military Departments, and provide a consolidated report to ISOO.
 
- e. CUI Office (CUIO). The CUIO, under the authority of the Archivist of the United States,
-issues directives as necessary to implement Reference (e). The directives establish national
-standards for designation, safeguarding, marking, and dissemination of CUI as well as standards
-for education and training. The CUIO has the responsibility to oversee agency implementation
-and compliance with these directives. CUIO requests for information regarding DoD activities
-are coordinated through USD(I&S).
+ (2) The SF 311 shall be completed according to the instructions accompanying the form
+and those provided by ISOO and OUSD(I&S).
 
-5. DoD INFORMATION SECURITY PROGRAM MANAGEMENT
+ n. Cooperate and coordinate with the Component senior intelligence official as appropriate
+to achieve a harmonized and cohesive information security program within the DoD Component.
 
- a. USD(I&S). Reference (a) designates the USD(I&S) as the DoD Senior Security Official.
-In this role, the USD(I&S) is the DoD Senior Agency Official responsible for directing,
-administering, and overseeing the DoD Information Security Program for the Department of
-Defense, and except as provided in paragraph 5.b. of this section, performs the functions
-specified in subsection 5.4(d) of Reference (d) and its implementing directives for the
-Department of Defense. The USD(I&S) is also the Restricted Data Management Official for the
-Department of Defense consistent with the requirement in part 1045 of title 10, Code of Federal
-Regulations (References (ai) and (as)).
+7. HEADS OF DoD ACTIVITIES. The heads of DoD activities shall:
 
- b. USD(P). In accordance with Reference (p), the USD(P) is the senior official responsible
-for directing, administering, and overseeing that portion of the DoD Information Security
-Program pertaining to foreign government (including NATO) information, the disclosure of
-classified information to foreign governments and international organizations, and security
-arrangements for international programs. Within the scope of these responsibilities, the USD(P)
-also performs the functions specified in subsection 5.4(d) of Reference (d) and its implementing
-directives for the Department of Defense.
+ a. Be responsible for overall management, functioning and effectiveness of the activity’s
+information security program.
 
- c. DoD CIO. In accordance with DoDD 5144.02 (Reference (aj)), the DoD CIO is
-responsible for all matters relating to the DoD information enterprise, including communications;
-spectrum management; network policy and standards; information systems; cybersecurity;
+ b. Designate, in writing, an activity security manager, who shall be given the necessary
+authority to ensure personnel adhere to program requirements. Provide the designated activity
+security manager direct access to activity leadership and ensure he or she is organizationally
+aligned to ensure prompt and appropriate attention to program requirements.
 
-positioning, navigation, and timing policy; and the DoD information enterprise that supports
-DoD command and control.
+ (1) The activity security manager may be assigned full-time, part-time, or as a collateral
+duty, provided that the responsibilities delineated in section 9 of this enclosure can be adequately
+and professionally executed and implemented.
+
+ (2) The activity security manager shall:
+
+ (a) Be a military officer, senior non-commissioned officer, or a civilian employee
+with sufficient authority, staff, and other resources necessary to manage the program for the
+activity.
+
+ 1. For activities with more than 100 personnel assigned, a senior non-
+commissioned officer designated as the activity security manager shall be E-7 or above; a
+civilian employee so designated shall be GS-11 or above (or pay band equivalent).
+
+ 2. For activities with less than 100 personnel assigned, a senior non-
+commissioned officer designated as the activity security manager shall be E-6 or above; a
+civilian employee so designated shall be GS-7 or above (or pay band equivalent).
+
+ (b) Be a U.S. citizen.
+
+ (c) Have been the subject of a favorably adjudicated, current background
+investigation appropriate for the highest level of classification of information handled by
+personnel within the activity in accordance with requirements of DoD 5200.2-R (Reference (s)).
 

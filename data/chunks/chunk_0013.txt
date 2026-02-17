@@ -1,67 +1,50 @@
- g. Establish and maintain a security education and training program as required by
-Enclosure 5 of Volume 3 of this Manual, ensure that DoD Component personnel receive security
-education and training as appropriate to their functions, and grant, when appropriate, waivers to
-the original and derivative classification training requirements of section 7 of Enclosure 5 of
-Volume 3.
+ g. Develop and oversee policy, strategy, plans, programs, required capabilities and resources
+for DoD intelligence, CI, security, sensitive activities, and other intelligence and security related
+matters, as necessary to counter insider threats. Serves as the senior official and principal advisor to
+the Secretary of Defense on the DoD Insider Threat program in accordance with DoDD 5205.16
+(Reference (n)), and in this capacity, will:
 
- h. Ensure that the performance contract or other system used to rate the performance of
-civilian and military personnel includes the designation and management of classified
-information, to include Restricted Data and Formerly Restricted Data information when
-appropriate, as a critical element or item to be evaluated in the rating of:
+ (1) Provide oversight of the DoD Insider Threat Program.
 
- (1) OCAs.
+ (2) Assign responsibilities to the DoD Components to implement the DoD Insider Threat
+Program.
 
- (2) Security managers and security specialists.
+ (3) Recommend improvements to the Secretary of Defense on DoD insider threat
+activities.
 
- (3) Personnel who derivatively classify information on a routine basis.
+ h. In coordination with the DoD Chief Information Officer (DoD CIO), the Chairman of the
+Joint Chiefs of Staff, the DoD Component heads, and the Director of National Intelligence,
+develop and integrate traditional and cyber security risk-based strategies and phased approaches
+to measurably increase DoD’s security posture against insider threats in accordance with the
+joint USD(I&S), DoD CIO, and Commander, United States Strategic Command Memorandum
+(Reference (o)).
 
- (4) Information system security personnel if their duties involve access to classified
-information and information system personnel (e.g., system administrators) with privileged
-access to classified system or network resources.
+2. UNDER SECRETARY OF DEFENSE FOR POLICY (USD(P)). The USD(P) shall:
 
- (5) All other personnel whose duties include significant involvement with the creation or
-handling of classified information.
+ a. Serve as the senior official responsible for administering that portion of the DoD
+Information Security Program pertaining to the National Classified Military Information
+Disclosure Policy, foreign government (including North Atlantic Treaty Organization (NATO))
+information, and security arrangements for international programs in accordance with
+DoDD 5111.1 (Reference (p)) and Reference (a).
 
- i. Account for the costs associated with implementing this Manual within the DoD
-Component and report those costs as required.
+ b. Notify the Director, ISOO, of approval of waivers involving Reference (d) and its
+implementing directive, Reference (f).
 
- j. Ensure prompt and appropriate response to any request, appeal, challenge, complaint, or
-suggestion arising out of implementation of this Manual within the DoD Component.
+3. DoD CIO. The DoD CIO shall:
 
- k. Establish procedures for receipt of information, allegations, or complaints regarding over-
-classification or incorrect classification within the DoD Component and, as needed, provide
-guidance to personnel on proper classification.
+ a. Establish procedures, consistent with References (d) and (f) and this Manual, to ensure
+that information systems, including networks and telecommunications systems, that process,
+disseminate, or store classified information:
 
- l. Approve, when appropriate, the use of alternative compensatory control measures
-(ACCM) for classified information over which the senior agency official has cognizance and
-provide written notification within 30 days to the Director of Security, Office of the Under
-Secretary of Defense for Intelligence and Security (OUSD(I&S)), or the Director, International
-Security Programs, Defense Technology Security Administration, Office of the USD(P)
-(OUSD(P)), as appropriate, when establishing or terminating an ACCM.
+ (1) Prevent access by unauthorized persons.
 
- m. Submit an annual report addressing how the DoD Component implemented that portion
-of the information security program dealing with classified information.
+ (2) Assure the integrity of the information.
 
- (1) The report, covering the previous fiscal year, shall be submitted on Standard Form
-(SF) 311, “Agency Information Security Program Data,” to reach the Director of Security,
+ (3) Use, to the maximum extent practicable, common information technology (IT)
+standards, protocols, and interfaces, and standardized electronic formats to maximize availability
+and authorized access.
 
-OUSD(I&S), prior to October 31 of each year. The Military Departments shall submit their
-reports directly to ISOO, with a copy furnished to OUSD(I&S). OUSD(I&S) shall compile the
-reports, excluding those of the Military Departments, and provide a consolidated report to ISOO.
-
- (2) The SF 311 shall be completed according to the instructions accompanying the form
-and those provided by ISOO and OUSD(I&S).
-
- n. Cooperate and coordinate with the Component senior intelligence official as appropriate
-to achieve a harmonized and cohesive information security program within the DoD Component.
-
-7. HEADS OF DoD ACTIVITIES. The heads of DoD activities shall:
-
- a. Be responsible for overall management, functioning and effectiveness of the activity’s
-information security program.
-
- b. Designate, in writing, an activity security manager, who shall be given the necessary
-authority to ensure personnel adhere to program requirements. Provide the designated activity
-security manager direct access to activity leadership and ensure he or she is organizationally
-aligned to ensure prompt and appropriate attention to program requirements.
+ b. Direct the use of technical means to prevent unauthorized copying of classified data and
+for anomaly detection to recognize unusual patterns of accessing, handling, downloading, and
+removal of digital classified information.
 

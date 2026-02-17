@@ -1,75 +1,38 @@
-20. DECLASSIFYING FGI. Pursuant to Reference (d), FGI qualifies as an exemption to the
-automatic declassification rule. Within the Department of Defense, every effort shall be made to
-ensure that FGI is not subject to downgrading or declassification without the prior consent of the
-originating government. FGI may exist in two forms: foreign documents in possession of the
-Department of Defense, and foreign government classified information included within U.S.
-Government documents.
+ b. If DoD officials have reason to believe that the public interest in disclosure of information
+outweighs the need for continued classification, they shall refer the matter to the appropriate
+senior agency official appointed in accordance with section 5.4(d) of Reference (d), who shall
+consult with the OCA. The senior agency official shall determine whether to declassify the
+information.
 
- a. If FGI in the form of foreign documents in the possession of the Department of Defense
-constitute permanently valuable records of the U.S. Government and are subject to the 25-year
-automatic declassification rule, declassification officials shall consult with the originating
-foreign government to determine whether it consents to declassification. If the originating
-foreign government does not consent, the records shall be processed for exemption from
-automatic declassification in accordance with section 13 of this enclosure. The agency head
-shall determine whether exemption category 25X6, 25X9, or both should be applied.
+ c. Classified information that has been declassified without proper authority remains
+classified until declassified by an OCA with jurisdiction over the information.
 
- b. U.S. Government documents that include classified FGI shall be marked with
-declassification instructions as specified in this enclosure and Volume 2 of this Manual. If these
-documents are permanently valuable records of the U.S. Government and are subject to the
-25- year automatic declassification rule, the provisions of paragraph 20.a. of this section shall
-apply. A U.S. document marked as described herein cannot be downgraded below the highest
-level of FGI contained in the document or be declassified without the written permission of the
-foreign government or international organization that originated the information. Submit
-recommendations concerning downgrading or declassification to the DoD organization that
-created the document. If that organization supports the recommendation, it shall consult with the
-originating foreign government to determine whether that government consents to
-declassification.
+ (1) Administrative action shall be taken to restore markings and controls, as appropriate.
 
- c. DoD officials may consult directly with foreign governments regarding downgrading or
-declassification of FGI or seek assistance from the Department of State. In either case, DoD
-officials should first consult with the Director, International Security Programs, Defense
-Technology Security Administration, OUSD(P), for assistance and guidance.
+ (2) If the information is in records in the physical and legal custody of NARA and has
+been made available to the public:
 
-21. APPLICATION OF DECLASSIFICATION AND EXTENSION OF CLASSIFICATION
-TO PRESENT AND PREDECESSOR EXECUTIVE ORDERS. The requirements for
-declassifying and extending classification specified by this enclosure apply to information
-classified in accordance with E.O. 12958 (Reference (bl)) and earlier Executive orders, as well as
-to information classified pursuant to Reference (d).
+ (a) The OCA shall, as part of determining if restoration of markings and controls is
+appropriate, consider whether removing the information from public access will significantly
+mitigate harm to the national security or otherwise draw undue attention to the information.
 
- GLOSSARY
+ (b) DoD or Military Department senior agency official shall provided written
+notification to the Archivist of the United States, which shall include a description of the
+record(s), the elements of information that are classified, the duration of classification, and the
+specific authority for continued classification. OCAs in DoD Components other than the
+Military Departments shall submit notifications to USD(I&S), through their chain of command,
+for submission to the Archivist.
 
- PART I. ABBREVIATIONS AND ACRONYMS
+ (c) The issue shall be referred to the Director, ISOO if the information is more than
+25 years old and the Archivist does not agree with the OCA’s determination that the information
+remains classified. The information shall be withdrawn from public access pending resolution.
 
- ACCM alternative compensatory control measures
- AO agency official
-
- B&P bid and proposal
-
- CI Counterintelligence
- CNWDI Critical Nuclear Weapon Design Information
- COMSEC communication security
- CUI controlled unclassified information
- CUIO Controlled Unclassified Information Office
- CUSR Central U.S Registry
-
- DAA designated approval authority
- DASD(NM) Deputy Assistant Secretary of Defense for Nuclear Matters
- DD DoD
- DIA Defense Intelligence Agency
- DNI Director of National Intelligence
- DoDD DoD Directive
- DoD CIO DoD Chief Information Officer
- DoDI DoD Instruction
- DoDM DoD Manual
- DSS Defense Security Service
- DUSD(I&S) Deputy Under Secretary of Defense for Intelligence and Security
-
- E.O. Executive order
-
- FGI foreign government information
- FOIA Freedom of Information Act
- FOUO For Official Use Only
- FRD Formerly Restricted Data
-
- GS General Schedule
+ d. Classified information shall be marked as declassified, as specified by Enclosure 3 of
+Volume 2 of this Manual, before it is handled as unclassified. Holders of classified information
+marked with a date or event on the “declassify on” line shall, when the date or event has passed,
+confirm that the OCA(s) of the information has not extended the classification period. This can
+be done by reference to a security classification or declassification guide or to other appropriate
+guidance issued by the OCA or by consultation with the OCA. Once declassification is
+confirmed, such information may be made publicly available only as provided in paragraph 1.e
+of this section.
 

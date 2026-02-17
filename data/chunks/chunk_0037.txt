@@ -1,58 +1,55 @@
- c. If the holder of a document has reason to believe it should not be declassified as specified,
-the originator shall be notified through appropriate administrative channels. The document or
-material shall continue to be protected at the originally assigned classification until the issue is
-resolved.
+ e. In the case of information security waivers and exceptions involving classified
+information, the DoD Components shall maintain documents regarding approved waivers and
+exceptions, and furnish such documents to other agencies with which they share affected
+classified information or secure facilities, except documentation regarding approved waivers and
+exceptions involving marking of classified information need be shared only upon request.
 
- d. Declassification markings are used to clearly convey the declassified status of the
-information and who authorized the declassification. All declassified information in agency
-records not held by NARA shall have the declassification markings required by Enclosure 3 of
-Volume 2 of this Manual applied.
+18. CORRECTIVE ACTIONS AND SANCTIONS
 
-6. CANCELING OR CHANGING CLASSIFICATION MARKINGS. Declassification
-authority is not required for simply canceling or changing classification markings in accordance
-with guidance from an OCA or declassification authority. Sections 18 and 19 of this enclosure
-provide guidance on downgrading and upgrading classified information.
+ a. Procedures. Heads of the DoD Components shall establish procedures to ensure that
+prompt and appropriate management action is taken in cases of compromise of classified
+information and unauthorized disclosure of CUI, improper classification or designation of
+information, violation of the provisions of this Manual, and incidents that may put classified
+information and CUI at risk of unauthorized disclosure. Such actions shall focus on correcting or
+eliminating the conditions that caused or brought about the incident.
 
-7. SPECIAL PROCEDURES FOR CRYPTOLOGIC INFORMATION. Only NSA/CSS may
-declassify cryptologic information. Therefore, such information uncovered in systematic or
-mandatory review of U.S. Government records for declassification, including such information
-incorporated into other documents, must be referred to the NSA/CSS for declassification
-determination.
+ b. Sanctions
 
- a. Recognition of cryptologic information is not always easy since it may concern or reveal
-the processes, techniques, operations, and scope of signals intelligence, which consists of
-communications intelligence, electronic intelligence, and foreign instrumentation signals
-intelligence, or it may concern IA, which includes COMSEC, including the communications
-portion of cover and deception plans. Much cryptologic information is also considered FGI.
+ (1) DoD military and civilian personnel may be subject to criminal or administrative
+sanctions if they knowingly, willfully, or negligently:
 
- b. NSA/CSS has established special procedures for mandatory review for declassification of
-classified cryptologic information. For questions regarding cryptographic equities or for
-referrals for declassification determination, contact:
+ (a) Disclose classified information to unauthorized persons.
 
- Director, National Security Agency/
- Chief, Central Security Service
- ATTN: Declassification Services (DJP5)
- Fort George G. Meade, MD 20755-6248
+ (b) Classify or continue the classification of information in violation of this Volume.
 
-8. PERMANENTLY VALUABLE RECORDS
+ (c) Create or continue a SAP contrary to the requirements of Reference (q) and this
+Volume.
 
- a. Classified information in records that are scheduled for retention by NARA as
-permanently valuable records when that information is less than 20 years old shall be subject to
-the automatic declassification provisions of section 12 of this enclosure when the information is
-25 years old.
+ (d) Disclose CUI to unauthorized persons.
 
- b. Classified information in records that are scheduled for retention by NARA as
-permanently valuable records when that information is already more than 20 years old shall be
-subject to the automatic declassification provisions of section 12 of this enclosure 5 years from
-the date the records are scheduled.
+ (e) Violate any other provision of this Manual.
 
-9. RECORDS DETERMINED NOT TO HAVE PERMANENT HISTORICAL VALUE.
-Classified records determined not to be permanently valuable and not scheduled retention by
-NARA are subject to the automatic declassification provisions of this issuance. The disposition
-(destruction) date of those records in the DoD Component’s Records Control Schedule or
-General Records Schedule approved by NARA shall be used as the declassification date,
-although the duration of classification may be extended if a record has been retained for business
-reasons beyond its scheduled destruction date. If the disposition date extends beyond 25 years,
-an exemption request must be submitted to and approved by the ISCAP in accordance with the
-procedure in section 13 of this enclosure.
+ (2) Sanctions include, but are not limited to, warning, reprimand, suspension without
+pay, forfeiture of pay, removal, discharge, loss, or denial of access to classified information
+and/or CUI, and removal of classification authority. Criminal sanctions may also be undertaken
+in accordance with sections 801-940 of title 10, U.S.C. (also known as “The Uniform Code of
+Military Justice” (UCMJ) (Reference (ax)) and other applicable U.S. criminal laws.
+
+ (3) If an individual delegated OCA demonstrates reckless disregard or a pattern of error
+in applying the classification standards of this Volume, the appropriate official shall, as a
+minimum, remove the offending individual’s OCA.
+
+ c. Reporting of Incidents. Security incidents involving classified information shall be
+ reported as required in Enclosure 6 of Volume 3 of this Manual. Incidents involving CUI shall
+be reported as Volume 4 requires.
+
+ APPENDIX TO ENCLOSURE 3
+
+ DOD COMPONENT REQUEST FOR WAIVER OR EXCEPTION
+
+ [CLASSIFICATION]
+
+ COMPONENT SENIOR AGENCY OFFICIAL LETTERHEAD
+
+ [month, day, year]
 

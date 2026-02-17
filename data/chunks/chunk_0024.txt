@@ -1,55 +1,35 @@
- a. Protection of Restricted Data (RD) and Formerly Restricted Data (FRD). Classified
-information, including Critical Nuclear Weapon Design Information (CNWDI), in the custody of
-the Department of Defense marked as RD or FRD in accordance with the Atomic Energy Act of
-1954, as amended, shall be stored, protected, and destroyed as this Manual requires for other
-information of a comparable level of security classification.
+3. PERSONAL RESPONSIBILITY. All personnel of the Department of Defense are personally
+and individually responsible for properly protecting classified information and CUI under their
+custody and control. All officials within the Department of Defense who hold command,
+management, or supervisory positions have specific, non-delegable responsibility for the quality
+and effectiveness of implementation and management of the information security program within
+their areas of responsibility.
 
- (1) Consult DoDI 5210.02 (Reference (as)) for DoD policy and procedures concerning
-access to and dissemination of RD, FRD, and CNWDI within the Department of Defense.
-Reference (as) also provides guidance on access, distribution, handling, and accountability of
-Sigma information.
+4. NATIONAL AUTHORITIES FOR SECURITY MATTERS
 
- (2) Until DoD public key infrastructure is generally deployed on the Secret Internet
-Protocol Router Network (SIPRNET), the following security measures, deemed sufficient to
-provide the access and dissemination controls required by Reference (as), shall be implemented
-when processing RD and CNWDI on SIPRNET:
+ a. President of the United States. The President of the United States bears executive
+responsibility for the security of the Nation, which includes the authority to classify information
+for the protection of the national defense and foreign relations of the United States. The
+President has established standards for the classification, safeguarding, and declassification of
+national security information through the issuance of Reference (d) and for the designation and
+protection of CUI through the issuance of Reference (e).
 
- (a) RD and CNWDI shall be e-mailed only after confirmation that the recipient has a
-final security clearance at the appropriate level, has a need to know the information, and, for
-CNWDI, has received the additional security briefing required by Reference (as).
+ b. National Security Council (NSC). In accordance with section 3021 of title 50, U.S.C.
+(Reference (af)), the NSC provides overall policy guidance on information security.
 
- (b) All RD and CNWDI files stored on shared or personal local electronic storage
-devices shall be password-protected.
+ c. DNI. The DNI is head of the Intelligence Community and principal advisor to the
+President and the NSC for intelligence matters related to national security pursuant to Section
+1011 of Public Law 108-458 (Reference (ag)) and Section 1.3 of E.O. 12333 (Reference (ah)).
+The DNI is also charged by section 1.3(b)(8) of Reference (ah) with protecting intelligence
+sources, methods, and activities, and in this role, the DNI issues instructions in the form of
+Intelligence Community Directives or other security policies and standards for the protection,
+management and oversight of SCI and other national intelligence.
 
- (c) IT systems and networks must be certified and accredited for RD, FRD, and/or
-CNWDI prior to transmission, processing, or storage of such data. Such certification must verify
-that access to RD, FRD, and CNWDI information, including through websites, is limited to
-authorized recipients by, at a minimum, a properly administered and protected individual
-identifier and password consistent with requirements of Reference (ae).
-
- (d) System log-ons and properly configured screen savers are sufficient protection
-for e-mail files.
-
- (e) In accordance with Reference (as), Sigma 14, 15, and 20 information shall not be
-processed on SIPRNET.
-
- b. Protection of SCI. SCI information shall be controlled and protected in accordance with
-applicable national policy, policies established by the DNI, and implementing DoD issuances.
-Security classification and declassification policies of this Manual apply to SCI information in
-the same manner as other classified information.
-
- c. Protection of COMSEC Information. COMSEC information shall be controlled and
-protected in accordance with applicable national policy and DoD issuances. Security
-classification and declassification policies of this Manual apply to COMSEC information in the
-same manner as other classified information, except ONLY NSA/CSS is authorized to declassify
-COMSEC information.
-
- d. Protection of SAP Information. SAPs shall be created, continued, managed, and
-discontinued in accordance with Reference (q) and DoDI 5205.11 (Reference (at)). Information
-covered by SAPs established in accordance with References (q) and (at) shall be classified,
-declassified, controlled, and protected as this Manual, References (q) and (at), and instructions
-issued by officials charged with management of those programs require. The provisions of this
-Manual pertaining to classification, declassification, and marking apply, without exception, to
-SAP information unless waivers of specific requirements are obtained in accordance with
-section 16 of this enclosure.
+ d. ISOO. The ISOO, under the authority of the Archivist of the United States, acting in
+consultation with the NSC, issues directives as necessary to implement Reference (d). The
+directives establish national standards for the classification and marking of national security
+information, security education and training programs, safeguarding, self-inspection programs,
+and declassification. The ISOO has the responsibility to oversee agency implementation and
+compliance with these directives. In this role, the ISOO requests certain information regarding
+DoD activities, and such requests are coordinated through USD(I&S).
 

@@ -1,58 +1,41 @@
- a. Description. The referral process involves identification of information in records
-containing classified information that originated with another DoD Component or Executive
-Branch agency or the disclosure of which would affect the interests or activities of another DoD
-Component or Executive Branch agency and that could reasonably be expected to fall within one
-or more of the exemptions listed in subparagraph 13.b.(1) of this enclosure. Such records are
+10. THE PATENT SECRECY ACT OF 1952. Sections 181 through 188 of title 35, U.S.C.
+(also known and hereinafter referred to as “The Patent Secrecy Act of 1952” (Reference (bd))
+provides that the Secretary of Defense, among others, may determine that disclosure of an
+invention by granting of a patent would be detrimental to the national security. The Department
+of Defense shall handle a patent application on which a secrecy order has been imposed as
+follows:
 
-eligible for referral. The referral process also requires formal notification of referral, making the
-records available for review, and recording final determinations.
+ a. If the patent application contains information that warrants classification, it shall be
+assigned a classification and be marked and safeguarded commensurate with the level of
+classification.
 
- b. Referral Responsibility. Identification of records eligible for referral is the responsibility
-of the primary reviewing agency and shall be completed prior to the date for automatic
-declassification established in accordance with section 12 of this enclosure. DoD Components
-shall use SF 715 to identify any record requiring referral.
+ b. Unclassified patent applications that do not contain information that warrants
+classification, but requires CUI safeguarding and dissemination controls, will be marked as a
+category of CUI in accordance with Volume 4 of this Manual. This same requirement applies to
+legacy patent applications marked with the former statement that required handling as
+CONFIDENTIAL.
 
-16. MANDATORY DECLASSIFICATION REVIEW. Any individual or organization may
-request a declassification review of information classified pursuant to Reference (d) or previous
-classified national security information orders. Heads of the DoD Components shall establish
-processes for responding to such requests in accordance with Reference (f).
+11. REQUESTS FOR CLASSIFICATION DETERMINATION. Within 30 days of receipt
+OCAs shall provide a classification determination to requests for same from individuals who are
+not OCAs, but who believe they have originated information requiring classification. If the
 
- a. Information reviewed shall be declassified if it no longer meets the standards for
-classification established by this Volume. The declassified information shall be released unless
-withholding is authorized under other applicable law and the requirement of paragraph 1.e. of
-this enclosure.
+information is not under the OCA’s classification authority, the request shall be referred to the
+appropriate OCA and the requestor shall be informed of the referral. Pending a classification
+determination the information shall be protected consistent with the requirements of this Manual.
 
- b. Upon receiving a request for a mandatory declassification review, the responsible DoD
-organization shall conduct the review if:
+12. CHALLENGES TO CLASSIFICATION
 
- (1) The request describes the document or material with enough specificity to allow DoD
-Component personnel to locate the records with a reasonable amount of effort. Requests for
-broad types of information, entire file series of records, or similar non-specific requests may be
-denied.
+ a. Principles. If holders of information have substantial reason to believe that the
+information is improperly or unnecessarily classified, they shall communicate that belief to their
+security manager or the OCA to bring about any necessary correction. This may be done
+informally or by submitting a formal challenge to the classification in accordance with
+References (d) and (f).
 
- (2) The information falls under its purview.
+ (1) Informal questioning of classification is encouraged before resorting to formal
+challenge. If the information holder has reason to believe the classification applied to
+information is inappropriate, he or she should contact the classifier of the source document or
+material to resolve the issue.
 
- (a) If documents or material being reviewed for declassification contain information
-originally classified by another DoD Component or U.S. Government agency or the disclosure of
-which would affect the interests or activities of another DoD Component or U.S. Government
-agency, the reviewing activity shall refer the appropriate portions of the request to the originating
-or affected organization. Unless the association of that organization with the requested
-information is itself classified, the DoD Component that received the review request shall notify
-the requester of the referral. The DoD Component that received the review request remains
-responsible for collecting all determinations made by organizations to which the information was
-referred and for informing the requestor of the final decision regarding declassification, unless
-other prior arrangements have been made.
-
- (b) Requests for cryptologic information shall be processed in accordance with
-section 7 of this enclosure.
-
- (c) The DoD Component that initially received or classified FGI shall determine
-whether the information is subject to a treaty or international agreement that does not permit
-unilateral declassification. (Refer also to section 20 of this enclosure.)
-
- (3) The information is not the subject of pending litigation.
-
- (4) The information is not contained within an operational file that is exempt from search
-and review, or disclosure, pursuant to sections 3141, 3142, 3143 and 3144 of Reference (af) or
-other applicable statute.
+ (2) The Heads of the DoD Components shall ensure that no retribution is taken against
+any individual for questioning a classification or making a formal challenge to a classification.
 

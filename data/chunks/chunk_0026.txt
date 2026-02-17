@@ -1,60 +1,42 @@
- c. The Military Departments will forward requests for waiver or exception through their
-SAOs for endorsement before submitting such requests to the USD(I&S) for approval. DoD
-Components will provide all requests for waiver or exception, including those approved by the
-USD(P), to the USD(I&S) through the Director, Security Policy and Oversight Division. The
-USD(I&S) and USD(P) shall be responsible for promptly notifying the Director, ISOO, of
-approved waivers and exceptions involving References (d) and (f).
+ d. National Security Agency/Central Security Service (NSA/CSS). In accordance with
+Reference (ah), the NSA/CSS provides centralized coordination and direction for signals
+intelligence. In accordance with National Security Directive 42 (Reference (ak)), the NSA/CSS
+provides IA/cybersecurity support for national security systems and, at the request of the national
+security system owner, provides vulnerability assessments. Additionally, in accordance with
+Reference (b), the Director, NSA/Chief, CSS may impose special requirements for protection of
+classified cryptologic information.
 
- d. Requests for information security waivers and exceptions shall contain sufficient
-information to permit a complete and thorough analysis to be made of the impact of approval on
-national security. Minimally, requests must identify the specific provision(s) of this Manual for
-which the waiver or exception is sought (cite this Manual by volume, enclosure, and paragraph)
-and provide rationale and justification for the request, including negative impacts to cost,
-schedule, mission, or operations; a mission analysis summary to identify vulnerabilities and risk
-management considerations; a summary of proposed mitigation measures to reduce risk; and the
+ e. DIA. As assigned by Reference (b) and with the exception of NSA/CSS, the National
+Reconnaissance Office, and the National Geospatial-Intelligence Agency, DIA administers
+within the Department of Defense the SCI security policies and procedures issued by the DNI.
+The Director, DIA, is responsible for development of standards, implementation, and operational
+management of the SCI compartments for the Department of Defense.
 
-necessary duration for any waivers). A sample template memorandum for requesting waivers and
-exceptions is at the Appendix to this enclosure. Current waivers and exceptions will continue to
-be valid until they are due for renewal.
+ f. Defense Security Service (DSS). DSS provides information security education and
+training for the Department of Defense as required by DoDI 3305.13 (Reference (al)). DSS, as
+the DoD cognizant security office for industrial security, also manages and administers the DoD
+portion of the National Industrial Security Program, to ensure the protection of classified information
+released or disclosed to industry in connection with classified contracts.
 
- e. In the case of information security waivers and exceptions involving classified
-information, the DoD Components shall maintain documents regarding approved waivers and
-exceptions, and furnish such documents to other agencies with which they share affected
-classified information or secure facilities, except documentation regarding approved waivers and
-exceptions involving marking of classified information need be shared only upon request.
+6. DoD COMPONENT INFORMATION SECURITY MANAGEMENT
 
-18. CORRECTIVE ACTIONS AND SANCTIONS
+ a. Head of the DoD Component. The Head of each DoD Component has overall
+responsibility for implementation of the information security program within the Component.
+This includes responsibility for:
 
- a. Procedures. Heads of the DoD Components shall establish procedures to ensure that
-prompt and appropriate management action is taken in cases of compromise of classified
-information and unauthorized disclosure of CUI, improper classification or designation of
-information, violation of the provisions of this Manual, and incidents that may put classified
-information and CUI at risk of unauthorized disclosure. Such actions shall focus on correcting or
-eliminating the conditions that caused or brought about the incident.
+ (1) Designating senior agency officials, including, as appropriate, the DoD Component
+senior agency official and senior intelligence official, to be responsible for directing,
+administering, and overseeing the information security program within the Component. A
+separate senior official responsible for overseeing SAPs within the Component may also be
+designated.
 
- b. Sanctions
+ (2) Committing necessary resources to effectively implement the information security
+program.
 
- (1) DoD military and civilian personnel may be subject to criminal or administrative
-sanctions if they knowingly, willfully, or negligently:
+ b. Senior Agency Officials. The senior agency official appointed by the Head of the DoD
+Component has day-to-day responsibility for the direction, implementation, and oversight of
+Component’s information security program and for its efficient and effective implementation.
+These responsibilities include:
 
- (a) Disclose classified information to unauthorized persons.
-
- (b) Classify or continue the classification of information in violation of this Volume.
-
- (c) Create or continue a SAP contrary to the requirements of Reference (q) and this
-Volume.
-
- (d) Disclose CUI to unauthorized persons.
-
- (e) Violate any other provision of this Manual.
-
- (2) Sanctions include, but are not limited to, warning, reprimand, suspension without
-pay, forfeiture of pay, removal, discharge, loss, or denial of access to classified information
-and/or CUI, and removal of classification authority. Criminal sanctions may also be undertaken
-in accordance with sections 801-940 of title 10, U.S.C. (also known as “The Uniform Code of
-Military Justice” (UCMJ) (Reference (ax)) and other applicable U.S. criminal laws.
-
- (3) If an individual delegated OCA demonstrates reckless disregard or a pattern of error
-in applying the classification standards of this Volume, the appropriate official shall, as a
-minimum, remove the offending individual’s OCA.
+ (1) Promulgating guidance necessary for program implementation.
 

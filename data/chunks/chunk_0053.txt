@@ -1,47 +1,37 @@
-file series. File units or documents arranged according to a filing system or kept together
-because they relate to a particular subject or function, result from the same activity, document a
-specific kind of transaction, take a particular form, or have some other relationship arising out of
-their creation, receipt, or use, such as restrictions on access or use. Also documentary material,
-regardless of its physical form or characteristics, that is arranged in accordance with a filing
-system or maintained as a unit because it pertains to the same subject, function, or activity.
+ a. Recognition of cryptologic information is not always easy since it may concern or reveal
+the processes, techniques, operations, and scope of signals intelligence, which consists of
+communications intelligence, electronic intelligence, and foreign instrumentation signals
+intelligence, or it may concern IA, which includes COMSEC, including the communications
+portion of cover and deception plans. Much cryptologic information is also considered FGI.
 
-file series exemption. An exception to the 25-year automatic declassification provisions of
-Reference (d). This exception applies to entire blocks of records, i.e., “file series,” within an
-agency’s records management program. To qualify for this exemption, the file series must be
-replete with exemptible information.
+ b. NSA/CSS has established special procedures for mandatory review for declassification of
+classified cryptologic information. For questions regarding cryptographic equities or for
+referrals for declassification determination, contact:
 
-FOUO. A protective marking to be applied to unclassified information when disclosure to the
-public of that particular record, or portion thereof, would reasonably be expected to cause a
-foreseeable harm to an interest protected by one or more provisions of the FOIA. This includes
-information that qualifies for protection pursuant to the provisions of the Privacy Act of 1974, as
-amended. See Reference (bk) for detailed information on categories of information that may
-qualify for exemption from public disclosure. The use of FOUO marking remains in effect until
-the revised Volume 4 of this Manual is released.
+ Director, National Security Agency/
+ Chief, Central Security Service
+ ATTN: Declassification Services (DJP5)
+ Fort George G. Meade, MD 20755-6248
 
-FRD. Information removed from the RD category upon a joint determination by the Department
-of Energy (or antecedent agencies) and the Department of Defense that such information relates
-primarily to the military utilization of atomic weapons and that such information can be
+8. PERMANENTLY VALUABLE RECORDS
 
-safeguarded adequately as classified defense information. For purposes of foreign
-dissemination, this information is treated in the same manner as RD.
+ a. Classified information in records that are scheduled for retention by NARA as
+permanently valuable records when that information is less than 20 years old shall be subject to
+the automatic declassification provisions of section 12 of this enclosure when the information is
+25 years old.
 
-heads of DoD activities. Heads, either military or civilian, of organizations, commands, and staff
-elements subordinate to a DoD Component, with jurisdiction over and responsibility for the
-execution of the organization’s mission and functions, including its information security
-program. The official may carry the title of commander, commanding officer, or director, or
-other equivalent title.
+ b. Classified information in records that are scheduled for retention by NARA as
+permanently valuable records when that information is already more than 20 years old shall be
+subject to the automatic declassification provisions of section 12 of this enclosure 5 years from
+the date the records are scheduled.
 
-human intelligence source. People who provide intelligence directly; individuals associated with
-organizations (such as foreign government entities and intelligence services) who willingly share
-intelligence information with the United States; individuals and organizations who facilitate the
-placement or service of technical collection means that could not succeed without their support;
-and foreign citizens who are identified as of an intelligence interest to the United States with a
-reasonable expectation that they will provide information or services in the future. Information
-that may reveal the identities of people upon whom the United States relies for information,
-access to information, or cooperation leading to obtaining information is considered to
-potentially reveal human intelligence sources.
-
-information. Any knowledge that can be communicated or documentary material, regardless of
-its physical form or characteristics, that is owned by, produced by or for, or is under the control
-of the U.S. Government.
+9. RECORDS DETERMINED NOT TO HAVE PERMANENT HISTORICAL VALUE.
+Classified records determined not to be permanently valuable and not scheduled retention by
+NARA are subject to the automatic declassification provisions of this issuance. The disposition
+(destruction) date of those records in the DoD Component’s Records Control Schedule or
+General Records Schedule approved by NARA shall be used as the declassification date,
+although the duration of classification may be extended if a record has been retained for business
+reasons beyond its scheduled destruction date. If the disposition date extends beyond 25 years,
+an exemption request must be submitted to and approved by the ISCAP in accordance with the
+procedure in section 13 of this enclosure.
 

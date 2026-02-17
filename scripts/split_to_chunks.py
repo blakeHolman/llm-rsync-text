@@ -5,8 +5,8 @@ INFILE = "data/520001m_vol1_clean.txt"
 OUTDIR = "data/chunks"
 
 # For 1-shot OLD+NEW+OLD in Phi-3-mini-4k, start conservative:
-MAX_CHARS = 3800   # hard cap per chunk
-MIN_CHARS = 2800   # try not to emit tiny chunks
+MAX_CHARS = 2600
+MIN_CHARS = 1900
 
 text = Path(INFILE).read_text(encoding="utf-8", errors="ignore")
 

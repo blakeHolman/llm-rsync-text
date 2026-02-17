@@ -1,68 +1,41 @@
- d. Designate a senior-level Federal employee, and an alternate, to represent the Department
-of Defense on the Interagency Security Classification Appeals Panel (ISCAP) as required by
-Reference (d). The individuals so designated must be full-time or permanent part-time
-employees of the Department of Defense. Designate to the ISCAP Chair in writing one or more
-individuals as identified by the Director, Washington Headquarters Services (WHS) to serve as a
-liaison in support of the DoD representative in accordance with the ISCAP bylaws in
-Reference (f).
-
- e. Establish policy and oversee program implementation for reporting and investigating
-known or suspected incidents of unauthorized disclosure of classified information and for
-reporting corrective and disciplinary action taken in accordance with DoDD 5210.50 (Reference
-(m)).
-
- f. Serve as the principal point of contact on counterintelligence (CI) and security
-investigative matters that involve the unauthorized disclosure of classified information referred
-to the Department of Defense by other government agencies or that may involve other
-government agencies in accordance with Reference (m).
-
- g. Develop and oversee policy, strategy, plans, programs, required capabilities and resources
-for DoD intelligence, CI, security, sensitive activities, and other intelligence and security related
-matters, as necessary to counter insider threats. Serves as the senior official and principal advisor to
-the Secretary of Defense on the DoD Insider Threat program in accordance with DoDD 5205.16
-(Reference (n)), and in this capacity, will:
-
- (1) Provide oversight of the DoD Insider Threat Program.
-
- (2) Assign responsibilities to the DoD Components to implement the DoD Insider Threat
-Program.
-
- (3) Recommend improvements to the Secretary of Defense on DoD insider threat
-activities.
-
- h. In coordination with the DoD Chief Information Officer (DoD CIO), the Chairman of the
-Joint Chiefs of Staff, the DoD Component heads, and the Director of National Intelligence,
-develop and integrate traditional and cyber security risk-based strategies and phased approaches
-to measurably increase DoD’s security posture against insider threats in accordance with the
-joint USD(I&S), DoD CIO, and Commander, United States Strategic Command Memorandum
-(Reference (o)).
-
-2. UNDER SECRETARY OF DEFENSE FOR POLICY (USD(P)). The USD(P) shall:
-
- a. Serve as the senior official responsible for administering that portion of the DoD
-Information Security Program pertaining to the National Classified Military Information
-Disclosure Policy, foreign government (including North Atlantic Treaty Organization (NATO))
-information, and security arrangements for international programs in accordance with
-DoDD 5111.1 (Reference (p)) and Reference (a).
-
- b. Notify the Director, ISOO, of approval of waivers involving Reference (d) and its
-implementing directive, Reference (f).
-
-3. DoD CIO. The DoD CIO shall:
-
- a. Establish procedures, consistent with References (d) and (f) and this Manual, to ensure
-that information systems, including networks and telecommunications systems, that process,
-disseminate, or store classified information:
-
- (1) Prevent access by unauthorized persons.
-
- (2) Assure the integrity of the information.
-
- (3) Use, to the maximum extent practicable, common information technology (IT)
-standards, protocols, and interfaces, and standardized electronic formats to maximize availability
-and authorized access.
-
- b. Direct the use of technical means to prevent unauthorized copying of classified data and
-for anomaly detection to recognize unusual patterns of accessing, handling, downloading, and
-removal of digital classified information.
+(x) DoD Instruction 8550.01, “DoD Internet Services and Internet-Based Capabilities,”
+ September 11, 2012
+(y) DoD Directive 5230.11, “Disclosure of Classified Military Information to Foreign
+ Governments and International Organizations,” June 16, 1992
+(z) DoD Directive 5230.20, “Visits and Assignments of Foreign Nationals,” June 22, 2005
+(aa) DoD Instruction 5200.08, “Security of DoD Installations and Resources and the DoD
+ Physical Security Review Board (PSRB),” December 10, 2005, as amended
+(ab) DoD Instruction 5220.22, “National Industrial Security Program (NISP),” March 18, 2011
+(ac) Executive Order 12968, “Access to Classified Information,” August 2, 1995, as amended
+(ad) Intelligence Community Directive 703, “Protection of Classified National intelligence,
+ Including Sensitive Compartmental Information (SCI),” June 21 2013 2
+(ae) DoD Instruction 8500.01, “Cybersecurity,” March 14, 2014
+(af) Sections 3021, 3141, 3142, 3143, 3144, 1801(p) and 2673 of title 50, United States Code
+(ag) Section 1011 of Public Law 108-458, “Intelligence Reform and Terrorism Prevention Act
+ of 2004,” December 17, 2004
+(ah) Executive Order 12333, “United States Intelligence Activities,” December 4, 1981, as
+ amended
+(ai) Part 1045 of title 10, Code of Federal Regulations
+(aj) DoD Directive 5144.02, “DoD Chief Information Officer (DoD CIO),”November 21, 2014,
+ as amended
+(ak) National Security Directive 42, “National Policy for the Security of National Security
+ Telecommunications and Information Systems,” July 5, 1990 3
+(al) DoD Instruction 3305.13, “DoD Security Education, Training, and Certification,” February
+ 13, 2014
+(an) National Security Agency/Central Security Service Policy Manual 3-16, “Control of
+ Communications Security (COMSEC) Material,” August 5, 2005 4
+(ao) DoD Instruction 1100.22, “Policy and Procedures for Determining Workforce Mix,”
+ April 12, 2010, as amended
+(ap) Office of Federal Procurement Policy Letter 11-01, “Performance of Inherently
+ Governmental and Critical Functions,” September 12, 2011
+(aq) Section 2011, et seq, of title 42, United States Code (also known as “The Atomic Energy
+ Act of 1954, as amended”)
+(ar) DoD Directive 5210.48, “Credibility Assessment (CA) Program,” April 24, 2015, as
+ amended
+(as) DoD Instruction 5210.02, “Access to and Dissemination of Restricted Data and Formerly
+ Restricted Data,” June 3, 2011, as amended
+(at) DoD Instruction 5205.11, “Management, Administration, and Oversight of DoD Special
+ Access Programs (SAPs),” February 6, 2013
+(au) Chairman of the Joint Chiefs of Staff Instruction 3231.01B, “Safeguarding Nuclear
+ Command and Control Extremely Sensitive Information,” June 21, 2006 5
 

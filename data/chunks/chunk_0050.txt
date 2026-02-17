@@ -1,86 +1,42 @@
- IA information assurance
- IAM information assurance manager
- IR&D independent research and development
- ISCAP Interagency Security Classification Appeals Panel
- ISOO Information Security Oversight Office
- ISSM information system security officer
- IT information technology
+ e. Declassification does not authorize release of the information to the public.
+DECLASSIFIED INFORMATION SHALL NOT BE RELEASED TO THE PUBLIC UNTIL A
+PUBLIC RELEASE REVIEW AS REQUIRED BY REFERENCES (V) AND (W) HAS BEEN
+CONDUCTED to determine if there are reasons for withholding some or all of the information.
+Declassified information may be released to the public unless withholding is appropriate in
+accordance with other applicable law (for example, FOIA or the Privacy Act of 1974, as
+amended) or DoD issuance (for example, Reference (v) and DoDD 5230.25 (Reference (be)).
+Regardless of the date specified for declassification, declassified information shall not be
+approved for public release without referral to the OCA of the information, except records
+accessioned by NARA that were reviewed for automatic declassification in accordance with
+section 3.3 of Reference (d) will be reviewed by NARA for public release.
 
- MR manual review
+ f. Personnel leaving DoD employment or service may not direct that information be
+declassified in order to remove it from DoD control.
 
- NARA National Archives and Records Administration
- NATO North Atlantic Treaty Organization
- NC2-ESI Nuclear Command and Control-Extremely Sensitive Information
- NDC National Declassification Center
- NSA National Security Agency
- NSA/CSS National Security Agency/Central Security Service
- NSC National Security Council
+ g. OCAs affected by ISCAP deliberations shall be notified of the final decision and shall
+consider the need to change classification and declassification guides to reflect the specific
+ISCAP decision.
 
- OADR originating agency’s determination required
- OCA original classification authority
- OPSEC operations security
- OUSD(I&S) Office of the Under Secretary of Defense for Intelligence and Security
- OUSD(P) Office of the Under Secretary of Defense for Policy
+2. PROCESSES FOR DECLASSIFICATION. Reference (d) establishes four separate and
+parallel processes for declassifying information:
 
- RD Restricted Data
+ a. A process requiring the original classifier to decide at the time information is classified
+when it may be declassified.
 
- SAO Senior Agency Official
- SAP Special Access Program
- SCI sensitive compartmented information
- SCIF sensitive compartmented information facility
- SF standard form
- SIPRNET Secret Internet Protocol Router Network
- SSO special security officer
- STIP Scientific and Technical Information Program
+ b. A process that shall cause information of permanent historical value to be automatically
+declassified no later than 31 December of the year that is 25 years from the date of its origin
+unless specific action is taken to keep it classified.
 
- TSCA Top Secret control assistant
- TSCO Top Secret control officer
+ c. A process for reviewing information for possible declassification upon request (mandatory
+declassification review).
 
- UCMJ Uniform Code of Military Justice
- U.S.C. United States Code
- USD(I&S) Under Secretary of Defense for Intelligence and Security
- USD(P) Under Secretary of Defense for Policy
- USSAN United States Security Authority for NATO
+ d. A process for systematic review of information for possible declassification.
 
- WHS Washington Headquarters Services
+3. AUTHORITY TO DECLASSIFY
 
- PART II. DEFINITIONS
-
-Unless otherwise noted, these terms and their definitions are for the purpose of this Volume.
-
-access. The ability or opportunity to obtain knowledge of classified information.
-
-accessioned records. Records of permanent historical value in the legal custody of NARA.
-
-activity security manager. The individual specifically designated in writing and responsible for
-the activity’s information security program, which ensures that classified information (except
-SCI which is the responsibility of the SSO appointed by the senior intelligence official) and CUI
-are properly handled during their entire life cycle. This includes ensuring information is
-appropriately identified, marked, stored, disseminated, disposed of, and accounted for, as well as
-providing guidance on the handling of security incidents to minimize adverse effects and ensure
-that appropriate corrective action is taken. The security manager may be assigned
-responsibilities in other security disciplines such as personnel and physical security, etc. The
-activity security manager implements the information security program guidance established by
-this Manual and the Component senior agency official.
-
-agency. Any Executive agency as defined in section 105 of Reference (ay); any Military
-Department as defined in section 102 of Reference (bd); and any other entity within the
-Executive Branch that comes into the possession of classified information.
-
-authorized person. A person who has a favorable determination of eligibility for access to
-classified information, has signed an SF 312 nondisclosure agreement, and has a need to know
-for the specific classified information in the performance of official duties.
-
-automatic declassification. The declassification of information based solely upon:
-
- The occurrence of a specific date or event as determined by the OCA; or
-
- The expiration of a maximum time frame for duration of classification established pursuant
-to Reference (d).
-
-classification. The act or process by which information is determined to be classified
-information.
-
-classification guidance. Any instruction or source that prescribes the classification of specific
-information.
+ a. Information may be declassified or downgraded by the cognizant OCA, by supervisory
+officials of the OCA if the supervisory official has OCA, or by those officials who have been
+delegated declassification authority in accordance with paragraph 3.b. of this enclosure. The
+authority to declassify information extends only to information for which the specific official has
+classification, program, or functional responsibility.
 

@@ -152,6 +152,9 @@ chunk_files = sorted(CHUNK_DIR.glob("chunk_*.txt"))
 if not chunk_files:
     raise SystemExit(f"No chunk_*.txt files found in {CHUNK_DIR}")
 
+kept = 0
+skipped = 0
+
 with OUT_JSON.open("w", encoding="utf-8") as f:
     for i, path in enumerate(chunk_files):
         old = path.read_text(encoding="utf-8", errors="ignore")
@@ -159,7 +162,12 @@ with OUT_JSON.open("w", encoding="utf-8") as f:
         new, counts_by_name, total = apply_rules(old)
         forbid_total, forbid_details = count_forbidden(new)
 
-        # Per-chunk counts
+        # Skip unchanged chunks
+        if new == old or total == 0:
+            skipped += 1
+            continue
+
+        # Per-chunk counts (only for kept)
         print(f"{path.name}: total_replacements={total}")
         for k, v in sorted(counts_by_name.items(), key=lambda kv: (-kv[1], kv[0])):
             print(f"  {k}: {v}")
@@ -168,12 +176,15 @@ with OUT_JSON.open("w", encoding="utf-8") as f:
             print(f"  [WARN] leftover_forbidden={forbid_total} {forbid_details}")
 
         rec = {
-            "id": i,
+            "id": kept,            # reindex kept examples densely
             "chunk_id": path.stem,
             "OLD": old,
             "NEW": new,
         }
         f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+        kept += 1
+
+print(f"\nWrote {kept} changed records to {OUT_JSON} (skipped {skipped} unchanged chunks)")
 
 print(f"\nWrote {len(chunk_files)} records to {OUT_JSON}")
 

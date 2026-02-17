@@ -1,52 +1,38 @@
-17. SYSTEMATIC REVIEW FOR DECLASSIFICATION. Heads of the DoD Components
-that have classified information in accordance with Reference (d) or previous Executive orders
-shall establish systematic review programs to review for declassification information in the
-custody of the DoD Component. These programs shall review for declassification information
-that is contained in permanently valuable historical records that have been exempted from
-automatic declassification and shall determine if the information may be further exempt from
-automatic declassification in accordance with the provisions of this enclosure. These efforts
-shall be prioritized in accordance with the priorities established by the NDC.
+ (4) Except as provided in subparagraphs 12.b.(5) and (6) of this section, provide an
+initial written response to each challenge within 60 days. If not responding fully to the challenge
+within 60 days, the DoD Component shall acknowledge the challenge and provide an expected
+date of response. This acknowledgment shall include a statement that, if no response is received
+within 120 days, the challenger has the right to forward the challenge to the ISCAP for decision.
+The challenger may also forward the challenge to the ISCAP if the Component has not
+responded to an appeal within 90 days of receipt of the appeal. DoD Component responses to
+those challenges it denies shall include the challenger’s right to appeal to the ISCAP.
 
-18. DOWNGRADING CLASSIFIED INFORMATION. Downgrading information to a lower
-level of classification is appropriate when the information no longer requires protection at the
-originally assigned level and can be properly protected at a lower level. The principal purpose of
-downgrading is to conserve security resources by avoiding protection of information at too high
-a level. Any official with jurisdiction over the information who is authorized to classify or
-declassify the information may downgrade it.
+ (5) Not process the challenge if it concerns information that has been the subject of a
+challenge within the preceding 2 years or is the subject of pending litigation. The DoD
+Component shall inform the challenger of the situation and appropriate appellate procedures.
 
- a. Downgrading shall be considered when OCAs are deciding on the duration of
-classification to be assigned. If downgrading dates or events can be identified, they shall be
-specified along with the declassification instruction. Downgrading instructions do not replace
-declassification instructions.
+ (6) Refer challenges involving RD to the Department of the Energy and FRD to the
+Deputy Assistant Secretary of Defense, Nuclear Matters (DASD(NM)) and notify the challenger
+accordingly. Do not include a statement about forwarding the challenge to the ISCAP in the
+notification letter, as these categories of information are not within the purview of the ISCAP.
 
- b. An authorized official making a downgrading decision shall notify all known holders of
-the change in classification. If the information is subject to the Scientific and Technical
-Information Program (STIP) (DoDD 3200.12 (Reference (bk)), the authorized official shall also
-notify the Defense Technical Information Center.
+ (7) In case a classification challenge involves documents that contain RD and/or FRD as
+well as information classified under Reference (d), delete (redact) the RD and FRD portions of
+the documents before the document is forwarded to the ISCAP for review.
 
- c. When information is marked for downgrading on a specific date or event and that date or
-event has passed, holders shall confirm that the OCA(s) of the information has not extended the
-higher classification period prior to downgrading DoD information.
+ ENCLOSURE 5
 
- d. Downgraded information shall be marked as required by Enclosure 3 of Volume 2 of this
-Manual.
+ DECLASSIFICATION AND CHANGES IN CLASSIFICATION
 
- e. If a holder of classified information has reason to believe it should not be downgraded as
-indicated, the originator shall be notified through appropriate administrative channels. The
+1. DECLASSIFICATION POLICY
 
-document or material shall continue to be protected at the originally assigned classification until
-the issue is resolved.
+ a. Per Reference (d), information shall be declassified as soon as it no longer meets the
+standards for classification. In some exceptional cases, the need to protect information still
+meeting these standards may be outweighed by the public interest in disclosure of the
+information, and in these cases the information should be declassified. Pursuant to DoD policy
+in Reference (b), information shall remain classified only as long as:
 
-19. UPGRADING CLASSIFIED INFORMATION. Classified information may be upgraded to
-a higher level of classification only by officials who have been delegated the appropriate level of
-OCA in accordance with Enclosure 4 of this Volume. The information to be upgraded must
-continue to meet the standards for classification specified in Enclosure 4 of this Volume. When
-making the decision to upgrade the classification level, OCAs shall consider the benefits to
-national security that will accrue from the higher classification against the costs associated with
-upgrading (e.g., the requirement for upgraded clearances or storage facilities, notification costs)
-and the ability to notify all holders of the information of the change so that the information shall
-be uniformly protected at the higher level. The OCA making the upgrading decision is
-responsible for notifying holders of the change in classification. For information subject to the
-STIP (Reference (bk)), the OCA shall also notify the Defense Technical Information Center.
-Upgraded information shall be marked as required by Enclosure 3 of Volume 2 of this Manual.
+ (1) It is in the best interest of national security to keep it protected.
+
+ (2) Continued classification is in accordance with the requirements of Reference (d).
 

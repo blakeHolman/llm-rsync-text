@@ -1,49 +1,47 @@
- (a) Referring Other Agency Information. Other than records that are properly
-excluded or exempted from automatic declassification, records containing classified information
-originated by another department or agency or the disclosure of which would affect the interests
-or activities of other departments or agencies with respect to the classified information and that
+Pending determination, the document or material containing the information shall be protected at
+the highest level of classification specified by the sources.
 
-could reasonably be expected to fall under one or more of the exemptions identified in
-paragraph 13.b. of this enclosure shall be identified prior to onset of automatic declassification
-for later referral to those departments or agencies. DoD Components shall identify other agency
-information for referral during the initial review of Component records; referral review will take
-place under the auspices of the NDC. The records shall be referred using SF 715, “U.S.
-Government Declassification Review Tab.”
+5. DURATION OF CLASSIFICATION. Every time a classified document is created, a
+determination must be made regarding how long the information is to be protected (i.e., when the
+information will lose its sensitivity and no longer merit or qualify for classification). This is an
+essential part of the classification process. For derivatively classified information, the most
+restrictive declassification instruction (i.e., the one that specifies the longest duration of
+classification) must be carried forward from the source document(s), security classification
+guide(s) or other classification guidance provided by the OCA. Specific guidance on
+determining the most restrictive instruction is provided in Enclosure 3 of Volume 2.
 
- (b) Referrals to the Department of Defense. Other agency records subject to
-automatic declassification that contain defense information shall be reviewed by the appropriate
-DoD Component upon referral. If a final determination is not provided within 1 year on a
-referral made by the NDC, defense information in the referred records shall be automatically
-declassified.
+6. CLASSIFICATION OF ACQUISITION INFORMATION. Classifying information involved
+in the DoD acquisition process shall conform to the requirements of DoDD 5000.01 (Reference
+(az)) and DoDI 5000.02 (Reference (ba)), as well as this enclosure. Security classification
+guides should be updated to include classified critical program information identified as part of
+the program protection planning process required by DoDI 5200.39 (Reference (bb)).
 
- (c) DoD Component Referrals to Other DoD Components. Records containing
-information originated by another DoD Component or the disclosure of which would affect the
-interests or activities of another DoD Component with respect to the classified information shall
-be referred and processed through the NDC, as appropriate. The DoD Component shall be
-notified of these types of referrals.
+7. CLASSIFICATION OF INFORMATION RELEASED TO THE PUBLIC
 
- (d) Referral Review Period. If any disagreement arises between a DoD Component
-and the NDC regarding the referral review period, the DoD Component shall notify ISOO and
-USD(I&S) of the disagreement. In such cases, the Director of ISOO shall determine the
-appropriate review period for referred records. Otherwise, the DoD Component shall provide a
-final determination on referrals received through the NDC within 1 year of referral or the
-information shall be automatically declassified. If any disagreement arises among the DoD
-Components regarding the referral review period, the USD(I&S) shall determine the appropriate
-period of review for the referred records.
+ a. Classified Information Released Without Proper Authority
 
- h. Automatic Declassification of Backlogged Records at NARA. In accordance with
-Presidential Memorandum (Reference (bh)) and under NDC direction:
+ (1) Classified information that has been released to the public without proper authority
+(e.g., media leak, data spill) remains classified. It may be declassified upon such a determination
+by the appropriate OCA. Enclosure 6 of Volume 3 of this Manual identifies issues to be
+considered when making the decision. When the determination is made that the information will
+remain classified, the appropriate OCA will notify known authorized holders accordingly and
+provide the following marking guidance to be used in the event the information is not marked:
 
- (1) Referrals and quality assurance problems within the backlog of more than 400
-million pages of accessioned Federal records previously subject to automatic declassification
-shall be addressed in a manner that will permit public access to all declassified records from this
-backlog no later than December 31, 2013.
+ (a) Overall level of classification.
 
- (2) DoD Components shall review all referrals to DoD in the backlogged records and
-identify potentially exemptible information for further referral to other agencies. For DoD, the
-backlog includes all records reviewed for automatic declassification from April 1995 to
-December 2009 that have been accessioned, but not processed, by NARA.
+ (b) Portion markings.
 
- i. Declassification Review Technique. DoD Components may use a pass/fail or a redaction
-declassification technique when doing automatic declassification reviews.
+ (c) Identity, by name or personal identifier and position, of the OCA.
+
+ (d) Declassification instructions.
+
+ (e) Concise reason for classification.
+
+ (f) Date the action was taken.
+
+ (2) Holders of the information shall take administrative action, as needed, to apply
+markings and controls. DoD personnel shall not publicly acknowledge the release of classified
+
+information and must be careful not to make any statement or comment that confirms the
+accuracy of or verifies the information requiring protection.
 

@@ -1,58 +1,40 @@
- (c) A specific date or a specific and independently verifiable event for automatic
-declassification of specific records that contain the information proposed for exemption. The
-date or event shall not exceed December 31 of the year that is 50 years from the date of origin of
-the records (75 years for 50 year old material), except a date or event is not required when the
-information identifies a confidential human source or a human intelligence source or key design
-concepts of weapons of mass destruction.
+ (6) Any cleared recipients or holders of reclassified information shall be notified and
+appropriately briefed about their continuing legal obligations and responsibilities to protect this
+information from unauthorized disclosure. The recipients or holder who do not have security
+clearances shall, to the extent practicable, be appropriately briefed about the reclassification of
+the information to which they have had access and their obligation not to disclose the
+information, and shall be asked to sign an acknowledgement of the briefing and to return all
+copies of the information in their possession.
 
- (d) If appropriate, a statement that the exemption will be cited subsequently in
-applicable classification guides to provide declassification guidance.
+ c. Information Declassified and Released to the Public Without Proper Authority.
+Information that was declassified without proper authority remains classified. See paragraph 7.a.
+of this enclosure and paragraph 1.c. of Enclosure 5 of this Volume.
 
- (e) If requesting an exemption from declassification at 50 or 75 years, a statement of
-support from the USD(I&S), as the designee of the Secretary of Defense. DoD Components that
-are elements of the Intelligence Community shall also provide a statement of support from the
-DNI.
+8. CLASSIFICATION OR RECLASSIFICATION FOLLOWING RECEIPT OF A REQUEST
+FOR INFORMATION. Information that has not previously been released to the public under
+proper authority may be classified or reclassified after receiving a request for it under FOIA;
+section 2204(c)(1) of Reference (av) (also known as “The Presidential Records Act of 1978”);
+section 552a of Reference (ay) (also known and hereinafter referred to as “The Privacy Act of
+1974, as amended”); or the mandatory review provisions of section 3.5 of Reference (d), only if
+it is done on a document-by-document basis with the personal participation or under the direction
+of the USD(I&S), the Secretary or Under Secretary of a Military Department, or the senior
+agency official appointed within a Military Department in accordance with section 5.4(d) of
+Reference (d). OCAs shall submit requests to the USD(I&S) through the Head of the DoD
+Component.
 
- (2) Requesting an Exemption for a File Series. OCAs shall provide the following
-information:
+ a. The provisions of this section apply to information that has been declassified in
+accordance with the date or event specified by the OCA as well as to information not previously
+classified.
 
- (a) A description of the file series.
+ b. Classification requests shall provide all information necessary for the original
+classification process as specified by Reference (bm).
 
- (b) An explanation of why the information within the file series is almost invariably
-exempt from automatic declassification and why the information must remain classified for a
-longer period of time.
+ c. The Secretaries of the Military Departments shall notify the USD(I&S) of classification
+decisions made in accordance with the provisions of this section.
 
- (c) A specific date or event for declassification of the information, not to exceed
-December 31 of the year that is 50 years from the date of origin of the records (75 years for
-50 year old information), except a date or event is not required when the information within the
-file series almost invariably identifies a confidential human source or a human intelligence
-source or key design concepts of weapons of mass destruction.
+ d. Once a decision is rendered, OCAs shall update their security classification guidance as
+needed.
 
- (d) If appropriate, a statement that the exemption will be cited subsequently in
-applicable classification guides to provide declassification guidance.
-
- (e) If requesting an exemption from declassification at 50 or 75 years, a statement of
-support from the USD(I&S), as the designee of Secretary of Defense. DoD Components that are
-elements of the Intelligence Community shall also provide a statement of support from the DNI.
-
- d. When to Request an Exemption. Exemptions shall be requested not more than 5 years
-and not less than 1 year before information is subject to automatic declassification except for
-75- year exemptions which shall be requested in accordance with subparagraph 13.b.(3) of this
-section.
-
- e. Who Identifies and Requests an Exemption. In all cases, OCAs are responsible for
-identifying information that should be exempted from automatic declassification. The type of
-exemption requested (i.e., specific information, specific records, or file series) determines who
-must request the exemption.
-
- (1) Specific Information and Specific Records. The senior agency official of a Military
-Department or the USD(I&S) acting as the DoD senior agency official, as appropriate, requests
-exemptions for specific information and specific records from automatic declassification. OCAs,
-except those in a Military Department, shall request exemptions for specific information and
-specific records through their DoD Component Head to USD(I&S). USD(I&S) shall notify the
-Director of ISOO, serving as Executive Secretary of the ISCAP, of any information or records
-that the Component proposes to exempt from automatic declassification. OCAs within a
-Military Department shall request exemptions through their Department’s senior agency official,
-who shall notify the Director of ISOO and provide USD(I&S) an information copy for oversight
-purposes.
+9. CLASSIFYING NON-GOVERNMENT RESEARCH AND DEVELOPMENT
+INFORMATION
 

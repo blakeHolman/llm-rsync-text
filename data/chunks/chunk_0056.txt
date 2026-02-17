@@ -1,63 +1,34 @@
-senior agency official. An official appointed by the head of a DoD Component to be responsible
-for direction, administration, and oversight of the Component’s information security program, to
-include classification, declassification, safeguarding, and security education and training
-programs, and for the efficient and effective implementation of References (b), (d), (e), and (f)
-and the guidance in this Manual. Where used in reference to authorities pursuant to
-section 5.4(d) of Reference (d), this term applies only to the senior agency officials of the
-Military Departments and of the Department of Defense.
+ e. Exclusion of RD and FRD. Documents and other materials marked or containing RD or
+FRD are excluded from the automatic declassification provisions of Reference (d) and this
+Volume until the RD or FRD designation is properly removed. Such information shall remain
+classified or shall be referred for a declassification review to the Department of Energy if RD or
+the DASD(NM) if FRD.
 
-senior intelligence official. The highest ranking military or civilian charged with direct foreign
-intelligence missions, functions, or responsibilities with a department, agency, component, or
-element of an Intelligence Community organization. Responsible for direction, administration,
-and oversight of the organization’s SCI program, to include classification, declassification,
-safeguarding, and security education and training programs for the effective implementation of
-References (b), (j), and (ad) and the guidance in this Manual.
+ (1) In accordance with the provisions of section 3161 of Public Law 105-261
+(Reference (bg) (also known as “The Kyl-Lott Amendment”), and its implementing plan, all
+personnel who perform automatic declassification reviews on records that are highly likely to
+contain RD or FRD must be trained and certified by the Department of Energy in the
+identification of unmarked RD and FRD information. DoD Components shall report each
+confirmed inadvertent release of RD or FRD occurring during declassification processes to the
+Department of Energy and provide a copy to OUSD(I&S) Security Directorate.
 
-SSO. Individual appointed, in accordance with References (j) and (ad), by the senior intelligence
-official to be responsible for the day-to-day security management, operation, implementation,
-use, and dissemination of SCI within an activity.
+ (2) When the RD or FRD pertains to defense nuclear information, declassification
+reviews shall be referred to the DASD(NM), who has OCA for defense nuclear information, to
+include joint OCA with the Department of Energy for FRD.
 
-tab. A narrow paper sleeve placed around a document or group of documents in such a way that
-it is readily visible.
+ (3) The Secretary of Energy determines when information concerning foreign nuclear
+programs that was removed from the RD category in order to carry out provisions of
+section 2673 of Reference (af) may be declassified. Unless otherwise determined by the
+appropriate OCA, such information shall be declassified when comparable information
+concerning the U.S. nuclear program is declassified.
 
-telecommunications. The preparation, transmission, or communication of information by
-electronic means.
+ f. Integral File Block. Classified records within an integral file block that are otherwise
+subject to automatic declassification in accordance with this section shall not be automatically
+declassified until December 31 of the year that is 25 years from the date of the MOST RECENT
+record or the date specified by the exemption instruction of the most recent exempted record,
+whichever is later, within the file block. For purposes of automatic declassification, integral file
+blocks shall contain only records dated within 10 years of the oldest record in the file block.
 
-transferred records. Records transferred to agency storage facilities or a Federal records center.
+ g. Delays of Automatic Declassification. The following lists the scenarios for which
+automatic declassification may be delayed.
 
-unauthorized disclosure. Communication or physical transfer of classified or controlled
-unclassified information to an unauthorized recipient.
-
-unscheduled records. Records whose final disposition has not been approved by NARA.
-
-U.S. entity
-
- State, local, or tribal governments.
-
- State, local, and tribal law enforcement and firefighting entities.
-
- Public health and medical entities.
-
- Regional, State, local, and tribal emergency management entities, including State Adjutants
-General and other appropriate public safety entities.
-
- Private sector entities serving as part of the Nation’s critical infrastructure and/or key
-resources.
-
-violation
-
- Any knowing, willful, or negligent action that could reasonably be expected to result in an
-unauthorized disclosure of classified information.
-
- Any knowing, willful, or negligent action to classify or continue the classification of
-information contrary to the requirements of Reference (d), its implementing directives, or this
-Manual.
-
- Any knowing, willful, or negligent action to create or continue a special access program
-contrary to the requirements of Reference (d), Reference (q), or this Manual.
-
-waiver. An approved temporary or short-term exclusion or deviation from an information
-security standard or requirement, as specified in this Volume.
-
-weapons of mass destruction. Any weapon of mass destruction as defined in section 1801(p) of
-Reference (af).

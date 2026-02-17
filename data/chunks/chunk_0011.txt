@@ -1,64 +1,46 @@
-4. DIRECTOR, WHS. The Director, WHS, under the authority, direction, and control of the
-Chief Management Officer of the Department of Defense, through the Director of
+2
+ Available from the Office of the Director of National Intelligence.
+3
+ Available on SIPRNET at http://www.iad.nsa.smil.mil/resources/library/natl_pols_dirs_orders_section/index.cfm.
+4
+ CUI document, available to authorized users. Contact the NSA/CSS Office of Corporate Policy (DJP1) for
+assistance.
+5
+ This document is CUI. It is available to authorized recipients at https://ca.dtic.mil/cjcs_directives/index.htm
 
-Administration, shall identify to the USD(I&S) an individual and at least one alternate to serve as
-the ISCAP liaison for the Department of Defense in accordance with the ISCAP Bylaws in
-Reference (f).
-
-5. HEADS OF THE DoD COMPONENTS. The Heads of the DoD Components shall, in
-accordance with Reference (b):
-
- a. Be responsible for the overall management, functioning, and effectiveness of the
-information security program within their respective DoD Component.
-
- b. Appoint a senior agency official to be responsible for directing, administering, and
-overseeing the information security program within the Component on his or her behalf and
-ensure that official accomplishes the responsibilities in section 7 of this enclosure. The DoD
-Component Head may designate a separate senior official to be responsible for overseeing SAPs
-within the Component, if necessary, in accordance with DoDD 5205.07 (Reference (q)).
-
- c. If the Component is not an element of the Intelligence Community, designate a senior
-intelligence official to be responsible for ensuring adequate funding and effective
-implementation of the Component’s SCI security program, including awareness and education,
-consistent with guidance established by the DNI.
-
- d. Identify, program for, and commit necessary resources to effectively implement the
-requirements for protection of classified information as part of the Component’s information
-security program.
-
- e. Conduct, as periodically directed by the USD(I&S), reviews of the DoD Component’s
-classification guidance and provide reports summarizing results.
-
- f. Ensure the Component Senior Agency Official and the Component Senior Intelligence
-Official coordinate as appropriate to achieve a harmonized and cohesive information security
-program within the DoD Component.
-
-6. SENIOR AGENCY OFFICIALS. The senior agency officials, under the authority, direction,
-and control of the Heads of the DoD Components, appointed in accordance with section 6 of this
-enclosure shall, in addition to the responsibilities in Volume 4 of this Manual:
-
- a. Direct, administer, and oversee their respective DoD Component’s information security
-program.
-
- b. Develop guidance as necessary for program implementation within the DoD Component.
-
- c. Direct the head of each activity within the DoD Component that creates, handles, or stores
-classified information to appoint, in writing, an official to serve as security manager for the
-activity, to properly manage and oversee the activity’s information security program. Persons
-
-appointed to these positions shall be provided training as Enclosure 5 of Volume 3 of this
-Manual requires.
-
- d. Establish and maintain an ongoing self-inspection and oversight program to evaluate and
-assess the effectiveness and efficiency of the DoD Component’s implementation of that portion
-of the information security program pertaining to classified information.
-
- (1) Evaluation criteria shall consider, at a minimum, original and derivative
-classification, declassification, safeguarding, security violations, education and training, and
-management and oversight.
-
- (2) The program shall include regular review and assessment of representative samples
-of the DoD Component’s classified products. Appropriate officials shall be authorized to correct
-misclassification of information, except for information covered by paragraph 17.b. or section 18
-of Enclosure 4 of this Volume.
+(av) Chapters 21, 22, 6 31, 33, and 35 of title 44, United States Code
+(aw) DoD Instruction 5015.02, “DoD Records Management Program,” February 24, 2015, as
+ amended
+(ax) Sections 801-940 of title 10, United States Code (also known as “The Uniform Code of
+ Military Justice”)
+(ay) Sections 102, 105, 552, 7 and 552a 8 of title 5, United States Code
+(az) DoD Directive 5000.01, “The Defense Acquisition System,” May 12, 2003
+(ba) DoD Instruction 5000.02, “Operation of the Defense Acquisition System,” January 7, 2015,
+ as amended
+(bb) DoD Instruction 5200.39, “Critical Program Information (CPI) Identification and
+ Protection Within Research, Development, Test, and Evaluation (RDT&E),” May 28, 2015,
+ as amended
+(bc) DoD Instruction 3204.01, “DoD Policy for Oversight of Independent Research and
+ Development (IR&D),” August 20, 2014
+(bd) Sections 181 through 188 of title 35, United States Code (also known as “The Patent
+ Secrecy Act of 1952, as amended”)
+(be) DoD Directive 5230.25, “Withholding of Unclassified Technical Data From Public
+ Disclosure,” November 6, 1984, as amended
+(bf) Section 1041 of Public Law 106-65, “National Defense Authorization Act for Fiscal
+ Year 2000,” October 5, 1999
+(bg) Section 3161 of Public Law 105-261, “Strom Thurmond National Defense Authorization
+ Act for Fiscal Year 1999,” October 17, 1998, as amended (also known as “The Kyl-Lott
+ Amendment”)
+(bh) Presidential Memorandum, “Implementation of the Executive Order, ‘Classified National
+ Security Information,’” December 29, 2009
+(bi) Executive Order 12951, “Release of Imagery Acquired by Space-Based National
+ Intelligence Reconnaissance Systems,” February 22, 1995
+(bj) DoD 7000.14-R, Volume 11A, “Department of Defense Financial Management Regulation
+ (FMR): Reimbursable Operations Policy,” current edition
+(bk) DoD Instruction 3200.12, “DoD Scientific and Technical Information Program (STIP),”
+ August 22, 2013
+(bl) Executive Order 12958, “Classified National Security Information,” April 17, 1995, as
+ amended
+(bm) DoD Manual 5200.45, “Originating Classification Authority and Writing a Security
+ Classification Guide,” January 17, 2025
 

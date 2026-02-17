@@ -1,51 +1,35 @@
- (2) File Series. For file series exemptions, the Secretary of Defense or the Secretary of a
-Military Department, as appropriate, must request the exemption. In either case, the request is
-forwarded to the Director of ISOO, serving as Executive Secretary of the ISCAP. OCAs, except
-those within a Military Department, shall submit requests for file series exemption through their
-DoD Component Head to USD(I&S). USD(I&S) will forward the request to the Secretary of
-Defense for decision and ISCAP notification. OCAs within the Military Departments shall
-submit requests for exemption to the Secretary of the Military Department, who shall notify the
-ISCAP. Military Departments shall provide USD(I&S) an information copy of such
-notifications for oversight purposes.
+ a. Information that is a product of contractor or individual independent research and
+development (IR&D) or bid and proposal (B&P) efforts, as defined by DoDI 3204.01 (Reference
+(bc)), conducted without prior or current access to classified information associated with the
+specific information in question, may not be classified unless:
 
- f. ISCAP Authority. The ISCAP may direct the Department of Defense not to exempt the
-specific information, specific records, or file series, or to declassify it at an earlier date than
+ (1) The U.S. Government first acquires a proprietary interest in the information; or,
 
-recommended. The Secretary of Defense or the Secretary of a Military Department, as
-appropriate, may appeal such a decision to the President through the National Security Advisor.
-The information will remain classified while such an appeal is pending. OCAs shall notify the
-appropriate DoD authority if an appeal is necessary and provide justification and rationale to
-counter the ISCAP decision. Military Departments shall provide USD(I&S) an information copy
-of any appeal for oversight purposes.
+ (2) The contractor or individual conducting the IR&D or B&P requests that the U.S.
+Government contracting activity place the information under the control of the security
+classification system without relinquishing ownership of the information.
 
- g. Notice to Information Holders. When information has been approved for exemption by
-the ISCAP, the OCA must notify all known information holders. This may be done through
-issuance of a memorandum or distribution of the declassification guide. DoD Components that
-have ISCAP-approved declassification guides must ensure maximum dissemination to record
-holders of the information. Holders shall re-mark documents in their possession to reflect the
-exemption.
+ b. The contractor or individual conducting such an IR&D or B&P effort and believing that
+the information generated may require protection in the interest of national security shall
+safeguard the information and submit it to an appropriate U.S. Government activity for a
+classification determination.
 
-14. DECLASSIFICATION OF INFORMATION MARKED WITH OLD
-DECLASSIFICATION INSTRUCTIONS
+ (1) The U.S. Government activity receiving the request shall issue security classification
+guidance, as appropriate, if the information is to be classified. If the information is not under the
+activity’s classification authority, the activity shall refer the matter to the appropriate
+classification authority and inform the individual or contractor of the referral. The information
+shall be safeguarded until the matter is resolved.
 
- a. In accordance with Reference (f), when information is marked with previously authorized
-exemption categories X-1 through X-8, or with the instructions “OADR” (Originating Agency’s
-Determination Required) or “MR” (Manual Review), including when preceded by “Source
-marked,” use a declassification date of 25 years from the date of the source document or 25 years
-from the current date if the source document date is not available, unless exempted in accordance
-with section 13 of this enclosure.
+ (2) The U.S. Government activity authorizing classification for the information shall
+verify whether the contractor or individual is cleared and has been authorized to store classified
+information. If not, the U.S. Government activity authorizing classification shall advise whether
+security clearance action should be initiated.
 
- b. If imagery subject to E.O. 12951 (Reference (bi)) is marked with the declassification
-instruction “DCI Only” or “DNI Only,” use “25X1, E.O. 12951” as the declassification
-instruction, as specified by the DNI. (Contact the National Geospatial-Intelligence Agency,
-Classification Management (NGA/SISX) for assistance in determining whether specific imagery
-is subject to E.O. 12951.) Otherwise, for documents marked with the declassification
-instructions “DCI Only” or “DNI Only” which do NOT contain information subject to
-Reference (bi), use a declassification date that is 25 years from the date of the source document
-or 25 years from the current date if the source document date is not available.
+ (3) If the contractor or individual refuses to be processed for the appropriate security
+clearance and the U.S. Government does not acquire a proprietary interest in the information, the
+information may not be classified.
 
-15. REFERRALS IN THE AUTOMATIC DECLASSIFICATION PROCESS. Referrals are
-required by References (d) and (f) to ensure timely, efficient, and effective processing of reviews
-and to protect classified information from inadvertent disclosure. All referrals contained within
-accessioned records will be processed through the NDC.
+ (4) If the information is not classified, consideration may be given to the need for other
+controls applicable to unclassified information (e.g., export controls). (See Volume 4 of this
+Manual for guidance on CUI.)
 

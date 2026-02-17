@@ -1,59 +1,48 @@
- (b) The Secretary of Defense approves the reclassification based on a document-by-
-document determination and recommendation by the Head of the originating DoD Component,
-other than the Secretary of a Military Department, when that reclassification of the information is
-required to prevent significant and demonstrable damage to the national security.
-Reclassification and release of information under proper authority means the DoD Component
-with jurisdiction over the information authorized declassification and release of the information.
-The Secretaries of a Military Department shall approve the reclassification of information under
-their jurisdiction on the same basis and shall notify the USD(I&S) of the action. The Military
-Departments shall provide implementing guidance to their subordinate activities for submitting such
-requests.
+ a. Activity security management shall ensure that contractors who are involved in security
+administration and support duties are clearly identified in their capacities, roles, and functions, to
+ensure there is no possible confusion regarding which security personnel may exercise inherently
+governmental authorities and which may not.
 
- (2) DoD Component Heads other than the Secretaries of the Military Departments shall
-submit recommendations for reclassification of information under their jurisdiction to the
-Secretary of Defense through the USD(I&S). Recommendations for reclassification must
-include, on a document-by-document basis:
+ b. Inherently governmental activities and functions include those that require either the
+exercise of substantial discretion in applying U.S. Government authority, or value judgments
+when making decisions for the U.S. Government. Inherently governmental security functions
+include, but are not limited to:
 
- (a) A description of the information.
+ (1) Approving and issuing security policies and procedures.
 
- (b) All information necessary for the original classification decision in accordance
-with Reference (bm), including classification level of the information and declassification
-instructions to be applied.
+ (2) Making original classification decisions, or rendering classification determinations
+regarding classified information that is improperly or incompletely marked. (Correcting
+improper markings when the appropriate classification is not in question is not considered
+rendering a classification determination.)
 
- (c) When and how it was released to the public.
+ (3) Deciding to downgrade or declassify information. (Adhering to security markings on
+information or to guidance stated in an appropriate security classification or declassification
+guide is not considered a downgrading or declassification decision.)
 
- (d) An explanation as to why it should be reclassified. Include the applicable reason
-in accordance with Reference (d) and describe what damage could occur to national security.
-Also describe what damage may have already occurred as a result of the release.
+ (4) Deciding challenges to classification and any appeals.
 
- (e) The number of recipients and/or holders and how they will be notified of the
-reclassification.
+ (5) Making foreign disclosure decisions pursuant to Reference (y).
 
- (f) How the information will be recovered.
+ (6) Making public release decisions pursuant to Reference (v).
 
- (g) Whether the information is in the custody of NARA and whether the Archivist of
-the United States must be notified of the reclassification as specified in subparagraph 7.b.(4) of
-this section.
+ (7) Committing to expenditure of U.S. Government funds pursuant to References ((ao)
+and (ap)).
 
- (3) Once a reclassification action has occurred, it must be reported to all recipients and
-holders, to the Assistant to the President for National Security Affairs (herein after referred to as
-“the National Security Advisor”) and to ISOO within 30 days. The notification to ISOO must
-include how the “reasonably recoverable” decision was made, including the number of recipients
-or holders, how the information was recovered, and how the recipients and holders were notified.
-The Secretaries of the Military Departments shall notify the National Security Advisor and ISOO
-directly and provide an information copy to the USD(I&S). The Secretary of Defense, after
-making reclassification decisions, will notify the National Security Advisor and ISOO of such
-decisions.
+ (8) Conducting investigations of, or determining fault in, security incidents involving
+U.S. Government or other contractor personnel. (Contractors may conduct preliminary inquiries
+to determine if a security incident is a violation or an infraction.)
 
- (4) For documents in the physical and legal custody of NARA that have been available
-for public use, reclassification must also be reported to the Archivist of the United States, who
-shall suspend public access pending approval of the reclassification action by the Director,
-ISOO. The Secretaries of the Military Departments shall notify the Archivist directly and
-provide an information copy to USD(I&S). The Secretary of Defense will notify the Archivist as
-required for decisions involving other DoD Components. Disapproval of the reclassification
-action by the Director, ISOO, may be appealed to the President through the National Security
-Advisor. Public access shall remain suspended pending decision on the appeal.
+ (9) Giving final approval or executing documents for filing in litigation if documents
+assert an official position of the Department of Defense, any DoD Component, or any other
+Federal agency.
 
- (a) OCAs shall notify the Secretary of Defense of the need to appeal ISOO decisions
-through their DoD Component Head and the USD(I&S).
+8. USE OF FOREIGN NATIONALS IN SECURITY ADMINISTRATION. Foreign nationals
+may not engage in the following DoD security administrative activities:
+
+ a. Approving and issuing security policies and procedures.
+
+ b. Making original classification decisions, or rendering classification determinations
+regarding classified information that is improperly or incompletely marked. Correcting improper
+markings when the appropriate classification is not in question is not considered rendering a
+classification determination.
 

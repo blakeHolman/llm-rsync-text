@@ -1,69 +1,52 @@
- (2) Ensure implementation of and compliance with the requirements of this Manual for
-all uses of IT. Coordinate with information systems security personnel (e.g., designated approval
-authorities (DAAs), information assurance managers (IAMs), information system security
-managers) as required for effective management, use, and oversight of classified information in
-electronic form.
+ (1) Using Microsoft SharePoint to make available all information that security
+managers need to manage their programs and share unit best practices.
 
- k. Develop security measures and procedures, consistent with DoDD 5230.20
-(Reference (z)), DoDI 5200.08 (Reference (aa)) and other applicable policies, regarding visitors
-who require access to classified information and facilities containing same.
+ (2) Creating and using an electronic security manager handbook.
 
- l. Ensure compliance with the requirements of this Manual when access to classified
-information is provided to industry at activity facilities and locations in connection with a
-classified contract. If the classified information is provided to industry at the contractor’s
-facility, ensure compliance with the provisions of DoDI 5220.22 (Reference (ab)).
+ (3) Providing and maintaining open communications between different levels of
+management structure within the organization.
 
- m. Ensure that access to classified information is limited to appropriately cleared personnel
-with a need to know as required by section 4.1 of Reference (d) and section 3.1 of E.O. 12968
-(Reference (ac)).
+ (4) Establishing and using online training tools to track training requirement
+completion.
 
- n. Maintain liaison with the special security officer (SSO), as appropriate, on issues of
-common concern.
+ (5) Issuing and using the Quarterly Security newsletter that provides information
+security articles, security updates, and upcoming security courses.
 
-9. TSCO. The TSCO, when designated in accordance with paragraph 8.d. of this enclosure,
-shall:
+ (6) Maintaining an automated security incident reporting program.
 
- a. For paper documents and other physical media (e.g., disk drives and removable computer
-media), maintain a system of accountability (e.g., registry) to record the receipt, reproduction,
-transfer, transmission, downgrading, declassification, and destruction of Top Secret information,
-that is not SAP, SCI, and other special types of classified information.
+ (7) Maintaining complete inventories of all classified documents and electronic
+media to provide precise tracking of classified holdings.
 
- b. Ensure that inventories of Top Secret information are conducted at least annually or more
-frequently when circumstances warrant.
+ (8) Developing organization derivative classification training.
 
-10. SENIOR INTELLIGENCE OFFICIALS. The senior intelligence officials, including those
-who are heads of elements of the Intelligence Community and those designated according to
-paragraph 6.c of this enclosure, shall:
+ (9) Reviewing the process for public release of information.
 
- a. In accordance with Reference (b):
+ (10) Maintaining a central security and education awareness mailbox with
+questions answered by close of business.
 
- (1) Protect intelligence and intelligence sources and methods from unauthorized
-disclosure consistent with the policies of the DNI and, where applicable, the requirements of this
-Manual and Reference (j).
+ (11) Tracking mandatory annual security and derivative classification training by
+the Human Resources Information System of Record, which enhances better oversight of
+training completion rates.
 
- (2) Administer and oversee, within their respective organizations, those aspects of the
-SCI security programs not delegated to Defense Intelligence Agency (DIA) in accordance with
-Reference (b).
+ (12) Developing a comprehensive security database reflecting final adjudication
+and investigation of security incidents.
 
- (3) Develop DoD Component-specific implementation guidance as necessary for the
-protection of SCI.
+ e. Establish procedures to prevent unauthorized persons from accessing classified
+information, including:
 
- b. Cooperate and coordinate with the Component senior agency official as appropriate to
-achieve a harmonized and cohesive information security program within the DoD Component.
+ (1) Specific requirements for protecting classified information at DoD Component-
+sponsored meetings and conferences, to include seminars, exhibits, symposiums, conventions,
+training activities, workshops, or other such gatherings, during which classified information is
+disseminated.
 
- c. Where required by this Manual, provide the USD(I&S) with copies of requests for
-exceptions and waivers of information security policies, security incident reports, and other
-information submitted to the DNI.
+ (2) Requirements for protecting U.S. classified information located in foreign countries,
+with particular attention on ensuring proper enforcement of controls on release of U.S. classified
+information to foreign entities.
 
- d. Designate, as required by Intelligence Community Directive 703 (Reference (ad)) and
-Reference (j), an activity SSO to be responsible for the day-to-day security management,
-operation, implementation, use, and dissemination of SCI within the activity and, as needed,
-alternate SSO(s). Such designations shall be made for any activity that is accredited for and
-authorized to receive, use, and store SCI and shall be in writing.
+ (3) Procedures to accommodate visits to DoD Component facilities involving access to,
+or disclosure of, classified information.
 
- (1) All SCI matters shall be referred to the SSO.
-
- (2) The SSO may be designated as the activity security manager if the grade
-requirements for the position are met; however, the activity security manager cannot function as
-the SSO unless so designated by the cognizant senior intelligence official.
+ f. Establish and maintain declassification programs and plans that meet the requirements of
+this Manual and ensure that necessary resources are applied to the review of information to
+ensure it is neither classified for longer than necessary nor declassified prematurely.
 

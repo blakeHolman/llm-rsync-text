@@ -1,59 +1,51 @@
- (b) Notifications shall clearly articulate the compelling national security reasons for
-reclassifying the information and shall counter the ISOO rationale for disapproving the
-reclassification.
+ c. Deciding to downgrade or declassify information. Adhering to security markings on
+information or guidance stated in an appropriate security classification or declassification guide
+is not considered a downgrading or declassification decision.
 
- (5) Once a final decision is rendered, OCAs shall update their security classification
-guidance accordingly. The reclassified information must be marked and safeguarded in
-accordance with the requirements of Volumes 2 and 3 of this Manual.
+ d. Deciding challenges to classification or any appeals.
 
- (6) Any cleared recipients or holders of reclassified information shall be notified and
-appropriately briefed about their continuing legal obligations and responsibilities to protect this
-information from unauthorized disclosure. The recipients or holder who do not have security
-clearances shall, to the extent practicable, be appropriately briefed about the reclassification of
-the information to which they have had access and their obligation not to disclose the
-information, and shall be asked to sign an acknowledgement of the briefing and to return all
-copies of the information in their possession.
+ e. Making foreign disclosure decisions pursuant to Reference (y).
 
- c. Information Declassified and Released to the Public Without Proper Authority.
-Information that was declassified without proper authority remains classified. See paragraph 7.a.
-of this enclosure and paragraph 1.c. of Enclosure 5 of this Volume.
+ f. Making public release decisions pursuant to Reference (v).
 
-8. CLASSIFICATION OR RECLASSIFICATION FOLLOWING RECEIPT OF A REQUEST
-FOR INFORMATION. Information that has not previously been released to the public under
-proper authority may be classified or reclassified after receiving a request for it under FOIA;
-section 2204(c)(1) of Reference (av) (also known as “The Presidential Records Act of 1978”);
-section 552a of Reference (ay) (also known and hereinafter referred to as “The Privacy Act of
-1974, as amended”); or the mandatory review provisions of section 3.5 of Reference (d), only if
-it is done on a document-by-document basis with the personal participation or under the direction
-of the USD(I&S), the Secretary or Under Secretary of a Military Department, or the senior
-agency official appointed within a Military Department in accordance with section 5.4(d) of
-Reference (d). OCAs shall submit requests to the USD(I&S) through the Head of the DoD
-Component.
+ g. Committing to expenditure of U.S. Government funds. Guidelines within international or
+host nation agreements or treaties may provide exceptions to this area of security administration.
 
- a. The provisions of this section apply to information that has been declassified in
-accordance with the date or event specified by the OCA as well as to information not previously
-classified.
+ h. Conducting investigations of, or determining fault in, security incidents involving U.S.
+Government or contractor personnel.
 
- b. Classification requests shall provide all information necessary for the original
-classification process as specified by Reference (bm).
+ i. Giving final approval or executing documents for filing in litigation, if documents assert
+an official position of the Department of Defense, any DoD Component, or any other federal
+agency.
 
- c. The Secretaries of the Military Departments shall notify the USD(I&S) of classification
-decisions made in accordance with the provisions of this section.
+ j. Escorting personnel, except where the foreign national is employed by DoD and the
+foreign national escorts personnel:
 
- d. Once a decision is rendered, OCAs shall update their security classification guidance as
-needed.
+ (1) As a specific function of his or her assigned duties.
 
-9. CLASSIFYING NON-GOVERNMENT RESEARCH AND DEVELOPMENT
-INFORMATION
+ (2) Only to areas where U.S. personnel are embedded within locations or facilities that
+are outside the continental United States.
 
- a. Information that is a product of contractor or individual independent research and
-development (IR&D) or bid and proposal (B&P) efforts, as defined by DoDI 3204.01 (Reference
-(bc)), conducted without prior or current access to classified information associated with the
-specific information in question, may not be classified unless:
+ (3) Only in situations not detrimental to the interests of the DoD or the U.S.
+Government.
 
- (1) The U.S. Government first acquires a proprietary interest in the information; or,
+ k. Accessing combinations at the entrance and exit doors or security containers that contain
+non-releasable classified information or non-releasable CUI.
 
- (2) The contractor or individual conducting the IR&D or B&P requests that the U.S.
-Government contracting activity place the information under the control of the security
-classification system without relinquishing ownership of the information.
+ l. Accessing codes or functions associated with the intrusion detection system or master
+codes associated with access control devices.
+
+ m. Accessing IT equipment, such as computers, printers, or fax equipment used to process
+non-releasable classified information or non-releasable CUI.
+
+ n. Constructing or modifying areas where classified information will be processed, unless
+cleared U.S. national civil engineers provide oversight to all new construction and modifications
+of facilities where classified information will be processed.
+
+ o. Accessing SCIFs, except as stated in Volume 2 of Reference (j).
+
+9. CLASSIFICATION AUTHORITY. Except for information subject to section 2011 et seq., of
+title 42, U.S.C. (also known and hereinafter referred to as “The Atomic Energy Act of 1954, as
+amended” (Reference (aq)), Reference (d) and this Manual provide the only authority for
+applying security classification to information within the Department of Defense.
 

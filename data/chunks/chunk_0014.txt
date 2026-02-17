@@ -1,65 +1,44 @@
- (1) The activity security manager may be assigned full-time, part-time, or as a collateral
-duty, provided that the responsibilities delineated in section 9 of this enclosure can be adequately
-and professionally executed and implemented.
+4. DIRECTOR, WHS. The Director, WHS, under the authority, direction, and control of the
+Chief Management Officer of the Department of Defense, through the Director of
 
- (2) The activity security manager shall:
+Administration, shall identify to the USD(I&S) an individual and at least one alternate to serve as
+the ISCAP liaison for the Department of Defense in accordance with the ISCAP Bylaws in
+Reference (f).
 
- (a) Be a military officer, senior non-commissioned officer, or a civilian employee
-with sufficient authority, staff, and other resources necessary to manage the program for the
-activity.
+5. HEADS OF THE DoD COMPONENTS. The Heads of the DoD Components shall, in
+accordance with Reference (b):
 
- 1. For activities with more than 100 personnel assigned, a senior non-
-commissioned officer designated as the activity security manager shall be E-7 or above; a
-civilian employee so designated shall be GS-11 or above (or pay band equivalent).
+ a. Be responsible for the overall management, functioning, and effectiveness of the
+information security program within their respective DoD Component.
 
- 2. For activities with less than 100 personnel assigned, a senior non-
-commissioned officer designated as the activity security manager shall be E-6 or above; a
-civilian employee so designated shall be GS-7 or above (or pay band equivalent).
+ b. Appoint a senior agency official to be responsible for directing, administering, and
+overseeing the information security program within the Component on his or her behalf and
+ensure that official accomplishes the responsibilities in section 7 of this enclosure. The DoD
+Component Head may designate a separate senior official to be responsible for overseeing SAPs
+within the Component, if necessary, in accordance with DoDD 5205.07 (Reference (q)).
 
- (b) Be a U.S. citizen.
+ c. If the Component is not an element of the Intelligence Community, designate a senior
+intelligence official to be responsible for ensuring adequate funding and effective
+implementation of the Component’s SCI security program, including awareness and education,
+consistent with guidance established by the DNI.
 
- (c) Have been the subject of a favorably adjudicated, current background
-investigation appropriate for the highest level of classification of information handled by
-personnel within the activity in accordance with requirements of DoD 5200.2-R (Reference (s)).
+ d. Identify, program for, and commit necessary resources to effectively implement the
+requirements for protection of classified information as part of the Component’s information
+security program.
 
- (d) Have access appropriate to the level of information managed.
+ e. Conduct, as periodically directed by the USD(I&S), reviews of the DoD Component’s
+classification guidance and provide reports summarizing results.
 
- c. In large activities and where circumstances warrant, designate, in writing, activity
-assistant security manager(s) to assist in program implementation, maintenance, and local
-oversight.
+ f. Ensure the Component Senior Agency Official and the Component Senior Intelligence
+Official coordinate as appropriate to achieve a harmonized and cohesive information security
+program within the DoD Component.
 
- (1) Responsibilities assigned to assistant security managers shall be commensurate with
-their grade level, experience, and training.
+6. SENIOR AGENCY OFFICIALS. The senior agency officials, under the authority, direction,
+and control of the Heads of the DoD Components, appointed in accordance with section 6 of this
+enclosure shall, in addition to the responsibilities in Volume 4 of this Manual:
 
- (2) Individuals assigned as assistant security managers shall be U.S. citizens with
-security clearances and accesses appropriate to their assigned responsibilities.
+ a. Direct, administer, and oversee their respective DoD Component’s information security
+program.
 
- (3) Assistant security managers shall report directly to the activity security manager who
-shall provide guidance, direction, coordination, training, and oversight necessary to ensure that
-the program is being administered effectively.
-
- d. Optionally, where circumstances warrant (such as in activities with large repositories of
-Top Secret information), designate an activity Top Secret control officer (TSCO) to manage and
-account for Top Secret materials, and Top Secret control assistant(s) (TSCA(s)) as needed to
-assist the TSCO. When used, designations shall be in writing. Top Secret couriers are NOT
-considered TSCA(s).
-
- (1) An individual designated as the TSCO must have been the subject of a favorably
-adjudicated, current background investigation in accordance with requirements of Reference (s)
-and must have Top Secret access. The TSCO shall report directly to the activity security
-manager, or the activity security manager may serve concurrently as the TSCO.
-
- (2) An individual designated as a TSCA must have been the subject of a favorably
-adjudicated, current background investigation in accordance with requirements of Reference (s)
-and must have Top Secret access.
-
- e. When required by DoDD 5100.55 (Reference (t)), designate, in writing, an activity NATO
-control point officer and at least one alternate to ensure that NATO information is correctly
-controlled and accounted for, and that NATO security procedures are followed. United States
-Security Authority for NATO (USSAN) Instruction 1-07 (Reference (u)) was written by USD(P)
-on behalf of the Secretary of Defense, acting as the U.S. Security Authority to NATO and
-administrator of NATO information security regulation. It establishes procedures and minimum
-security standards for the handling and protection of NATO classified information.
-
-8. ACTIVITY SECURITY MANAGER. The activity security manager shall:
+ b. Develop guidance as necessary for program implementation within the DoD Component.
 

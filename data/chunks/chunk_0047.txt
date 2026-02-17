@@ -1,48 +1,42 @@
- (5) The information has not been reviewed for declassification within the preceding
-2 years. If the requested information has been reviewed for declassification within the 2 years
-preceding the request, the DoD Component shall notify the requester of the prior review decision
-and provide appeal rights information. No further review is required.
+ (3) Formal challenges to classification made pursuant to this section shall include
+sufficient description of the information being challenged to permit identification of the
+information and its classifier with reasonable effort. Challenges to classification made by DoD
+personnel shall also include the reason why the challenger believes that the information is
+improperly or unnecessarily classified. The challenge shall be unclassified, if possible.
 
- (6) The information was not originated by the incumbent President or the incumbent
-Vice President, the incumbent President’s White House staff, or the incumbent Vice President’s
-staff, committees, commissions, or boards appointed by the incumbent President, or other entities
-within the Executive Office of the President that solely advise and assist the incumbent
-President. Information so originated is exempt from the provisions of this section.
+ (4) Pending final decision on the classification level, the information that is the subject
+of a classification challenge will remain classified at its current classification level or the
+recommended change level, whichever is higher. The information will continue to be
+safeguarded unless and until a decision is made to declassify it.
 
- (7) The request was submitted to a Defense Intelligence Component by a U.S. citizen or
-an alien lawfully admitted for permanent residence; otherwise, the request may be denied.
+ (5) The provisions of this section do not apply to information required to be submitted
+for prepublication review or other administrative process pursuant to an approved NDA.
 
- c. A DoD Component may refuse to confirm or deny the existence or nonexistence of
-requested information when the fact of its existence or nonexistence is properly classified.
+ b. Procedures. The Heads of the DoD Components shall encourage classification challenges
+and establish procedures for handling challenges to classification received from within and from
+outside their Components in accordance with Reference (f). The DoD Components shall:
 
- d. DoD Components shall either make a prompt declassification determination and notify the
-requester accordingly, or inform the requester of the additional time needed to process the
-request. DoD Components shall ordinarily make a final determination within 1 year from the
-date of receipt.
+ (1) Incorporate the following language for Component security classification guides
+consistent with the intent of Section 5.3 of Reference (d):
 
- (1) In making a declassification determination DoD Components shall determine
-whether the information continues to meet the requirements for classification. Information to be
-withheld must not only qualify for classification under the criteria identified in paragraph 1.b of
-Enclosure 4, but there also must be a current basis for continued classification.
+ (a) Follow the guidance provided in Paragraph 12 of this enclosure for individuals
+who wish to challenge information they believe has been improperly or unnecessarily classified.
 
- (2) When information cannot be declassified in its entirety, DoD Components shall make
-reasonable efforts to release, consistent with other applicable law and the requirements of
-paragraph 1.e. of this enclosure, those declassified portions of the requested information that
-constitute a coherent segment. Where information is withheld the specific reason, as specified
-by section 1.4 of Reference (d) and identified in paragraph 1.b of Enclosure 4 of this Volume,
-must be included for each redaction. Information that is redacted due to a statutory authority
-must be clearly marked with the specific authority that authorizes the redaction.
+ (b) Such challenges are encouraged, and expected, and should be forwarded through
+the appropriate channels to the office of primary responsibility.
 
- e. The mandatory declassification review process shall provide for administrative appeal in
-cases where the review results in the information remaining classified. The requester shall be
-notified of the results of the review and of the right to appeal, within 60 days of receipt, the
-denial of declassification. If the requester files an appeal, the DoD Component appellate
+ (c) Pending final decision, handle and protect the information at its current
+classification level or at the recommended change level, whichever is higher.
 
-authority shall make a determination within 60 working days following receipt. If additional
-time is required to make a determination, the appellate authority shall notify the requestor of the
-additional time needed and provide the reason for the extension. If the appeal is denied, the
-requester shall be notified of the right to appeal the denial to the ISCAP.
+ (d) Challenges should include sufficient description to permit identification of the
+specific information under challenge with reasonable effort.
 
- f. Requesters may be charged fees for processing their requests in accordance with the
-schedule of fees in Volume 11 A of DoD 7000.14-R (Reference (bj)).
+ (e) Challenges should include detailed justification outlining why the information is
+improperly or unnecessarily classified.
+
+ (2) Establish a system for processing, tracking, and recording formal challenges to
+classification, including administrative appeals of classification decisions, and ensure that DoD
+Component personnel are made aware of the established procedures for classification challenges.
+
+ (3) Provide an opportunity for review of the information by an impartial official or panel.
 

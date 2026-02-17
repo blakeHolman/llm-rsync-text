@@ -1,51 +1,41 @@
-(x) DoD Instruction 8550.01, “DoD Internet Services and Internet-Based Capabilities,”
- September 11, 2012
-(y) DoD Directive 5230.11, “Disclosure of Classified Military Information to Foreign
- Governments and International Organizations,” June 16, 1992
-(z) DoD Directive 5230.20, “Visits and Assignments of Foreign Nationals,” June 22, 2005
-(aa) DoD Instruction 5200.08, “Security of DoD Installations and Resources and the DoD
- Physical Security Review Board (PSRB),” December 10, 2005, as amended
-(ab) DoD Instruction 5220.22, “National Industrial Security Program (NISP),” March 18, 2011
-(ac) Executive Order 12968, “Access to Classified Information,” August 2, 1995, as amended
-(ad) Intelligence Community Directive 703, “Protection of Classified National intelligence,
- Including Sensitive Compartmental Information (SCI),” June 21 2013 2
-(ae) DoD Instruction 8500.01, “Cybersecurity,” March 14, 2014
-(af) Sections 3021, 3141, 3142, 3143, 3144, 1801(p) and 2673 of title 50, United States Code
-(ag) Section 1011 of Public Law 108-458, “Intelligence Reform and Terrorism Prevention Act
- of 2004,” December 17, 2004
-(ah) Executive Order 12333, “United States Intelligence Activities,” December 4, 1981, as
+(a) DoD Directive 5143.01, “Under Secretary of Defense for Intelligence and Security
+ (USD(I&S)),” October 24, 2014, as amended
+(b) DoD Instruction 5200.01, “DoD Information Security Program and Protection of Sensitive
+ Compartmented Information (SCI),” April 21, 2016
+(c) DoD 5200.1-R, “Information Security Program,” January 14, 1997 (hereby cancelled)
+(d) Executive Order 13526, “Classified National Security Information,” December 29, 2009
+(e) Executive Order 13556, “Controlled Unclassified Information,” November 4, 2010
+(f) Parts 2001 and 2002 of title 32, Code of Federal Regulations
+(g) DoD O-5200.1-I, “Index of Security Classification Guides (U),” September 1, 1996 (hereby
+ cancelled)
+(h) Directive-Type Memorandum 04-010, “Interim Information Security Guidance,” April 16,
+ 2004 (hereby cancelled)
+(i) Directive-Type Memorandum 11-004, “Immediate Implementation Provisions of Executive
+ Order 13526, “Classified National Security Information,” April 26, 2011 (hereby cancelled)
+(j) DoD Manual 5105.21, Volumes 1 - 3, “Sensitive Compartmented Information (SCI)
+ Administrative Security Manual,” October 19, 2012
+(k) DoD Manual 8910.01, Volume 1,“DoD Information Collections Manual: Procedures for
+ DoD Internal Information Collections,” June 30, 2014, as amended
+(l) Section 2723 of title 10, United States Code
+(m) DoD Directive 5210.50, “Management of Serious Security Incidents Involving Classified
+ Information,” October 27, 2014
+(n) DoD Directive 5205.16, “The DoD Insider Threat Program,” September 30, 2014, as
  amended
-(ai) Part 1045 of title 10, Code of Federal Regulations
-(aj) DoD Directive 5144.02, “DoD Chief Information Officer (DoD CIO),”November 21, 2014,
- as amended
-(ak) National Security Directive 42, “National Policy for the Security of National Security
- Telecommunications and Information Systems,” July 5, 1990 3
-(al) DoD Instruction 3305.13, “DoD Security Education, Training, and Certification,” February
- 13, 2014
-(an) National Security Agency/Central Security Service Policy Manual 3-16, “Control of
- Communications Security (COMSEC) Material,” August 5, 2005 4
-(ao) DoD Instruction 1100.22, “Policy and Procedures for Determining Workforce Mix,”
- April 12, 2010, as amended
-(ap) Office of Federal Procurement Policy Letter 11-01, “Performance of Inherently
- Governmental and Critical Functions,” September 12, 2011
-(aq) Section 2011, et seq, of title 42, United States Code (also known as “The Atomic Energy
- Act of 1954, as amended”)
-(ar) DoD Directive 5210.48, “Credibility Assessment (CA) Program,” April 24, 2015, as
- amended
-(as) DoD Instruction 5210.02, “Access to and Dissemination of Restricted Data and Formerly
- Restricted Data,” June 3, 2011, as amended
-(at) DoD Instruction 5205.11, “Management, Administration, and Oversight of DoD Special
- Access Programs (SAPs),” February 6, 2013
-(au) Chairman of the Joint Chiefs of Staff Instruction 3231.01B, “Safeguarding Nuclear
- Command and Control Extremely Sensitive Information,” June 21, 2006 5
-
-2
- Available from the Office of the Director of National Intelligence.
-3
- Available on SIPRNET at http://www.iad.nsa.smil.mil/resources/library/natl_pols_dirs_orders_section/index.cfm.
-4
- CUI document, available to authorized users. Contact the NSA/CSS Office of Corporate Policy (DJP1) for
-assistance.
-5
- This document is CUI. It is available to authorized recipients at https://ca.dtic.mil/cjcs_directives/index.htm
+(o) Joint Under Secretary of Defense for Intelligence, DoD Chief Information Officer, and
+ Commander, United States Strategic Command Memorandum, “Effective Integration of
+ Cyber and Traditional Security Efforts,” March 31, 2014
+(p) DoD Directive 5111.1, “Under Secretary of Defense for Policy (USD(P)),”
+ December 8, 1999
+(q) DoD Directive 5205.07, “Special Access Program (SAP) Policy,” July 1, 2010
+(r) DoD Inspector General Report DODIG-2013-142, “DoD Evaluation of Over-Classification
+ of National Security Information,” September 30, 2013
+(s) DoD 5200.2-R, “Personnel Security Program,” January 1987, as amended
+(t) DoD Directive 5100.55, “United States Security Authority for North Atlantic Treaty
+ Organization Affairs (USSAN),” February 27, 2006
+(u) United States Security Authority for NATO Affairs Instruction 1-07, “Implementation of
+ North Atlantic Treaty Organization (NATO) Security Requirements,” April 5, 2007 1
+(v) DoD Directive 5230.09, “Clearance of DoD Information for Public Release,”
+ August 22, 2008, as amended
+(w) DoD Instruction 5230.29, “Security and Policy Review of DoD Information for Public
+ Release,” August 13, 2014, as amended
 

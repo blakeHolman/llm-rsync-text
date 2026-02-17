@@ -1,67 +1,36 @@
- f. Infrequently, different sources of classification guidance may specify different
-classification for the same information. When such inconsistencies are encountered, the
-derivative classifier must contact the applicable OCA(s) for resolution of the inconsistency.
+ (4) NATO Control Point Officer. In accordance with Reference (t), the Secretary of the
+Army operates the Central U.S. Registry (CUSR), the main receiving and dispatching element
+for NATO information in the U.S. Government. The activity NATO Control Point Officer and
+any designated alternate(s) ensure that NATO information is correctly controlled and accounted
+for and that NATO security procedures specified in Reference (u) are followed. The CUSR
+manages the U.S. Registry system of subregistries, communications centers, and control points to
+maintain accountability of NATO classified information and it conducts inspections of the
+associated security processes and procedures. Further information can be found at
+http://www.cusr.army.mil.
 
-Pending determination, the document or material containing the information shall be protected at
-the highest level of classification specified by the sources.
+ (5) SSO. An SSO is to be designated by the Senior Intelligence Official for any activity
+that is accredited for and authorized to receive, use, and store SCI. The activity SSO is
+responsible, in accordance with References (j) and (ad), for the day-to-day security management,
+operation, implementation, use, and dissemination of SCI within the activity.
 
-5. DURATION OF CLASSIFICATION. Every time a classified document is created, a
-determination must be made regarding how long the information is to be protected (i.e., when the
-information will lose its sensitivity and no longer merit or qualify for classification). This is an
-essential part of the classification process. For derivatively classified information, the most
-restrictive declassification instruction (i.e., the one that specifies the longest duration of
-classification) must be carried forward from the source document(s), security classification
-guide(s) or other classification guidance provided by the OCA. Specific guidance on
-determining the most restrictive instruction is provided in Enclosure 3 of Volume 2.
+ (6) SAP Security Officer. In accordance with the requirements of Reference (q), a SAP
+security officer is to be designated for any activity that is accredited for and authorized to
+receive, use, and store SAP information.
 
-6. CLASSIFICATION OF ACQUISITION INFORMATION. Classifying information involved
-in the DoD acquisition process shall conform to the requirements of DoDD 5000.01 (Reference
-(az)) and DoDI 5000.02 (Reference (ba)), as well as this enclosure. Security classification
-guides should be updated to include classified critical program information identified as part of
-the program protection planning process required by DoDI 5200.39 (Reference (bb)).
+ (7) Information Systems Security Officials. Information systems security officials (e.g.,
+AO, ISSM, and information systems security officer) manage and oversee the DoD IT
+infrastructure (i.e., computer systems and networks). As computers are found everywhere within
+the Department of Defense, close coordination with these officials regarding implementation of
+security measures and procedures is imperative.
 
-7. CLASSIFICATION OF INFORMATION RELEASED TO THE PUBLIC
+ (8) CI and OPSEC. The activity’s information security program must also be closely
+coordinated and aligned with the DoD Component’s CI and OPSEC functions in order to
+maintain the security essential to warfighter and mission success.
 
- a. Classified Information Released Without Proper Authority
-
- (1) Classified information that has been released to the public without proper authority
-(e.g., media leak, data spill) remains classified. It may be declassified upon such a determination
-by the appropriate OCA. Enclosure 6 of Volume 3 of this Manual identifies issues to be
-considered when making the decision. When the determination is made that the information will
-remain classified, the appropriate OCA will notify known authorized holders accordingly and
-provide the following marking guidance to be used in the event the information is not marked:
-
- (a) Overall level of classification.
-
- (b) Portion markings.
-
- (c) Identity, by name or personal identifier and position, of the OCA.
-
- (d) Declassification instructions.
-
- (e) Concise reason for classification.
-
- (f) Date the action was taken.
-
- (2) Holders of the information shall take administrative action, as needed, to apply
-markings and controls. DoD personnel shall not publicly acknowledge the release of classified
-
-information and must be careful not to make any statement or comment that confirms the
-accuracy of or verifies the information requiring protection.
-
- b. Reclassification of Information Declassified and Released to the Public Under Proper
-Authority
-
- (1) Information that has been declassified and released to the public under proper
-authority may be reclassified only when:
-
- (a) The information may be reasonably recoverable without bringing undue attention
-to the information, which means that:
-
- 1. Most individual recipients or holders are known and can be contacted and all
-forms of the information to be reclassified can be retrieved from them.
-
- 2. If the information has been made available to the public via means such as
-U.S. Government archives or reading rooms, it can be or has been withdrawn from public access
-without significant media or public attention or notice.
+7. USE OF CONTRACTORS IN SECURITY ADMINISTRATION. In accordance with
+DoDI 1100.22 (Reference (ao)) and Office of Federal Procurement Policy Letter 11-01
+(Reference (ap)), there are certain critical, closely associated with inherently governmental, or
+otherwise exempt functions and activities that cannot or should not be performed by a contractor.
+The DoD Components shall be careful not to outsource security functions that are inherently
+governmental.
 

@@ -1,52 +1,38 @@
- f. Integral File Block. Classified records within an integral file block that are otherwise
-subject to automatic declassification in accordance with this section shall not be automatically
-declassified until December 31 of the year that is 25 years from the date of the MOST RECENT
-record or the date specified by the exemption instruction of the most recent exempted record,
-whichever is later, within the file block. For purposes of automatic declassification, integral file
-blocks shall contain only records dated within 10 years of the oldest record in the file block.
+ e. Take appropriate and reasonable steps, including consulting a security classification guide
+or requesting assistance from the appropriate OCA, to resolve doubts or apparent conflicts about
+the classification, level of classification, and duration of classification. In cases of apparent
+conflict between a security classification guide and a classified source document regarding a
+discrete item of information, the instructions in the security classification guide shall take
+precedence. Where required markings are missing or omitted from source documents, consult
+the OCA, appropriate security classification guide, or other classification guidance for
+application of the omitted markings.
 
- g. Delays of Automatic Declassification. The following lists the scenarios for which
-automatic declassification may be delayed.
+4. PROCEDURES FOR DERIVATIVE CLASSIFICATION
 
- (1) Media That Is Difficult or Costly to Review. Before the records are subject to
-automatic declassification, a DoD Component Head or senior agency official may delay
-automatic declassification for up to 5 additional years for classified information contained in
-media that make a review for possible declassification more difficult or costly. Prior to taking
-such action, officials shall consult with the NDC Director, either through the Component
-declassification plan or by memorandum. The Heads of the Military Departments or their senior
-agency official shall consult with the NDC Director directly and provide an information copy to
-the Deputy Under Secretary of Defense Intelligence and Security (DUSD(I&S)). Other DoD
-Component Heads or their senior agency official shall consult with the NDC Director through
-DUSD(I&S).
+ a. Derivative classifiers shall carefully analyze the material they are classifying to determine
+what information it contains or reveals and shall evaluate that information against the
+instructions provided by the classification guidance or the markings on source documents.
 
- (a) When determined by NARA or jointly determined by NARA and the Department
-of Defense, automatic declassification may be delayed for:
+ b. Drafters of derivatively classified documents shall portion-mark their drafts and keep
+records of the sources they use, to facilitate derivative classification of the finished product.
 
- 1. Records requiring extraordinary preservation or conservation treatment, to
-include reformatting, to preclude damage to the records by declassification processing.
+ c. When material is derivatively classified based on “multiple sources” (i.e., more than one
+security classification guide, classified source document, or combination thereof), the derivative
+classifier shall compile a list of the sources used. This list shall be included in or attached to the
+document.
 
- 2. Records that pose a potential menace to health, life, or property due to
-contamination by a hazardous substance.
+ d. Duration of classification for derivatively classified documents shall be determined in
+accordance with section 13 of this enclosure and applied in accordance with Volume 2 of this
+Manual. The instructions shall not be automatically copied from source documents without
+consideration of adjustments that may be required (e.g., due to use of multiple sources, changes
+in policy, changes in classification guidance).
 
- 3. Electronic media if the media is subject to issues of software or hardware
-obsolescence or degraded data.
+ e. If extracting information from a document or section of a document classified by
+compilation, the derivative classifier shall consult the explanation on the source document to
+determine the appropriate classification. If that does not provide sufficient guidance, the
+derivative classifier shall contact the originator of the source document for assistance.
 
- (b) Information contained in such media that has been referred shall be automatically
-declassified 5 years from the date of notification or 30 years from the date of origination of the
-media, whichever is longer, unless the information has been properly exempted.
-
- (2) Newly Discovered Records. The Director, ISOO, must be consulted whenever a
-DoD Component Head determines there is a need to delay automatic declassification for newly
-discovered records that were inadvertently not reviewed prior to the effective date of automatic
-declassification. Such consultation shall occur not later than 90 days from discovery of the
-records. Heads of the Military Departments or their senior agency official will notify ISOO
-directly and provide an information copy to DUSD(I&S). Other DoD Component Heads or their
-senior agency official will notify ISOO through the DUSD(I&S). The notification should
-identify the records and their volume, explain the circumstances leading to discovery of the
-missed records, and provide the anticipated date for declassification. A DoD Component has up
-to 3 years from the date of discovery to make a declassification, exemption, or referral
-determination. Referral to other DoD Components or Federal entities with identified interests or
-equities shall be in accordance with subparagraph 12.g.(3) and section 15 of this enclosure.
-
- (3) Referred Records
+ f. Infrequently, different sources of classification guidance may specify different
+classification for the same information. When such inconsistencies are encountered, the
+derivative classifier must contact the applicable OCA(s) for resolution of the inconsistency.
 

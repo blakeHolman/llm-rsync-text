@@ -1,76 +1,44 @@
- (5) Making foreign disclosure decisions pursuant to Reference (y).
+ a. For paper documents and other physical media (e.g., disk drives and removable computer
+media), maintain a system of accountability (e.g., registry) to record the receipt, reproduction,
+transfer, transmission, downgrading, declassification, and destruction of Top Secret information,
+that is not SAP, SCI, and other special types of classified information.
 
- (6) Making public release decisions pursuant to Reference (v).
+ b. Ensure that inventories of Top Secret information are conducted at least annually or more
+frequently when circumstances warrant.
 
- (7) Committing to expenditure of U.S. Government funds pursuant to References ((ao)
-and (ap)).
+10. SENIOR INTELLIGENCE OFFICIALS. The senior intelligence officials, including those
+who are heads of elements of the Intelligence Community and those designated according to
+paragraph 6.c of this enclosure, shall:
 
- (8) Conducting investigations of, or determining fault in, security incidents involving
-U.S. Government or other contractor personnel. (Contractors may conduct preliminary inquiries
-to determine if a security incident is a violation or an infraction.)
+ a. In accordance with Reference (b):
 
- (9) Giving final approval or executing documents for filing in litigation if documents
-assert an official position of the Department of Defense, any DoD Component, or any other
-Federal agency.
+ (1) Protect intelligence and intelligence sources and methods from unauthorized
+disclosure consistent with the policies of the DNI and, where applicable, the requirements of this
+Manual and Reference (j).
 
-8. USE OF FOREIGN NATIONALS IN SECURITY ADMINISTRATION. Foreign nationals
-may not engage in the following DoD security administrative activities:
+ (2) Administer and oversee, within their respective organizations, those aspects of the
+SCI security programs not delegated to Defense Intelligence Agency (DIA) in accordance with
+Reference (b).
 
- a. Approving and issuing security policies and procedures.
+ (3) Develop DoD Component-specific implementation guidance as necessary for the
+protection of SCI.
 
- b. Making original classification decisions, or rendering classification determinations
-regarding classified information that is improperly or incompletely marked. Correcting improper
-markings when the appropriate classification is not in question is not considered rendering a
-classification determination.
+ b. Cooperate and coordinate with the Component senior agency official as appropriate to
+achieve a harmonized and cohesive information security program within the DoD Component.
 
- c. Deciding to downgrade or declassify information. Adhering to security markings on
-information or guidance stated in an appropriate security classification or declassification guide
-is not considered a downgrading or declassification decision.
+ c. Where required by this Manual, provide the USD(I&S) with copies of requests for
+exceptions and waivers of information security policies, security incident reports, and other
+information submitted to the DNI.
 
- d. Deciding challenges to classification or any appeals.
+ d. Designate, as required by Intelligence Community Directive 703 (Reference (ad)) and
+Reference (j), an activity SSO to be responsible for the day-to-day security management,
+operation, implementation, use, and dissemination of SCI within the activity and, as needed,
+alternate SSO(s). Such designations shall be made for any activity that is accredited for and
+authorized to receive, use, and store SCI and shall be in writing.
 
- e. Making foreign disclosure decisions pursuant to Reference (y).
+ (1) All SCI matters shall be referred to the SSO.
 
- f. Making public release decisions pursuant to Reference (v).
-
- g. Committing to expenditure of U.S. Government funds. Guidelines within international or
-host nation agreements or treaties may provide exceptions to this area of security administration.
-
- h. Conducting investigations of, or determining fault in, security incidents involving U.S.
-Government or contractor personnel.
-
- i. Giving final approval or executing documents for filing in litigation, if documents assert
-an official position of the Department of Defense, any DoD Component, or any other federal
-agency.
-
- j. Escorting personnel, except where the foreign national is employed by DoD and the
-foreign national escorts personnel:
-
- (1) As a specific function of his or her assigned duties.
-
- (2) Only to areas where U.S. personnel are embedded within locations or facilities that
-are outside the continental United States.
-
- (3) Only in situations not detrimental to the interests of the DoD or the U.S.
-Government.
-
- k. Accessing combinations at the entrance and exit doors or security containers that contain
-non-releasable classified information or non-releasable CUI.
-
- l. Accessing codes or functions associated with the intrusion detection system or master
-codes associated with access control devices.
-
- m. Accessing IT equipment, such as computers, printers, or fax equipment used to process
-non-releasable classified information or non-releasable CUI.
-
- n. Constructing or modifying areas where classified information will be processed, unless
-cleared U.S. national civil engineers provide oversight to all new construction and modifications
-of facilities where classified information will be processed.
-
- o. Accessing SCIFs, except as stated in Volume 2 of Reference (j).
-
-9. CLASSIFICATION AUTHORITY. Except for information subject to section 2011 et seq., of
-title 42, U.S.C. (also known and hereinafter referred to as “The Atomic Energy Act of 1954, as
-amended” (Reference (aq)), Reference (d) and this Manual provide the only authority for
-applying security classification to information within the Department of Defense.
+ (2) The SSO may be designated as the activity security manager if the grade
+requirements for the position are met; however, the activity security manager cannot function as
+the SSO unless so designated by the cognizant senior intelligence official.
 
