@@ -167,9 +167,7 @@ def predict(old, target_len=None):
     if PREFIX_KV is None or PREFIX_TEXT is None or PREFIX_TOKENS is None:
         raise RuntimeError("Prefix KV not initialized. Call init_prefix_kv() first.")
 
-    # Dynamic suffix per request
-    suffix = f"{old}\nAfter:\n"
-
+    suffix = f"{old}\nEdited text:\n"
     max_ctx = _model_max_ctx()
 
     enc = TOKENIZER(
@@ -181,19 +179,30 @@ def predict(old, target_len=None):
     suffix_ids = enc["input_ids"].to(DEVICE)
     suffix_mask = enc["attention_mask"].to(DEVICE)
 
-    # Combined prompt length is prefix + suffix (prefix is virtual via KV cache)
-    prompt_len_total = PREFIX_TOKENS + suffix_ids.size(1)
+    bsz, suffix_len = suffix_ids.shape
+
+    # --- IMPORTANT: build full attention mask for (prefix + suffix) ---
+    full_mask = torch.ones((bsz, PREFIX_TOKENS + suffix_len),
+                           dtype=suffix_mask.dtype, device=DEVICE)
+    # if suffix has any padding, preserve it
+    full_mask[:, PREFIX_TOKENS:] = suffix_mask
+
+    # --- IMPORTANT: offset positions by prefix length ---
+    position_ids = torch.arange(
+        PREFIX_TOKENS, PREFIX_TOKENS + suffix_len, device=DEVICE
+    ).unsqueeze(0).expand(bsz, -1)
+
+    # Combined prompt length is prefix + suffix
+    prompt_len_total = PREFIX_TOKENS + suffix_len
     available_for_gen = max_ctx - prompt_len_total
     if available_for_gen <= 0:
         print("Warning: no room left for generation; returning empty prediction.")
         return ""
 
-    # Decide how many tokens to generate
     if target_len is not None:
         approx_target_tokens = target_len + 64
     else:
-        old_tokens = len(TOKENIZER(old).input_ids)
-        approx_target_tokens = old_tokens + 64
+        approx_target_tokens = suffix_len + 64  # cheap proxy; avoids re-tokenizing old
 
     approx_target_tokens = max(32, approx_target_tokens)
     max_new = min(approx_target_tokens, available_for_gen)
@@ -201,9 +210,10 @@ def predict(old, target_len=None):
     with torch.no_grad():
         outputs = MODEL.generate(
             input_ids=suffix_ids,
-            attention_mask=suffix_mask,
-            past_key_values=PREFIX_KV,      # <<< reuse cached prefix
-            use_cache=True,                # <<< keep cache on for fast decode
+            attention_mask=full_mask,        # <<< full length
+            position_ids=position_ids,       # <<< offset positions
+            past_key_values=PREFIX_KV,       # <<< cached prefix
+            use_cache=True,
             max_new_tokens=max_new,
             do_sample=False,
             num_beams=1,
@@ -211,8 +221,7 @@ def predict(old, target_len=None):
             pad_token_id=TOKENIZER.eos_token_id,
         )
 
-    # outputs contains (suffix + generated). Prefix is represented only by past_key_values.
-    suffix_len = suffix_ids.size(1)
+    # outputs contains (suffix + generated); prefix is virtual via cache
     new_tokens = outputs[0, suffix_len:]
     return TOKENIZER.decode(new_tokens, skip_special_tokens=True)
 
