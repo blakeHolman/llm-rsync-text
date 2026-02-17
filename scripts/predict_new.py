@@ -142,23 +142,14 @@ def init_prefix_kv(prev_old, prev_new):
 
     PREFIX_TEXT = _build_prefix(prev_old, prev_new)
 
-    enc = TOKENIZER(
-        PREFIX_TEXT,
-        return_tensors="pt",
-        truncation=True,
-        max_length=_model_max_ctx(),
-    )
+    enc = TOKENIZER(PREFIX_TEXT, return_tensors="pt", truncation=True, max_length=_model_max_ctx())
     prefix_ids = enc["input_ids"].to(DEVICE)
     prefix_mask = enc["attention_mask"].to(DEVICE)
 
     with torch.no_grad():
-        out = MODEL(
-            input_ids=prefix_ids,
-            attention_mask=prefix_mask,
-            use_cache=True,
-        )
+        out = MODEL(input_ids=prefix_ids, attention_mask=prefix_mask, use_cache=True)
 
-    PREFIX_KV = out.past_key_values
+    PREFIX_KV = out.past_key_values   # Cache object
     PREFIX_TOKENS = prefix_ids.size(1)
 
 
@@ -170,60 +161,79 @@ def predict(old, target_len=None):
     suffix = f"{old}\nEdited text:\n"
     max_ctx = _model_max_ctx()
 
-    enc = TOKENIZER(
-        suffix,
-        return_tensors="pt",
-        truncation=True,
-        max_length=max_ctx,
-    )
-    suffix_ids = enc["input_ids"].to(DEVICE)
-    suffix_mask = enc["attention_mask"].to(DEVICE)
+    # Tokenize suffix (no truncation ideally; your chunking should ensure it fits)
+    enc = TOKENIZER(suffix, return_tensors="pt", truncation=True, max_length=max_ctx)
+    input_ids = enc["input_ids"].to(DEVICE)          # (1, suffix_len)
+    attn_mask = enc["attention_mask"].to(DEVICE)     # (1, suffix_len)
 
-    bsz, suffix_len = suffix_ids.shape
-
-    # --- IMPORTANT: build full attention mask for (prefix + suffix) ---
-    full_mask = torch.ones((bsz, PREFIX_TOKENS + suffix_len),
-                           dtype=suffix_mask.dtype, device=DEVICE)
-    # if suffix has any padding, preserve it
-    full_mask[:, PREFIX_TOKENS:] = suffix_mask
-
-    # --- IMPORTANT: offset positions by prefix length ---
-    position_ids = torch.arange(
-        PREFIX_TOKENS, PREFIX_TOKENS + suffix_len, device=DEVICE
-    ).unsqueeze(0).expand(bsz, -1)
-
-    # Combined prompt length is prefix + suffix
+    bsz, suffix_len = input_ids.shape
     prompt_len_total = PREFIX_TOKENS + suffix_len
     available_for_gen = max_ctx - prompt_len_total
     if available_for_gen <= 0:
-        print("Warning: no room left for generation; returning empty prediction.")
         return ""
 
+    # Decide decode length
     if target_len is not None:
-        approx_target_tokens = target_len + 64
+        max_new = min(max(32, target_len + 64), available_for_gen)
     else:
-        approx_target_tokens = suffix_len + 64  # cheap proxy; avoids re-tokenizing old
+        # cheap proxy: suffix_len is close to old length; avoids re-tokenizing old
+        max_new = min(max(32, suffix_len + 64), available_for_gen)
 
-    approx_target_tokens = max(32, approx_target_tokens)
-    max_new = min(approx_target_tokens, available_for_gen)
+    # ---- Step 1: run the suffix through the model using the cached prefix ----
+    # Build a full attention mask for prefix+suffix
+    full_mask = torch.ones((bsz, PREFIX_TOKENS + suffix_len), dtype=attn_mask.dtype, device=DEVICE)
+    full_mask[:, PREFIX_TOKENS:] = attn_mask
+
+    # Position ids for suffix must start at PREFIX_TOKENS
+    position_ids = torch.arange(PREFIX_TOKENS, PREFIX_TOKENS + suffix_len, device=DEVICE).unsqueeze(0)
+
+    # IMPORTANT: clone the cache per request so requests don't contaminate each other
+    past = PREFIX_KV
+    if hasattr(past, "clone"):
+        past = past.clone()
 
     with torch.no_grad():
-        outputs = MODEL.generate(
-            input_ids=suffix_ids,
-            attention_mask=full_mask,        # <<< full length
-            position_ids=position_ids,       # <<< offset positions
-            past_key_values=PREFIX_KV,       # <<< cached prefix
+        out = MODEL(
+            input_ids=input_ids,
+            attention_mask=full_mask,
+            position_ids=position_ids,
+            past_key_values=past,
             use_cache=True,
-            max_new_tokens=max_new,
-            do_sample=False,
-            num_beams=1,
-            eos_token_id=TOKENIZER.eos_token_id,
-            pad_token_id=TOKENIZER.eos_token_id,
         )
 
-    # outputs contains (suffix + generated); prefix is virtual via cache
-    new_tokens = outputs[0, suffix_len:]
-    return TOKENIZER.decode(new_tokens, skip_special_tokens=True)
+    past = out.past_key_values
+
+    # ---- Step 2: greedy decode token-by-token (no generate()) ----
+    generated = []
+    next_token = out.logits[:, -1, :].argmax(dim=-1, keepdim=True)  # (1,1)
+
+    cur_len_total = PREFIX_TOKENS + suffix_len
+
+    for _ in range(max_new):
+        tok = next_token.item()
+        if tok == TOKENIZER.eos_token_id:
+            break
+
+        generated.append(tok)
+
+        # update masks/positions for the next single token
+        cur_len_total += 1
+        step_mask = torch.ones((1, cur_len_total), dtype=full_mask.dtype, device=DEVICE)
+        step_pos = torch.tensor([[cur_len_total - 1]], device=DEVICE)
+
+        with torch.no_grad():
+            out = MODEL(
+                input_ids=next_token,           # (1,1)
+                attention_mask=step_mask,
+                position_ids=step_pos,
+                past_key_values=past,
+                use_cache=True,
+            )
+
+        past = out.past_key_values
+        next_token = out.logits[:, -1, :].argmax(dim=-1, keepdim=True)
+
+    return TOKENIZER.decode(generated, skip_special_tokens=True)
 
 
 def _model_max_ctx():
