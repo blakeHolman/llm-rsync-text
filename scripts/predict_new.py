@@ -129,12 +129,14 @@ def build_rule_extraction_prompt(prev_old: str, prev_new: str) -> str:
         "that transform BEFORE into AFTER.\n"
         "\n"
         "Requirements:\n"
-        "- List every surface form variant (acronyms, ALL-CAPS, Title Case, possessives)\n"
-        "- Order from most specific to least specific (longest phrase first)\n"
+        "- For each changed phrase, list ALL case variants that appear in the text\n"
+        "- NEVER output a rule where before and after are identical\n"
         "- Only include rules evidenced by the diff\n"
+        "- Order from most specific (longest) to least specific\n"
         "- Format each rule exactly as: \"BEFORE\" -> \"AFTER\"\n"
-        "- Output nothing else — no explanation, no commentary\n"
+        "- Output nothing else\n"
     )
+
 
     user = (
         f"BEFORE:\n{prev_old}\n\n"
@@ -240,44 +242,40 @@ def predict(old, target_len=None):
 
     rules = PREFIX_TEXT  # list of (before, after) tuples
 
-    # Deterministic pre-pass — handles the easy cases instantly
+    # Deterministic pre-pass — handles the easy cases instantly, no LLM cost
     pre_applied = apply_rules_deterministic(old, rules)
 
-    # Build Stage 2 prompt from pre-applied text
-    # (LLM only needs to fix what deterministic pass missed)
-    full_text = build_rewrite_prompt(rules, pre_applied)
+    # If deterministic pass already produced a perfect result, skip LLM entirely
+    # (won't happen often but worth short-circuiting)
+    if pre_applied == old and not rules:
+        return old
 
-    print(full_text)
+    # Build Stage 2 prompt: LLM only needs to fix what deterministic pass missed
+    full_text = build_rewrite_prompt(rules, pre_applied)
 
     max_ctx = _model_max_ctx()
 
-    # Decide decode length
-    # (same logic you already had)
+    # Estimate decode length based on pre_applied (closer to final than raw old)
     if target_len is not None:
         approx = target_len + 64
     else:
-        approx = len(TOKENIZER(old).input_ids) + 64
+        approx = len(TOKENIZER(pre_applied).input_ids) + 64
     max_new = max(32, approx)
-
-    # Build one full prompt and let generate() handle cache internally.
-    full_text = PREFIX_TEXT + _chat_user(old) + _chat_assistant_gen()
-
-    #print(f"Prompt:\n {full_text}")
 
     enc = TOKENIZER(
         full_text,
         return_tensors="pt",
-        add_special_tokens=False,     # IMPORTANT for Phi chat tokens you already embedded
+        add_special_tokens=False,  # chat tokens already embedded by build_rewrite_prompt
         truncation=True,
         max_length=max_ctx,
     ).to(DEVICE)
 
-    # Ensure we don't ask to generate beyond remaining context
     prompt_len = enc["input_ids"].size(1)
     available = max_ctx - prompt_len
     if available <= 0:
-        print("Warning: no room left for generation; returning empty prediction.")
-        return ""
+        print("Warning: no room left for generation; returning pre-applied deterministic result.")
+        return pre_applied  # still useful, better than empty string
+
     max_new = min(max_new, available)
 
     with torch.no_grad():
