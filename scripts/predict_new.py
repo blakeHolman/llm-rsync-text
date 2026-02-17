@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # scripts/predict_new.py
 
-import argparse, os, json, sys, csv, base64
+import argparse, os, json, sys, csv, base64, copy
 from pathlib import Path
 from residuals import get_residual
 from pick_best_example import pick_best_example
@@ -40,6 +40,7 @@ RESIDUAL_FILE = "work/residuals.jsonl"
 PREFIX_TEXT = None
 PREFIX_KV = None
 PREFIX_TOKENS = None
+PREFIX_MASK = None
 
 # Open old, new dataset. Pass old to LLM
 def _open_data(path, ex_id, len_prompt=False, stop_after=sys.maxsize):
@@ -148,7 +149,7 @@ def init_prefix_kv(prev_old, prev_new):
     Cache KV for the static prefix once. This speeds up many repeated predictions
     using the same exemplar.
     """
-    global PREFIX_TEXT, PREFIX_KV, PREFIX_TOKENS
+    global PREFIX_TEXT, PREFIX_KV, PREFIX_TOKENS, PREFIX_MASK
 
     PREFIX_TEXT = _build_prefix(prev_old, prev_new)
 
@@ -160,6 +161,8 @@ def init_prefix_kv(prev_old, prev_new):
     )
     prefix_ids = enc["input_ids"].to(DEVICE)
     prefix_mask = enc["attention_mask"].to(DEVICE)
+
+    PREFIX_MASK = prefix_mask
 
     with torch.no_grad():
         out = MODEL(
@@ -205,8 +208,9 @@ def predict(old, target_len=None):
     enc = TOKENIZER(
         suffix_text,
         return_tensors="pt",
+        add_special_tokens=False,                 # <<< CRITICAL
         truncation=True,
-        max_length=max_ctx,
+        max_length=max_ctx - PREFIX_TOKENS,       # <<< also important
     )
     input_ids = enc["input_ids"].to(DEVICE)          # (1, suffix_len)
     attn_mask = enc["attention_mask"].to(DEVICE)     # (1, suffix_len)
@@ -224,15 +228,11 @@ def predict(old, target_len=None):
     else:
         max_new = min(max(32, suffix_len + 64), available_for_gen)
 
-    # IMPORTANT: clone cache so each request starts from the same prefix state
-    past = PREFIX_KV
-    if hasattr(past, "clone"):
-        past = past.clone()
+    past = copy.deepcopy(PREFIX_KV)
 
     # ---- Step 1: run the suffix through the model using cached prefix ----
-    full_mask = torch.ones((bsz, PREFIX_TOKENS + suffix_len), dtype=attn_mask.dtype, device=DEVICE)
-    full_mask[:, PREFIX_TOKENS:] = attn_mask
-
+    full_mask = torch.cat([PREFIX_MASK, attn_mask], dim=1)
+    
     position_ids = torch.arange(PREFIX_TOKENS, PREFIX_TOKENS + suffix_len, device=DEVICE).unsqueeze(0)
 
     with torch.no_grad():
