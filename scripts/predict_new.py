@@ -110,28 +110,26 @@ def _open_data(path, ex_id, len_prompt=False, stop_after=sys.maxsize):
 
 
 def _build_prefix(prev_old, prev_new):
-    # Static part of the prompt (same for all predictions)
     """
-    return (
-        "Apply the same kind of edits as in the example.\n"
-        "Copy all lines and change only what is necessary.\n"
-        "Return only the edited text, no explanations.\n\n"
-        "Example (before):\n"
-        f"{prev_old}\n"
-        "Example (after):\n"
-        f"{prev_new}\n\n"
-        "Text to edit:\n"
-    )
+    Build the static prompt prefix using Phi-3 chat formatting.
+    This returns a STRING (not tokenized yet) that ends AFTER the exemplar assistant output.
     """
-    return (
-        "Apply the same kind of edits as the example.\n"
-        "Output only the edited text.\n\n"
-        "Before:\n"
-        f"{prev_old}\n"
-        "After:\n"
-        f"{prev_new}\n\n"
-        "Before:\n"
+    messages = [
+        {"role": "system", "content": "You are a text editor. Output ONLY the edited text. No commentary."},
+        {"role": "user", "content": "Edit this text:\n" + prev_old},
+        {"role": "assistant", "content": prev_new},
+        # NOTE: do NOT add the next user turn here if you want the old text to be dynamic.
+        # We'll add "Edit this text:\n" as part of the dynamic suffix, right before `old`.
+    ]
+
+    # Produce the exact <|system|>...<|assistant|> format Phi-3 expects.
+    # add_generation_prompt=False because we are NOT ready to generate yet.
+    return TOKENIZER.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=False,
     )
+
 
 def init_prefix_kv(prev_old, prev_new):
     """
@@ -142,15 +140,26 @@ def init_prefix_kv(prev_old, prev_new):
 
     PREFIX_TEXT = _build_prefix(prev_old, prev_new)
 
-    enc = TOKENIZER(PREFIX_TEXT, return_tensors="pt", truncation=True, max_length=_model_max_ctx())
+    enc = TOKENIZER(
+        PREFIX_TEXT,
+        return_tensors="pt",
+        truncation=True,
+        max_length=_model_max_ctx(),
+    )
     prefix_ids = enc["input_ids"].to(DEVICE)
     prefix_mask = enc["attention_mask"].to(DEVICE)
 
     with torch.no_grad():
-        out = MODEL(input_ids=prefix_ids, attention_mask=prefix_mask, use_cache=True)
+        out = MODEL(
+            input_ids=prefix_ids,
+            attention_mask=prefix_mask,
+            use_cache=True,
+        )
 
-    PREFIX_KV = out.past_key_values   # Cache object
+    PREFIX_KV = out.past_key_values   # Cache object / DynamicCache
     PREFIX_TOKENS = prefix_ids.size(1)
+
+    print(f"[prefix-kv] cached prefix tokens: {PREFIX_TOKENS}")
 
 
 # Given old data, predict new
@@ -158,11 +167,29 @@ def predict(old, target_len=None):
     if PREFIX_KV is None or PREFIX_TEXT is None or PREFIX_TOKENS is None:
         raise RuntimeError("Prefix KV not initialized. Call init_prefix_kv() first.")
 
-    suffix = f"{old}\nEdited text:\n"
     max_ctx = _model_max_ctx()
 
-    # Tokenize suffix (no truncation ideally; your chunking should ensure it fits)
-    enc = TOKENIZER(suffix, return_tensors="pt", truncation=True, max_length=max_ctx)
+    # Build the dynamic part as a *chat-formatted* user turn + assistant generation cue.
+    # We keep it generic: "Edit this text:" works for any dataset.
+    suffix_messages = [
+        {"role": "user", "content": "Edit this text:\n" + old},
+    ]
+
+    # add_generation_prompt=True will append the "<|assistant|>\n" (or equivalent)
+    # so the model continues by generating only the edited text.
+    suffix_text = TOKENIZER.apply_chat_template(
+        suffix_messages,
+        tokenize=False,
+        add_generation_prompt=True,
+    )
+
+    # Tokenize suffix
+    enc = TOKENIZER(
+        suffix_text,
+        return_tensors="pt",
+        truncation=True,
+        max_length=max_ctx,
+    )
     input_ids = enc["input_ids"].to(DEVICE)          # (1, suffix_len)
     attn_mask = enc["attention_mask"].to(DEVICE)     # (1, suffix_len)
 
@@ -170,27 +197,25 @@ def predict(old, target_len=None):
     prompt_len_total = PREFIX_TOKENS + suffix_len
     available_for_gen = max_ctx - prompt_len_total
     if available_for_gen <= 0:
+        print("Warning: no room left for generation; returning empty prediction.")
         return ""
 
     # Decide decode length
     if target_len is not None:
         max_new = min(max(32, target_len + 64), available_for_gen)
     else:
-        # cheap proxy: suffix_len is close to old length; avoids re-tokenizing old
         max_new = min(max(32, suffix_len + 64), available_for_gen)
 
-    # ---- Step 1: run the suffix through the model using the cached prefix ----
-    # Build a full attention mask for prefix+suffix
-    full_mask = torch.ones((bsz, PREFIX_TOKENS + suffix_len), dtype=attn_mask.dtype, device=DEVICE)
-    full_mask[:, PREFIX_TOKENS:] = attn_mask
-
-    # Position ids for suffix must start at PREFIX_TOKENS
-    position_ids = torch.arange(PREFIX_TOKENS, PREFIX_TOKENS + suffix_len, device=DEVICE).unsqueeze(0)
-
-    # IMPORTANT: clone the cache per request so requests don't contaminate each other
+    # IMPORTANT: clone cache so each request starts from the same prefix state
     past = PREFIX_KV
     if hasattr(past, "clone"):
         past = past.clone()
+
+    # ---- Step 1: run the suffix through the model using cached prefix ----
+    full_mask = torch.ones((bsz, PREFIX_TOKENS + suffix_len), dtype=attn_mask.dtype, device=DEVICE)
+    full_mask[:, PREFIX_TOKENS:] = attn_mask
+
+    position_ids = torch.arange(PREFIX_TOKENS, PREFIX_TOKENS + suffix_len, device=DEVICE).unsqueeze(0)
 
     with torch.no_grad():
         out = MODEL(
@@ -203,27 +228,30 @@ def predict(old, target_len=None):
 
     past = out.past_key_values
 
-    # ---- Step 2: greedy decode token-by-token (no generate()) ----
+    # ---- Step 2: greedy decode token-by-token (avoid generate() cache issues) ----
     generated = []
     next_token = out.logits[:, -1, :].argmax(dim=-1, keepdim=True)  # (1,1)
+
+    # Stop on EOS or <|end|> if present
+    END_ID = TOKENIZER.convert_tokens_to_ids("<|end|>")
+    EOS_ID = TOKENIZER.eos_token_id
 
     cur_len_total = PREFIX_TOKENS + suffix_len
 
     for _ in range(max_new):
         tok = next_token.item()
-        if tok == TOKENIZER.eos_token_id:
+        if tok == EOS_ID or (END_ID is not None and tok == END_ID):
             break
 
         generated.append(tok)
 
-        # update masks/positions for the next single token
         cur_len_total += 1
         step_mask = torch.ones((1, cur_len_total), dtype=full_mask.dtype, device=DEVICE)
         step_pos = torch.tensor([[cur_len_total - 1]], device=DEVICE)
 
         with torch.no_grad():
             out = MODEL(
-                input_ids=next_token,           # (1,1)
+                input_ids=next_token,
                 attention_mask=step_mask,
                 position_ids=step_pos,
                 past_key_values=past,
