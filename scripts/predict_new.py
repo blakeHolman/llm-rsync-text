@@ -132,7 +132,7 @@ def _build_prefix(prev_old, prev_new, subs):
     system = (
         "You are a semantic substitution engine.\n"
         "Change only the words that differ from the example.\n"
-        "You are responsible for changing words like DoD to DoW, Department of Defense to Department of War, etc.\n"
+        "You are responsible for changing all words like DoD to DoW, Department of Defense to Department of War, etc.\n"
         "Output ONLY the rewritten text.\n\n"
     )
 
