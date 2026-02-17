@@ -232,14 +232,14 @@ def predict(old, target_len=None):
 
     # ---- Step 1: run the suffix through the model using cached prefix ----
     full_mask = torch.cat([PREFIX_MASK, attn_mask], dim=1)
-    
-    position_ids = torch.arange(PREFIX_TOKENS, PREFIX_TOKENS + suffix_len, device=DEVICE).unsqueeze(0)
+
+    #position_ids = torch.arange(PREFIX_TOKENS, PREFIX_TOKENS + suffix_len, device=DEVICE).unsqueeze(0)
 
     with torch.no_grad():
         out = MODEL(
             input_ids=input_ids,
             attention_mask=full_mask,
-            position_ids=position_ids,
+            #position_ids=position_ids,
             past_key_values=past,
             use_cache=True,
         )
@@ -265,13 +265,13 @@ def predict(old, target_len=None):
 
         cur_len_total += 1
         step_mask = torch.ones((1, cur_len_total), dtype=full_mask.dtype, device=DEVICE)
-        step_pos = torch.tensor([[cur_len_total - 1]], device=DEVICE)
+        #step_pos = torch.tensor([[cur_len_total - 1]], device=DEVICE)
 
         with torch.no_grad():
             out = MODEL(
                 input_ids=next_token,
                 attention_mask=step_mask,
-                position_ids=step_pos,
+                #position_ids=step_pos,
                 past_key_values=past,
                 use_cache=True,
             )
