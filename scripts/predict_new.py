@@ -129,6 +129,7 @@ def _build_prefix(prev_old, prev_new, subs):
     """
     subs_str = "\n".join([f"- {a} -> {b}" for a, b in subs])
 
+    """
     system = (
         "You are a deterministic semantic rewrite engine.\n"
         "Learn the substitution rules ONLY from the provided example pair (before -> after).\n"
@@ -142,12 +143,19 @@ def _build_prefix(prev_old, prev_new, subs):
         "- After rewriting, scan your output and ensure none of the 'before-side' terms that changed in the example remain.\n"
         "Output ONLY the rewritten text.\n"
     )
-
+    """
+    system = (
+        "You are a deterministic semantic rewrite engine.\n"
+        "Rewrite all instances of DoD as DoW.\n"
+        "Rewrite all instances of Department of Defense as Department of War.\n"
+        "Rewrite all instances of DOD as DOW.\n"
+        "All instances may include substrings and other variations not mentioned.\n\n"
+    )
     # One exemplar turn (user->assistant)
     return (
         _chat_system(system)
-        + _chat_user(prev_old)
-        + _chat_assistant(prev_new)
+        #+ _chat_user(prev_old)
+        #+ _chat_assistant(prev_new)
     )
 
 
