@@ -8,6 +8,8 @@ from typing import Optional, Tuple, Any
 import re
 from collections import Counter
 
+_TOKEN_RE = re.compile(r"[A-Za-z0-9]+(?:'[A-Za-z0-9]+)?|[^\w\s]|\s+", re.UNICODE)
+
 def pick_best_example(jsonl_path, pick_best, tokenizer=None, max_tokens=600, min_tokens=80):
     """
     Pick a single exemplar (prev_old, prev_new) that is:
@@ -78,29 +80,62 @@ def pick_best_example(jsonl_path, pick_best, tokenizer=None, max_tokens=600, min
     return best
 
 
-def infer_substitutions(prev_old: str, prev_new: str, top_k: int = 12):
+def infer_substitutions(prev_old: str, prev_new: str, top_k: int = 20,
+                        max_span_tokens: int = 6, min_len_chars: int = 2):
     """
-    Generic: infer likely substitutions from an (OLD, NEW) exemplar by looking
-    at 'replace' spans and collecting repeated small phrase swaps.
+    Infer likely substitution pairs from one exemplar (prev_old -> prev_new).
+    Works generically for many datasets, and avoids char-level junk like D->W.
     """
-    sm = difflib.SequenceMatcher(a=prev_old, b=prev_new, autojunk=False)
+    a = _tokenize_preserve(prev_old)
+    b = _tokenize_preserve(prev_new)
+
+    sm = difflib.SequenceMatcher(a=a, b=b, autojunk=False)
+
     pairs = []
     for tag, i1, i2, j1, j2 in sm.get_opcodes():
         if tag != "replace":
             continue
-        a = prev_old[i1:i2].strip()
-        b = prev_new[j1:j2].strip()
-        # ignore huge blocks / whitespace-only
-        if not a or not b:
-            continue
-        if len(a) > 80 or len(b) > 80:
-            continue
-        # normalize internal whitespace for nicer prompting
-        a_norm = re.sub(r"\s+", " ", a)
-        b_norm = re.sub(r"\s+", " ", b)
-        pairs.append((a_norm, b_norm))
 
-    # rank by frequency (repeated replacements are likely "the rule")
+        span_a = a[i1:i2]
+        span_b = b[j1:j2]
+
+        # Remove whitespace-only tokens from candidate phrases
+        span_a_nw = [t for t in span_a if _is_meaningful_token(t)]
+        span_b_nw = [t for t in span_b if _is_meaningful_token(t)]
+
+        if not span_a_nw or not span_b_nw:
+            continue
+        if len(span_a_nw) > max_span_tokens or len(span_b_nw) > max_span_tokens:
+            continue
+
+        phrase_a = "".join(span_a_nw).strip()
+        phrase_b = "".join(span_b_nw).strip()
+
+        # Filter out tiny / single-letter / trivial “D->W”
+        if len(phrase_a) < min_len_chars or len(phrase_b) < min_len_chars:
+            continue
+        if len(phrase_a) == 1 or len(phrase_b) == 1:
+            continue
+
+        pairs.append((phrase_a, phrase_b))
+
     ctr = Counter(pairs)
-    best = [p for p, _ in ctr.most_common(top_k)]
-    return best
+    return [p for p, _ in ctr.most_common(top_k)]
+
+
+def _tokenize_preserve(text: str):
+    """
+    Tokenize into: words/numbers, punctuation, and whitespace tokens.
+    Keeping whitespace tokens lets the matcher align better, but we’ll filter
+    them out when building substitution candidates.
+    """
+    return _TOKEN_RE.findall(text)
+
+def _is_meaningful_token(tok: str) -> bool:
+    # reject whitespace-only
+    if tok.isspace():
+        return False
+    # reject pure punctuation (single punctuation token)
+    if re.fullmatch(r"[^\w\s]+", tok):
+        return False
+    return True
