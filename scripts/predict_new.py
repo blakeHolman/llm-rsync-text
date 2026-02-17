@@ -130,16 +130,23 @@ def _build_prefix(prev_old, prev_new, subs):
     subs_str = "\n".join([f"- {a} -> {b}" for a, b in subs])
 
     system = (
-        "You are a semantic substitution engine.\n"
-        "Change only the words that differ from the example.\n"
-        "You are responsible for changing all words like DoD to DoW, Department of Defense to Department of War, etc.\n"
-        "Output ONLY the rewritten text.\n\n"
+        "You are a deterministic semantic rewrite engine.\n"
+        "Learn the substitution rules ONLY from the provided example pair (before -> after).\n"
+        "Then apply the same substitutions to the new input.\n"
+        "\n"
+        "Rules:\n"
+        "- Preserve ALL whitespace, punctuation, and line breaks exactly.\n"
+        "- Do not paraphrase, reorder, summarize, or add/remove lines.\n"
+        "- Apply substitutions globally (every occurrence), including repeated occurrences.\n"
+        "- Match casing style (e.g., UPPER, Title, lower) when substituting.\n"
+        "- After rewriting, scan your output and ensure none of the 'before-side' terms that changed in the example remain.\n"
+        "Output ONLY the rewritten text.\n"
     )
 
     # One exemplar turn (user->assistant)
     return (
         _chat_system(system)
-        + _chat_user("Example: \n" + prev_old)
+        + _chat_user(prev_old)
         + _chat_assistant(prev_new)
     )
 
@@ -192,7 +199,7 @@ def predict(old, target_len=None):
     max_new = max(32, approx)
 
     # Build one full prompt and let generate() handle cache internally.
-    full_text = PREFIX_TEXT + _chat_user("Text to edit: \n" + old) + _chat_assistant_gen()
+    full_text = PREFIX_TEXT + _chat_user(old) + _chat_assistant_gen()
 
     #print(f"Prompt:\n {full_text}")
 
