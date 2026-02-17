@@ -133,14 +133,13 @@ def _build_prefix(prev_old, prev_new, subs):
         "You are a semantic substitution engine.\n"
         "You need to apply the changes in the text to the output.\n"
         "Output ONLY the rewritten text.\n\n"
-        f"Substitutions:\n{subs_str}"
     )
 
     # One exemplar turn (user->assistant)
     return (
         _chat_system(system)
-        + _chat_user(prev_old)
-        + _chat_assistant(prev_new)
+        + _chat_user("Text to edit: \n" + prev_old)
+        + _chat_assistant("Edited text: \n" + prev_new)
     )
 
 
@@ -192,7 +191,7 @@ def predict(old, target_len=None):
     max_new = max(32, approx)
 
     # Build one full prompt and let generate() handle cache internally.
-    full_text = PREFIX_TEXT + _chat_user(old) + _chat_assistant_gen()
+    full_text = PREFIX_TEXT + _chat_user("Text to edit: \n" + old) + _chat_assistant_gen()
 
     print(f"Prompt:\n {full_text}")
 
