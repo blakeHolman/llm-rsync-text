@@ -111,6 +111,7 @@ def _open_data(path, ex_id, len_prompt=False, stop_after=sys.maxsize):
 
 def _build_prefix(prev_old, prev_new):
     # Static part of the prompt (same for all predictions)
+    """
     return (
         "Apply the same kind of edits as in the example.\n"
         "Copy all lines and change only what is necessary.\n"
@@ -120,6 +121,16 @@ def _build_prefix(prev_old, prev_new):
         "Example (after):\n"
         f"{prev_new}\n\n"
         "Text to edit:\n"
+    )
+    """
+    return (
+        "Apply the same kind of edits as the example.\n"
+        "Output only the edited text.\n\n"
+        "Before:\n"
+        f"{prev_old}\n"
+        "After:\n"
+        f"{prev_new}\n\n"
+        "Before:\n"
     )
 
 def init_prefix_kv(prev_old, prev_new):
@@ -157,7 +168,7 @@ def predict(old, target_len=None):
         raise RuntimeError("Prefix KV not initialized. Call init_prefix_kv() first.")
 
     # Dynamic suffix per request
-    suffix = f"{old}\nEdited text:\n"
+    suffix = f"{old}\nAfter:\n"
 
     max_ctx = _model_max_ctx()
 
