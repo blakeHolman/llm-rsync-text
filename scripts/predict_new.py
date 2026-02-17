@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # scripts/predict_new.py
 
-import argparse, os, json, sys, csv, base64, copy, difflib
+import argparse, os, json, sys, csv, base64, copy, difflib, re
 from pathlib import Path
 from residuals import get_residual
 from pick_best_example import pick_best_example, infer_substitutions
