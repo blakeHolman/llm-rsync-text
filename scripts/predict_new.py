@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # scripts/predict_new.py
 
-import argparse, os, json, sys, csv, base64, copy
+import argparse, os, json, sys, csv, base64, copy, difflib
 from pathlib import Path
 from residuals import get_residual
 from pick_best_example import pick_best_example, infer_substitutions
@@ -122,96 +122,132 @@ def _chat_assistant(content: str) -> str:
 def _chat_assistant_gen() -> str:
     return "<|assistant|>\n"
 
-def _build_prefix(prev_old, prev_new, subs):
-    """
-    Build the static prompt prefix using Phi-3 chat formatting.
-    This returns a STRING (not tokenized yet) that ends AFTER the exemplar assistant output.
-    """
-    subs_str = "\n".join([f"- {a} -> {b}" for a, b in subs])
+def build_rule_extraction_prompt(prev_old: str, prev_new: str) -> str:
+    system = (
+        "You are a substitution rule extractor.\n"
+        "Given a BEFORE and AFTER document, output ONLY the substitution rules "
+        "that transform BEFORE into AFTER.\n"
+        "\n"
+        "Requirements:\n"
+        "- List every surface form variant (acronyms, ALL-CAPS, Title Case, possessives)\n"
+        "- Order from most specific to least specific (longest phrase first)\n"
+        "- Only include rules evidenced by the diff\n"
+        "- Format each rule exactly as: \"BEFORE\" -> \"AFTER\"\n"
+        "- Output nothing else — no explanation, no commentary\n"
+    )
 
-    """
-    system = (
-        "You are a deterministic semantic rewrite engine.\n"
-        "Learn the substitution rules ONLY from the provided example pair (before -> after).\n"
-        "Then apply the same substitutions to the new input.\n"
-        "\n"
-        "Rules:\n"
-        "- Preserve ALL whitespace, punctuation, and line breaks exactly.\n"
-        "- Do not paraphrase, reorder, summarize, or add/remove lines.\n"
-        "- Apply substitutions globally (every occurrence), including repeated occurrences.\n"
-        "- Match casing style (e.g., UPPER, Title, lower) when substituting.\n"
-        "- After rewriting, scan your output and ensure none of the 'before-side' terms that changed in the example remain.\n"
-        "Output ONLY the rewritten text.\n"
+    user = (
+        f"BEFORE:\n{prev_old}\n\n"
+        f"AFTER:\n{prev_new}\n\n"
+        "Extract substitution rules:"
     )
-    """
-    system = (
-        "You are a deterministic rewrite engine.\n"
-        "Make ONLY the specified substitutions.\n"
-        "Preserve ALL whitespace, punctuation, and line breaks exactly.\n"
-        "Apply substitutions globally (every occurrence), including within longer tokens.\n"
-        "Output ONLY the rewritten text.\n\n"
-        "Substitutions (apply everywhere):\n"
-        "- Department of Defense -> Department of War\n"
-        "- DEPARTMENT OF DEFENSE -> DEPARTMENT OF WAR\n"
-        "- Secretary of Defense -> Secretary of War\n"
-        "- SECRETARY OF DEFENSE -> SECRETARY OF WAR\n"
-        "- DoD -> DoW\n"
-        "- DOD -> DOW\n"
-        "- dod -> dow\n"
-        "- DoDI -> DoWI\n"
-        "- DoDD -> DoWD\n"
-        "- DoDM -> DoWM\n"
-        "- DoDIG -> DoWIG\n"
-        "- DoD O- -> DoW O-\n"
-        "\n"
-        "Important:\n"
-        "- 'Department of Defense' may be split by whitespace/newlines (e.g., 'Department\\nof Defense'). Treat that as the same phrase.\n"
-        "- Apply the same for 'Secretary of Defense'.\n"
-    )
-    # One exemplar turn (user->assistant)
+
     return (
         _chat_system(system)
-        #+ _chat_user(prev_old)
-        #+ _chat_assistant(prev_new)
+        + _chat_user(user)
+        + _chat_assistant_gen()
     )
 
+def parse_rules(llm_output: str) -> list[tuple[str, str]]:
+    """
+    Parse lines of the form: "BEFORE" -> "AFTER"
+    Returns list of (before, after) tuples, longest first.
+    """
+    rules = []
+    for line in llm_output.strip().splitlines():
+        line = line.strip()
+        # Match: "X" -> "Y"  or  X -> Y  (with or without quotes)
+        m = re.match(r'^"?([^"]+)"?\s*->\s*"?([^"]+)"?$', line)
+        if m:
+            before = m.group(1).strip()
+            after  = m.group(2).strip()
+            if before and after:
+                rules.append((before, after))
+
+    # Sort longest source phrase first — prevents partial matches
+    # e.g. "Department of Defense" must be applied before "Defense"
+    rules.sort(key=lambda x: len(x[0]), reverse=True)
+    return rules
+
+def build_rewrite_prompt(rules: list[tuple[str, str]], old: str) -> str:
+    rules_str = "\n".join(f'"{a}" -> "{b}"' for a, b in rules)
+
+    system = (
+        "You are a deterministic rewrite engine.\n"
+        "Apply ONLY the substitutions listed below.\n"
+        "Every character not covered by a rule must be copied exactly.\n"
+        "DO NOT paraphrase, reorder, summarize, or add content.\n"
+        "\n"
+        "Substitutions (apply every occurrence, most specific first):\n"
+        f"{rules_str}\n"
+    )
+
+    return (
+        _chat_system(system)
+        + _chat_user(old)
+        + _chat_assistant_gen()
+    )
+
+def apply_rules_deterministic(text: str, rules: list[tuple[str, str]]) -> str:
+    """Fast deterministic pre-pass before LLM. Longest rules applied first."""
+    for before, after in rules:  # already sorted longest-first
+        text = text.replace(before, after)
+    return text
 
 def init_prefix_kv(prev_old, prev_new):
-    """
-    Build and store the static prefix prompt once.
+    global PREFIX_TEXT
 
-    NOTE: If you are using the 'full_text = PREFIX_TEXT + user(old) + assistant_gen()'
-    approach inside predict(), you do NOT need to precompute or store KV caches here.
-    HuggingFace generate() will use KV cache internally during decoding.
-    """
-    global PREFIX_TEXT, PREFIX_KV, PREFIX_TOKENS, PREFIX_MASK
+    # Stage 1: extract rules via LLM
+    extraction_prompt = build_rule_extraction_prompt(prev_old, prev_new)
+    enc = TOKENIZER(extraction_prompt, return_tensors="pt",
+                    add_special_tokens=False).to(DEVICE)
 
-    subs = infer_substitutions(prev_old, prev_new)
-    print(f"Subs: {subs}")
+    with torch.no_grad():
+        out = MODEL.generate(
+            **enc,
+            max_new_tokens=256,   # rules list is short
+            do_sample=False,
+            num_beams=1,
+            use_cache=True,
+            eos_token_id=TOKENIZER.eos_token_id,
+            pad_token_id=TOKENIZER.eos_token_id,
+        )
 
-    # Store the reusable prefix as TEXT only
-    PREFIX_TEXT = _build_prefix(prev_old, prev_new, subs)
+    prompt_len = enc["input_ids"].size(1)
+    raw_rules = TOKENIZER.decode(out[0, prompt_len:], skip_special_tokens=True)
+    print(f"[Stage 1] Extracted rules:\n{raw_rules}")
 
-    # These are unused in the full_text+generate approach; keep as None to avoid confusion
-    PREFIX_KV = None
-    PREFIX_TOKENS = None
-    PREFIX_MASK = None
+    rules = parse_rules(raw_rules)
+    print(f"[Stage 1] Parsed {len(rules)} rules: {rules}")
 
-    # Optional: show how big the prefix is (useful for debugging context limits)
-    enc = TOKENIZER(
-        PREFIX_TEXT,
-        return_tensors="pt",
-        add_special_tokens=False,
-        truncation=True,
-        max_length=_model_max_ctx(),
-    )
-    print(f"[prefix] prefix tokens: {enc['input_ids'].size(1)}")
+    # Validation: apply rules back to prev_old, check similarity to prev_new
+    test_output = apply_rules_deterministic(prev_old, rules)
+    sim = difflib.SequenceMatcher(a=test_output, b=prev_new).ratio()
+    print(f"[Stage 1] Rule validation similarity: {sim:.3f}")
+    if sim < 0.85:
+        print("[Stage 1] Warning: low similarity, rules may be incomplete. "
+              "Falling back to infer_substitutions.")
+        rules = infer_substitutions(prev_old, prev_new)
+
+    # Stage 2 prompt is built per-document in predict(), using these rules
+    PREFIX_TEXT = rules  # store rules, not a fixed prompt
 
 
 # Given old data, predict new
 def predict(old, target_len=None):
     if PREFIX_TEXT is None:
-        raise RuntimeError("Prefix not initialized. Call init_prefix_kv() first.")
+        raise RuntimeError("Call init_prefix_kv() first.")
+
+    rules = PREFIX_TEXT  # list of (before, after) tuples
+
+    # Deterministic pre-pass — handles the easy cases instantly
+    pre_applied = apply_rules_deterministic(old, rules)
+
+    # Build Stage 2 prompt from pre-applied text
+    # (LLM only needs to fix what deterministic pass missed)
+    full_text = build_rewrite_prompt(rules, pre_applied)
+
+    print(full_text)
 
     max_ctx = _model_max_ctx()
 
