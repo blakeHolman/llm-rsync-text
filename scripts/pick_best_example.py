@@ -33,7 +33,7 @@ def _substitution_coverage_score(old: str, new: str) -> float:
 
     return diversity * (1.0 + variance ** 0.5)
 
-def pick_best_example(jsonl_path, pick_best, tokenizer=None, max_tokens=600, min_tokens=80):
+def pick_best_example(jsonl_path, pick_best, tokenizer=None, max_tokens=1500, min_tokens=80):
     first_valid = None
     best = None
     best_score = -1.0
