@@ -116,10 +116,8 @@ def _build_prefix(prev_old, prev_new):
     """
     messages = [
         {"role": "system", "content": "You are a text editor. Output ONLY the edited text. No commentary."},
-        {"role": "user", "content": "Edit this text:\n" + prev_old},
+        {"role": "user", "content": "Here is an example of an edit. Learn the edit pattern.\n\n" + prev_old},
         {"role": "assistant", "content": prev_new},
-        # NOTE: do NOT add the next user turn here if you want the old text to be dynamic.
-        # We'll add "Edit this text:\n" as part of the dynamic suffix, right before `old`.
     ]
 
     # Produce the exact <|system|>...<|assistant|> format Phi-3 expects.
@@ -170,9 +168,8 @@ def predict(old, target_len=None):
     max_ctx = _model_max_ctx()
 
     # Build the dynamic part as a *chat-formatted* user turn + assistant generation cue.
-    # We keep it generic: "Edit this text:" works for any dataset.
     suffix_messages = [
-        {"role": "user", "content": "Edit this text:\n" + old},
+        {"role": "user", "content": "Apply the same edit pattern to the following text.\n\n" + old},
     ]
 
     # add_generation_prompt=True will append the "<|assistant|>\n" (or equivalent)
