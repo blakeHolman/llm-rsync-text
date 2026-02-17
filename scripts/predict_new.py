@@ -116,6 +116,7 @@ def _build_prefix(prev_old, prev_new):
     This returns a STRING (not tokenized yet) that ends AFTER the exemplar assistant output.
     """
     subs = infer_substitutions(prev_old, prev_new)
+    print(f"Subs: {subs}")
     messages = [
         {
             "role": "system",
@@ -128,14 +129,6 @@ def _build_prefix(prev_old, prev_new):
                 f"{subs}"
             ),
         },
-        {
-            "role": "user",
-            "content": (
-                "Learn the semantic substitution pattern from this example.\n\n"
-                f"{prev_old}"
-            ),
-        },
-        {"role": "assistant", "content": prev_new},
     ]
 
     # Produce the exact <|system|>...<|assistant|> format Phi-3 expects.
