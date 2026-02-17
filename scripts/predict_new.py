@@ -115,8 +115,22 @@ def _build_prefix(prev_old, prev_new):
     This returns a STRING (not tokenized yet) that ends AFTER the exemplar assistant output.
     """
     messages = [
-        {"role": "system", "content": "You are a text editor. Output ONLY the edited text. No commentary."},
-        {"role": "user", "content": "Here is an example of an edit. Learn the edit pattern.\n\n" + prev_old},
+        {
+            "role": "system",
+            "content": (
+                "You perform minimal semantic rewrites.\n"
+                "Make only the necessary semantic substitutions, consistently.\n"
+                "Do not paraphrase. Preserve whitespace, punctuation, and line breaks.\n"
+                "Output ONLY the rewritten text."
+            ),
+        },
+        {
+            "role": "user",
+            "content": (
+                "Learn the semantic substitution pattern from this example.\n\n"
+                f"{prev_old}"
+            ),
+        },
         {"role": "assistant", "content": prev_new},
     ]
 
@@ -169,7 +183,14 @@ def predict(old, target_len=None):
 
     # Build the dynamic part as a *chat-formatted* user turn + assistant generation cue.
     suffix_messages = [
-        {"role": "user", "content": "Apply the same edit pattern to the following text.\n\n" + old},
+        {
+            "role": "user",
+            "content": (
+                "Apply the learned semantic substitution pattern to this input.\n"
+                "Return only the rewritten text.\n\n"
+                f"{old}"
+            ),
+        }
     ]
 
     # add_generation_prompt=True will append the "<|assistant|>\n" (or equivalent)
