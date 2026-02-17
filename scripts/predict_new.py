@@ -110,172 +110,120 @@ def _open_data(path, ex_id, len_prompt=False, stop_after=sys.maxsize):
     _save_residual(residuals)
 
 
-def _build_prefix(prev_old, prev_new):
+def _chat_user(content: str) -> str:
+    return f"<|user|>\n{content}<|end|>\n"
+
+def _chat_system(content: str) -> str:
+    return f"<|system|>\n{content}<|end|>\n"
+
+def _chat_assistant(content: str) -> str:
+    return f"<|assistant|>\n{content}<|end|>\n"
+
+def _chat_assistant_gen() -> str:
+    return "<|assistant|>\n"
+
+def _build_prefix(prev_old, prev_new, subs):
     """
     Build the static prompt prefix using Phi-3 chat formatting.
     This returns a STRING (not tokenized yet) that ends AFTER the exemplar assistant output.
     """
-    subs = infer_substitutions(prev_old, prev_new)
-    print(f"Subs: {subs}")
-    messages = [
-        {
-            "role": "system",
-            "content": (
-                "You perform minimal semantic rewrites.\n"
-                "Make only the necessary semantic substitutions, consistently.\n"
-                "Do not paraphrase. Preserve whitespace, punctuation, and line breaks.\n"
-                "Output ONLY the rewritten text."
-                 "Substitutions to apply (learned from example):\n"
-                f"{subs}"
-            ),
-        },
-    ]
+    subs_str = "\n".join([f"- {a} -> {b}" for a, b in subs])
 
-    # Produce the exact <|system|>...<|assistant|> format Phi-3 expects.
-    # add_generation_prompt=False because we are NOT ready to generate yet.
-    return TOKENIZER.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=False,
+    system = (
+        "You are a semantic substitution engine.\n"
+        "Apply ONLY the substitutions listed below.\n"
+        "Do not paraphrase. Preserve ALL whitespace, punctuation, and line breaks.\n"
+        "Output ONLY the rewritten text.\n\n"
+        f"Substitutions:\n{subs_str}"
+    )
+
+    # One exemplar turn (user->assistant)
+    return (
+        _chat_system(system)
+        + _chat_user(prev_old)
+        + _chat_assistant(prev_new)
     )
 
 
 def init_prefix_kv(prev_old, prev_new):
     """
-    Cache KV for the static prefix once. This speeds up many repeated predictions
-    using the same exemplar.
+    Build and store the static prefix prompt once.
+
+    NOTE: If you are using the 'full_text = PREFIX_TEXT + user(old) + assistant_gen()'
+    approach inside predict(), you do NOT need to precompute or store KV caches here.
+    HuggingFace generate() will use KV cache internally during decoding.
     """
     global PREFIX_TEXT, PREFIX_KV, PREFIX_TOKENS, PREFIX_MASK
 
-    PREFIX_TEXT = _build_prefix(prev_old, prev_new)
+    subs = infer_substitutions(prev_old, prev_new)
+    print(f"Subs: {subs}")
 
+    # Store the reusable prefix as TEXT only
+    PREFIX_TEXT = _build_prefix(prev_old, prev_new, subs)
+
+    # These are unused in the full_text+generate approach; keep as None to avoid confusion
+    PREFIX_KV = None
+    PREFIX_TOKENS = None
+    PREFIX_MASK = None
+
+    # Optional: show how big the prefix is (useful for debugging context limits)
     enc = TOKENIZER(
         PREFIX_TEXT,
         return_tensors="pt",
+        add_special_tokens=False,
         truncation=True,
         max_length=_model_max_ctx(),
     )
-    prefix_ids = enc["input_ids"].to(DEVICE)
-    prefix_mask = enc["attention_mask"].to(DEVICE)
-
-    PREFIX_MASK = prefix_mask
-
-    with torch.no_grad():
-        out = MODEL(
-            input_ids=prefix_ids,
-            attention_mask=prefix_mask,
-            use_cache=True,
-        )
-
-    PREFIX_KV = out.past_key_values   # Cache object / DynamicCache
-    PREFIX_TOKENS = prefix_ids.size(1)
-
-    print(f"[prefix-kv] cached prefix tokens: {PREFIX_TOKENS}")
+    print(f"[prefix] prefix tokens: {enc['input_ids'].size(1)}")
 
 
 # Given old data, predict new
 def predict(old, target_len=None):
-    if PREFIX_KV is None or PREFIX_TEXT is None or PREFIX_TOKENS is None:
-        raise RuntimeError("Prefix KV not initialized. Call init_prefix_kv() first.")
+    if PREFIX_TEXT is None:
+        raise RuntimeError("Prefix not initialized. Call init_prefix_kv() first.")
 
     max_ctx = _model_max_ctx()
 
-    # Build the dynamic part as a *chat-formatted* user turn + assistant generation cue.
-    suffix_messages = [
-        {
-            "role": "user",
-            "content": (
-                "Apply the learned semantic substitution pattern to this input.\n"
-                "Return only the rewritten text.\n\n"
-                f"{old}"
-            ),
-        }
-    ]
+    # Decide decode length
+    # (same logic you already had)
+    if target_len is not None:
+        approx = target_len + 64
+    else:
+        approx = len(TOKENIZER(old).input_ids) + 64
+    max_new = max(32, approx)
 
-    # add_generation_prompt=True will append the "<|assistant|>\n" (or equivalent)
-    # so the model continues by generating only the edited text.
-    suffix_text = TOKENIZER.apply_chat_template(
-        suffix_messages,
-        tokenize=False,
-        add_generation_prompt=True,
-    )
+    # Build one full prompt and let generate() handle cache internally.
+    full_text = PREFIX_TEXT + _chat_user(old) + _chat_assistant_gen()
 
-    # Tokenize suffix
     enc = TOKENIZER(
-        suffix_text,
+        full_text,
         return_tensors="pt",
-        add_special_tokens=False,                 # <<< CRITICAL
+        add_special_tokens=False,     # IMPORTANT for Phi chat tokens you already embedded
         truncation=True,
-        max_length=max_ctx - PREFIX_TOKENS,       # <<< also important
-    )
-    input_ids = enc["input_ids"].to(DEVICE)          # (1, suffix_len)
-    attn_mask = enc["attention_mask"].to(DEVICE)     # (1, suffix_len)
+        max_length=max_ctx,
+    ).to(DEVICE)
 
-    bsz, suffix_len = input_ids.shape
-    prompt_len_total = PREFIX_TOKENS + suffix_len
-    available_for_gen = max_ctx - prompt_len_total
-    if available_for_gen <= 0:
+    # Ensure we don't ask to generate beyond remaining context
+    prompt_len = enc["input_ids"].size(1)
+    available = max_ctx - prompt_len
+    if available <= 0:
         print("Warning: no room left for generation; returning empty prediction.")
         return ""
-
-    # Decide decode length
-    if target_len is not None:
-        max_new = min(max(32, target_len + 64), available_for_gen)
-    else:
-        max_new = min(max(32, suffix_len + 64), available_for_gen)
-
-    past = copy.deepcopy(PREFIX_KV)
-
-    # ---- Step 1: run the suffix through the model using cached prefix ----
-    full_mask = torch.cat([PREFIX_MASK, attn_mask], dim=1)
-
-    #position_ids = torch.arange(PREFIX_TOKENS, PREFIX_TOKENS + suffix_len, device=DEVICE).unsqueeze(0)
+    max_new = min(max_new, available)
 
     with torch.no_grad():
-        out = MODEL(
-            input_ids=input_ids,
-            attention_mask=full_mask,
-            #position_ids=position_ids,
-            past_key_values=past,
+        out = MODEL.generate(
+            **enc,
+            max_new_tokens=max_new,
+            do_sample=False,
+            num_beams=1,
             use_cache=True,
+            eos_token_id=TOKENIZER.eos_token_id,
+            pad_token_id=TOKENIZER.eos_token_id,
         )
 
-    past = out.past_key_values
-
-    # ---- Step 2: greedy decode token-by-token (avoid generate() cache issues) ----
-    generated = []
-    next_token = out.logits[:, -1, :].argmax(dim=-1, keepdim=True)  # (1,1)
-
-    # Stop on EOS or <|end|> if present
-    END_ID = TOKENIZER.convert_tokens_to_ids("<|end|>")
-    EOS_ID = TOKENIZER.eos_token_id
-
-    cur_len_total = PREFIX_TOKENS + suffix_len
-
-    for _ in range(max_new):
-        tok = next_token.item()
-        if tok == EOS_ID or (END_ID is not None and tok == END_ID):
-            break
-
-        generated.append(tok)
-
-        cur_len_total += 1
-        step_mask = torch.ones((1, cur_len_total), dtype=full_mask.dtype, device=DEVICE)
-        #step_pos = torch.tensor([[cur_len_total - 1]], device=DEVICE)
-
-        with torch.no_grad():
-            out = MODEL(
-                input_ids=next_token,
-                attention_mask=step_mask,
-                #position_ids=step_pos,
-                past_key_values=past,
-                use_cache=True,
-            )
-
-        past = out.past_key_values
-        next_token = out.logits[:, -1, :].argmax(dim=-1, keepdim=True)
-
-    return TOKENIZER.decode(generated, skip_special_tokens=True)
+    pred = TOKENIZER.decode(out[0, prompt_len:], skip_special_tokens=True)
+    return pred
 
 
 def _model_max_ctx():
