@@ -4,7 +4,7 @@
 import argparse, os, json, sys, csv, base64, copy
 from pathlib import Path
 from residuals import get_residual
-from pick_best_example import pick_best_example
+from pick_best_example import pick_best_example, infer_substitutions
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -115,6 +115,7 @@ def _build_prefix(prev_old, prev_new):
     Build the static prompt prefix using Phi-3 chat formatting.
     This returns a STRING (not tokenized yet) that ends AFTER the exemplar assistant output.
     """
+    subs = infer_substitutions(prev_old, prev_new)
     messages = [
         {
             "role": "system",
@@ -123,6 +124,8 @@ def _build_prefix(prev_old, prev_new):
                 "Make only the necessary semantic substitutions, consistently.\n"
                 "Do not paraphrase. Preserve whitespace, punctuation, and line breaks.\n"
                 "Output ONLY the rewritten text."
+                 "Substitutions to apply (learned from example):\n"
+                f"{subs}"
             ),
         },
         {

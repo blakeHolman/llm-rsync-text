@@ -5,6 +5,8 @@ import json
 import difflib
 from math import log1p
 from typing import Optional, Tuple, Any
+import re
+from collections import Counter
 
 def pick_best_example(jsonl_path, pick_best, tokenizer=None, max_tokens=600, min_tokens=80):
     """
@@ -73,4 +75,32 @@ def pick_best_example(jsonl_path, pick_best, tokenizer=None, max_tokens=600, min
 
     if best is None:
         raise RuntimeError("No suitable exemplar found; relax max_tokens/min_tokens.")
+    return best
+
+
+def infer_substitutions(prev_old: str, prev_new: str, top_k: int = 12):
+    """
+    Generic: infer likely substitutions from an (OLD, NEW) exemplar by looking
+    at 'replace' spans and collecting repeated small phrase swaps.
+    """
+    sm = difflib.SequenceMatcher(a=prev_old, b=prev_new, autojunk=False)
+    pairs = []
+    for tag, i1, i2, j1, j2 in sm.get_opcodes():
+        if tag != "replace":
+            continue
+        a = prev_old[i1:i2].strip()
+        b = prev_new[j1:j2].strip()
+        # ignore huge blocks / whitespace-only
+        if not a or not b:
+            continue
+        if len(a) > 80 or len(b) > 80:
+            continue
+        # normalize internal whitespace for nicer prompting
+        a_norm = re.sub(r"\s+", " ", a)
+        b_norm = re.sub(r"\s+", " ", b)
+        pairs.append((a_norm, b_norm))
+
+    # rank by frequency (repeated replacements are likely "the rule")
+    ctr = Counter(pairs)
+    best = [p for p, _ in ctr.most_common(top_k)]
     return best
