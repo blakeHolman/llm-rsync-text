@@ -145,11 +145,28 @@ def _build_prefix(prev_old, prev_new, subs):
     )
     """
     system = (
-        "You are a deterministic semantic rewrite engine.\n"
-        "Rewrite all instances of DoD as DoW.\n"
-        "Rewrite all instances of Department of Defense as Department of War.\n"
-        "Rewrite all instances of DOD as DOW.\n"
-        "All instances may include substrings and other variations not mentioned.\n\n"
+        "You are a deterministic rewrite engine.\n"
+        "Make ONLY the specified substitutions.\n"
+        "Preserve ALL whitespace, punctuation, and line breaks exactly.\n"
+        "Apply substitutions globally (every occurrence), including within longer tokens.\n"
+        "Output ONLY the rewritten text.\n\n"
+        "Substitutions (apply everywhere):\n"
+        "- Department of Defense -> Department of War\n"
+        "- DEPARTMENT OF DEFENSE -> DEPARTMENT OF WAR\n"
+        "- Secretary of Defense -> Secretary of War\n"
+        "- SECRETARY OF DEFENSE -> SECRETARY OF WAR\n"
+        "- DoD -> DoW\n"
+        "- DOD -> DOW\n"
+        "- dod -> dow\n"
+        "- DoDI -> DoWI\n"
+        "- DoDD -> DoWD\n"
+        "- DoDM -> DoWM\n"
+        "- DoDIG -> DoWIG\n"
+        "- DoD O- -> DoW O-\n"
+        "\n"
+        "Important:\n"
+        "- 'Department of Defense' may be split by whitespace/newlines (e.g., 'Department\\nof Defense'). Treat that as the same phrase.\n"
+        "- Apply the same for 'Secretary of Defense'.\n"
     )
     # One exemplar turn (user->assistant)
     return (
