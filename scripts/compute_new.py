@@ -93,8 +93,8 @@ def _open_data(path, ex_id, len_prompt=False, stop_after=sys.maxsize, residuals_
             if rec_id == ex_id:
                 continue
 
-            old = rec.get("old")
-            new = rec.get("new")
+            old = rec.get("OLD")
+            new = rec.get("NEW")
 
             if old is None or new is None:
                 print(f"Skipping line {idx}: missing 'old' or 'new'")
@@ -128,7 +128,7 @@ def _validate(new, expected_new, rec_id):
 def main():
     ap = argparse.ArgumentParser(description="Compute \"new\" output from predicted and residuals")
     ap.add_argument("--data_file", required=True, help="JSONL of {old,new,} pairs")
-    ap.add_argument("--residuals", required=False, help="File to save residuals")
+    ap.add_argument("--residuals", required=False, help="Location of residual file")
     ap.add_argument("--add_len", action="store_true", help="Provide \"new\" length to prompt for prediction")
     ap.add_argument("--best_example", action="store_true", help="Finds best OLD -> NEW pair for prompt generation")
     ap.add_argument("--stop_after", type=int, default=sys.maxsize, help="Number of lines to read")
