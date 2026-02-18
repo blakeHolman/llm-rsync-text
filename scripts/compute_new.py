@@ -3,7 +3,8 @@
 
 import json, sys, argparse, os, base64
 from residuals import apply_residual
-from predict_new import predict
+from predict_new import predict, init_prefix_kv
+from pick_best_example import pick_best_example
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -69,10 +70,7 @@ def _get_residual(rec_id):
 
 
 # Open old, new dataset. Pass old to LLM
-def _open_data(path, len_prompt=False, stop_after=sys.maxsize, residuals_path=RESIDUAL_FILE):
-    prev_old = None
-    prev_new = None
-
+def _open_data(path, ex_id, len_prompt=False, stop_after=sys.maxsize, residuals_path=RESIDUAL_FILE):
     with open(path, "r", encoding="utf-8") as f:
         for idx, line in enumerate(f, start=1):
             # Check we need to stop early
@@ -92,14 +90,11 @@ def _open_data(path, len_prompt=False, stop_after=sys.maxsize, residuals_path=RE
                 continue
 
             rec_id = rec.get("id")
+            if rec_id == ex_id:
+                continue
+
             old = rec.get("old")
             new = rec.get("new")
-
-            # Ignore first line do to few-shot prompting
-            if idx <= 1:
-                prev_old = old
-                prev_new = new
-                continue
 
             if old is None or new is None:
                 print(f"Skipping line {idx}: missing 'old' or 'new'")
@@ -107,7 +102,7 @@ def _open_data(path, len_prompt=False, stop_after=sys.maxsize, residuals_path=RE
 
             # Optionally include length of "new" in the prediction call
             target_len = len(TOKENIZER(new).input_ids) if len_prompt else None
-            predicted = _compute_new(old, prev_old, prev_new, target_len=target_len)
+            predicted = _compute_new(old, target_len=target_len)
 
             # Open residuals file and get residual for this index
             residual = _get_residual(rec_id)
@@ -118,13 +113,10 @@ def _open_data(path, len_prompt=False, stop_after=sys.maxsize, residuals_path=RE
             # Validate computed new matches expected new
             _validate(new, computed_new, rec_id)
 
-            prev_old = old
-            prev_new = new
 
 
-
-def _compute_new(old, prev_old, prev_new, target_len=None):
-    predicted = predict(old, prev_old, prev_new)
+def _compute_new(old, target_len=None):
+    predicted = predict(old, target_len)
     return predicted
 
 
@@ -138,6 +130,7 @@ def main():
     ap.add_argument("--data_file", required=True, help="JSONL of {old,new,} pairs")
     ap.add_argument("--residuals", required=False, help="File to save residuals")
     ap.add_argument("--add_len", action="store_true", help="Provide \"new\" length to prompt for prediction")
+    ap.add_argument("--best_example", action="store_true", help="Finds best OLD -> NEW pair for prompt generation")
     ap.add_argument("--stop_after", type=int, default=sys.maxsize, help="Number of lines to read")
     args = ap.parse_args()
 
@@ -157,11 +150,23 @@ def main():
     # Get flag for prompting length
     len_prompt = args.add_len
 
+    # Get flag for prompt
+    use_best = args.best_example
+    # Get best or first example
+    prev_old, prev_new, ex_id = pick_best_example(
+        data,
+        pick_best=use_best,
+        tokenizer=TOKENIZER,
+    )
+    print(f"Best example id = {ex_id}")
+    # Do prefill for first part of prompt
+    init_prefix_kv(prev_old, prev_new)
+
     # Get stop after var
     stop_after = args.stop_after
     
     # Open dataset and run LLM
-    _open_data(data, len_prompt, stop_after, RESIDUAL_FILE)
+    _open_data(data, ex_id, len_prompt, stop_after, RESIDUAL_FILE)
 
 
 if __name__ == "__main__":
